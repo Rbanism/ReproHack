@@ -4,6 +4,4 @@
 .Rhistory
 .RData
 .Ruserdata
-.hugo_build.lock
-public
-blogdown
+/.quarto/
