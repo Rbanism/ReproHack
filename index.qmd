@@ -1,7 +1,52 @@
 ---
-title: "reprohack"
+title: "Reproducible Research & Automation with R for the Urbanism Research Community"
 ---
 
-This is a Quarto website.
+## Rbanism
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Challenged by the limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills in the urbanism research community, this fellowship aims to empower researchers to use research software effectively and with confidence. The fellowship raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research in two thematic workshops and two hands-on challenges—ReproHack and ScaleUp. Experiences from Carpentries workshops and synergies with other related activities carried out at TU Delft will benefit both the content of the planned activities and the community-building efforts of this fellowship. The fellowship builds on the first steps taken by a recently formed group of R users in the Department of Urbanism at TU Delft and it has the ambition to scale up to a larger national and international Rbanism community. 
+
+## 1. Reproducible Research with R Workshop 
+(Monday, 10 October, 9:00-17:00)
+
+The "Reproducible Research with R" workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop will follow [the Carpentries lesson "Reproducible Research with R"](https://datacarpentry.org/rr-workshop/). Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training. 
+
+:::{.callout-note}
+To do before the event:
+
+- [ ] Shorten the Carpentries lesson to a 1-day format
+- [ ] Who will teach? (Claudiu, Barbara?)
+- [ ] Check with the TU Delft Graduate School if PhD candidates can get GS credits for joining the workshop
+:::
+
+## 2. ReproHack 
+(Friday, 14 October, 13:00-17:00)
+
+Before the ReproHack, a call for papers will be launched to select at least 10 papers and associated (open) data that will be made available to the participants. A selection of papers using R is desired, but the use of other tool sets (e.g., Python-based) will also be possible. The ReproHack will last 4 hours, in which teams will work together to reproduce a paper submitted by the authors for the ReproHack. The event will be hosted on the [ReproHack Hub](https://www.reprohack.org/), where participants can also get further acquainted with the global research community concerned with reproducibility.
+
+:::{.callout-note}
+To do before the event:
+
+- [ ] Register the event on the ReproHack Hub
+- [ ] Announce the challenge in the community
+- [ ] Invite a speaker from the ReproHack community (Daniela Gawehns, Anna Krystalli, or [someone else from the ReproHack team](https://www.reprohack.org/about)) for an inspirational lecture
+:::
+
+## 3. Challenge
+
+The challenge will be announced at the end of the *ReproHack* and will be open for one month. Individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process will be used to evaluate and rank the submissions: (1) a **peer assessment** in which participants evaluate another submission following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries will be evaluated in depth by an **expert assessment committee** consisting of at least three members. The first three entries will be awarded in the wrap-up event with vouchers and mentoring hours.
+
+:::{.callout-note}
+To do before the event:
+
+- [ ] Set up a GitHub repository that can receive submissions
+- [ ] Prepare evaluation guidelines
+- [ ] Prepare the assessment questionnaire
+:::
+
+## 4. Wrap-up event 
+(Monday, 14 November, 15:00-17:00)
+
+The wrap-up event, open to the wider national and international urbanism research community, will (1) present the principles of reproducibility put forward in this fellowship, (2) announce the results of the challenge, and (3) share a data-informed synthesis of challenges and opportunities of reproducibility emerging from the challenge submissions. The latter is meant to inform the wider community about the learning process.
+
+All material produced throughout the four stages of this process will be made openly available.
