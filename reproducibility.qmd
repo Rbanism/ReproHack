@@ -5,6 +5,16 @@ author: "Claudiu Forgaci"
 
 ## Workshop
 
+### Introduction
+
+### File organisation
+
+### Automation
+
+### Literate programming
+
+### Publishing
+
 ## ReproHack
 
 ## Challenge
