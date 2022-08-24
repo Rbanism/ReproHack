@@ -1,0 +1,32 @@
+---
+title: "Reproducibility"
+author: "Claudiu Forgaci"
+---
+
+## Workshop
+
+## ReproHack
+
+## Challenge
+
+---
+
+## Definitions
+
+-   Reproducible vs. Replicable vs. Robust vs. Generalisable (see The Turing Way)
+
+## File organisation
+
+## Testing
+
+## Reproducible computational environments
+
+## Resources
+
+-   [R Workflow](http://hbiostat.org/rflow)
+-   [The Turing Way handbook to reproducible, ethical and collaborative data science](https://the-turing-way.netlify.app/welcome)
+-   [Reproducible Research Data and Project Management in R](https://annakrystalli.me/rrresearchACCE20/)
+-   [The `holepunch` package](https://github.com/karthik/holepunch)
+-   [`rrtools`: Tools for Writing Reproducible Research in R](https://github.com/benmarwick/rrtools)
+
+## References
