@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-About this site
+## The goal
+
+[Rbanism is a Netherlands eScience Center fellowship project](https://www.esciencecenter.nl/claudiu-forgaci/) that aims to empower researchers to use research software effectively and with confidence. The fellowship raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research in two thematic workshops, two hands-on challenges -- ReproHack and ScaleUp -- and two corresponding one-month challenges. The fellowship will build on the first steps taken by a recently formed group of R users in the Department of Urbanism at TU Delft and it has the ambition to scale up to a larger national and international Rbanism community. 
+
+## The why
+
+The urbanism research community is challenged by a limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills. Rbanism can bring experiences from Carpentries workshops and synergies with other activities carried out at TU Delft to benefit both the content of the planned activities and the community-building efforts of this fellowship.  
