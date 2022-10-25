@@ -2,7 +2,7 @@
 title: "Rbanism: Empowering the urbanism research community to use research software effectively and with confidence"
 ---
 
-## Event series 1: Reproducible Research & Automation with R for the Urbanism Research Community
+## Series 1: Reproducible Urbanism Research & Automation
 
 ### 1. Reproducible Research with R Workshop
 
