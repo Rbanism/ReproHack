@@ -82,6 +82,9 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link" href="./about.html">About</a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html">Resources</a>
+  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -137,8 +140,6 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<!-- Open all links in a new browser tab -->
-<p><base target="_blank"></p>
 <section id="rbanism" class="level2">
 <h2 class="anchored" data-anchor-id="rbanism">Rbanism</h2>
 <p>Challenged by the limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills in the urbanism research community, this fellowship aims to empower researchers to use research software effectively and with confidence. The fellowship raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research in two thematic workshops and two hands-on challenges—ReproHack and ScaleUp. Experiences from Carpentries workshops and synergies with other related activities carried out at TU Delft will benefit both the content of the planned activities and the community-building efforts of this fellowship. The fellowship builds on the first steps taken by a recently formed group of R users in the Department of Urbanism at TU Delft and it has the ambition to scale up to a larger national and international Rbanism community. </p>
@@ -289,6 +290,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
