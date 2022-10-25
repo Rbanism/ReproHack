@@ -193,6 +193,13 @@
     "href": "resources.html#reproducibility",
     "title": "Resources",
     "section": "Reproducibility",
-    "text": "Reproducibility\n\nRbanism workshop on reproducibility\n\nIntroduction\n\nslides\n\n\n\nOrganisation\n\nslides\n\n\n\nAutomation\n\nlesson\nscript\n\n\n\nDocumentation\n\nslides\nR Markdown document\n\n\n\nDissemination\n\nslides\n\n\n\nWrap-up\n\nslides\n\n\n\n\nGeneral resources on reproducibility\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\nFor R users\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\nFrom urbanism research\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science"
+    "text": "Reproducibility\n\nRbanism workshop on reproducibility\n\nIntroduction\n\nslides\n\n\n\nOrganisation\n\nslides\n\n\n\nAutomation\n\nlesson\nscript\n\n\n\nDocumentation\n\nslides\nR Markdown document\n\n\n\nDissemination\n\nslides\n\n\n\nWrap-up\n\nslides\n\n\n\n\nGeneral resources on reproducibility\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\nFor R users\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\nFrom urbanism research\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science\nReproducible Graduate Theses in GIScience"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "Reproducible vs. Replicable vs. Robust vs. Generalisable (see The Turing Way)"
   }
 ]
