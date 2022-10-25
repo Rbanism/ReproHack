@@ -1,0 +1,54 @@
+---
+title: "Resources"
+---
+
+This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included. 
+
+## Reproducibility
+
+### Rbanism workshop on reproducibility
+
+##### Introduction
+
+-   [slides](https://rbanism.github.io/repro-r-workshop/documents/01-intro-slides.html)
+
+##### Organisation
+
+-   [slides](https://rbanism.github.io/repro-r-workshop/documents/02-organization-slides.html)
+
+##### Automation
+
+-   [lesson](https://rbanism.github.io/repro-r-workshop/documents/03-automation.html)
+-   [script](https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/R/my-first-R-script.R)
+
+##### Documentation
+
+-   [slides](https://rbanism.github.io/repro-r-workshop/documents/04-literate-programming-slides.html)
+-   [R Markdown document](https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/documents/my-awesome-report.Rmd)
+
+##### Dissemination
+
+-   [slides](https://rbanism.github.io/repro-r-workshop/documents/05-publishing-slides.html)
+
+##### Wrap-up
+
+-   [slides](https://rbanism.github.io/repro-r-workshop/documents/06-wrap-up.html)
+
+### General resources on reproducibility
+
+-   [The Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
+    
+##### For R users
+
+-   [R Workflow](http://hbiostat.org/rflow)
+-   [Reproducible Research Data and Project Management in R](https://annakrystalli.me/rrresearchACCE20/)
+-   [The `holepunch` package](https://github.com/karthik/holepunch)
+-   [`rrtools`: Tools for Writing Reproducible Research in R](https://github.com/benmarwick/rrtools)
+-   [Getting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum)](https://datacarpentry.org/r-socialsci/05-rmarkdown/index.html) - 1 hour
+
+    
+### From urbanism research
+
+-   [GIS and Computational Notebooks](https://gistbok.ucgis.org/bok-topics/gis-and-computational-notebooks)
+-   [Evolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science](https://onlinelibrary.wiley.com/doi/10.1111/gean.12302)
+    

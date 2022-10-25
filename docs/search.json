@@ -124,5 +124,75 @@
     "title": "Reproducible Research & Automation with R for the Urbanism Research Community",
     "section": "Rbanism",
     "text": "Rbanism\nChallenged by the limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills in the urbanism research community, this fellowship aims to empower researchers to use research software effectively and with confidence. The fellowship raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research in two thematic workshops and two hands-on challenges—ReproHack and ScaleUp. Experiences from Carpentries workshops and synergies with other related activities carried out at TU Delft will benefit both the content of the planned activities and the community-building efforts of this fellowship. The fellowship builds on the first steps taken by a recently formed group of R users in the Department of Urbanism at TU Delft and it has the ambition to scale up to a larger national and international Rbanism community."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included."
+  },
+  {
+    "objectID": "resources.html#reprohack",
+    "href": "resources.html#reprohack",
+    "title": "Resources",
+    "section": "ReproHack",
+    "text": "ReproHack"
+  },
+  {
+    "objectID": "resources.html#challenge",
+    "href": "resources.html#challenge",
+    "title": "Resources",
+    "section": "Challenge",
+    "text": "Challenge"
+  },
+  {
+    "objectID": "resources.html#definitions",
+    "href": "resources.html#definitions",
+    "title": "Resources",
+    "section": "Definitions",
+    "text": "Definitions\n\nReproducible vs. Replicable vs. Robust vs. Generalisable (see The Turing Way)"
+  },
+  {
+    "objectID": "resources.html#file-organisation-1",
+    "href": "resources.html#file-organisation-1",
+    "title": "Resources",
+    "section": "File organisation",
+    "text": "File organisation"
+  },
+  {
+    "objectID": "resources.html#testing",
+    "href": "resources.html#testing",
+    "title": "Resources",
+    "section": "Testing",
+    "text": "Testing"
+  },
+  {
+    "objectID": "resources.html#reproducible-computational-environments",
+    "href": "resources.html#reproducible-computational-environments",
+    "title": "Resources",
+    "section": "Reproducible computational environments",
+    "text": "Reproducible computational environments"
+  },
+  {
+    "objectID": "resources.html#resources",
+    "href": "resources.html#resources",
+    "title": "Resources",
+    "section": "Resources",
+    "text": "Resources\n\nR Workflow\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nGeneral:\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\nFor R users:\n\nR Workflow\nReproducible Research Data and Project Management in R\nrrtools: Tools for Writing Reproducible Research in R\n\nFor Python users:\n\nGIS and Computational Notebooks"
+  },
+  {
+    "objectID": "resources.html#references",
+    "href": "resources.html#references",
+    "title": "Resources",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "resources.html#reproducibility",
+    "href": "resources.html#reproducibility",
+    "title": "Resources",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nRbanism workshop on reproducibility\n\nIntroduction\n\nslides\n\n\n\nOrganisation\n\nslides\n\n\n\nAutomation\n\nlesson\nscript\n\n\n\nDocumentation\n\nslides\nR Markdown document\n\n\n\nDissemination\n\nslides\n\n\n\nWrap-up\n\nslides\n\n\n\n\nGeneral resources on reproducibility\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\nFor R users\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\nFrom urbanism research\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science"
   }
 ]
