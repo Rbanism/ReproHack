@@ -9,3 +9,5 @@ title: "About"
 ## The why
 
 The urbanism research community is challenged by a limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills. Rbanism can bring experiences from Carpentries workshops and synergies with other activities carried out at TU Delft to benefit both the content of the planned activities and the community-building efforts of this fellowship.  
+
+![](img/rbanism-221019-03.png){width=100%}
