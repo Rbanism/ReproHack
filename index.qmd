@@ -43,7 +43,7 @@ In this last part of the Reproducibility event series,  individuals or teams can
 
 ### 4. Wrap-up event
 
-(February 2023, date and time tbd)
+(March 2023, date and time tbd)
 
 The wrap-up event, open to the wider national and international urbanism research community, will (1) present the principles of reproducibility put forward in this fellowship, (2) announce the results of the challenge, and (3) share a data-informed synthesis of challenges and opportunities of reproducibility emerging from the challenge submissions. The latter is meant to inform the wider community about the learning process.
 
