@@ -2,7 +2,7 @@
 title: "Resources"
 ---
 
-This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included. 
+This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included.
 
 ## Reproducibility
 
@@ -37,19 +37,18 @@ This is a curated and evolving list of resources on the topics of reproducibilit
 ### General resources on reproducibility
 
 -   [The Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)
-    
+
 ##### For R users
 
 -   [R Workflow](http://hbiostat.org/rflow)
 -   [Reproducible Research Data and Project Management in R](https://annakrystalli.me/rrresearchACCE20/)
 -   [The `holepunch` package](https://github.com/karthik/holepunch)
 -   [`rrtools`: Tools for Writing Reproducible Research in R](https://github.com/benmarwick/rrtools)
+-   [Building reproducible analytical pipelines with R](https://raps-with-r.dev/) - This is an excellent book written by [Bruno Rodrigues](https://twitter.com/brodriguesco) a practicing data scientist who is an advocate of software engineering in the field of data science. The book provides an in-depth overview of the tools, practices and techniques for reproducible analytical pipelines (RAPs). The book does not teach R programming basics, nor does it cover statistics and visualisation. The language is accessible and non-academic, with multiple references to the pains encounters by data science practitioners due to the lack of reproducibility.
 -   [Getting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum)](https://datacarpentry.org/r-socialsci/05-rmarkdown/index.html) - 1 hour
 
-    
 ### From urbanism research
 
 -   [GIS and Computational Notebooks](https://gistbok.ucgis.org/bok-topics/gis-and-computational-notebooks)
 -   [Evolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science](https://onlinelibrary.wiley.com/doi/10.1111/gean.12302)
 -   [Reproducible Graduate Theses in GIScience](https://osf.io/j97zp/)
-    
