@@ -1,0 +1,14 @@
+---
+title: "Urbanism ReproHack"
+subtitle: "Oct. 14, 2022, 1:00–5:00 PM"
+description: "Attempt to reproduce a published paper."
+date: "3/2/2023"
+categories: [Hackathons]
+image: placeholder.png
+---
+
+Before the ReproHack, a call for papers was launched to select papers and associated (open) data that will be made available to the participants. A selection of papers using R was not a requirement; the use of other (e.g., Python-based) tool sets was also possible. The Urbanism ReproHack lasted 4 hours, in which teams work together to reproduce a paper submitted by the authors. The event was hosted on the [ReproHack Hub](https://www.reprohack.org/), where participants could also get further acquainted with the global research community concerned with reproducibility.
+
+## Links
+
+- [The Urbanism ReproHack page on the ReproHack Hub](https://www.reprohack.org/event/21/)

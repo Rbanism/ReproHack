@@ -1,0 +1,24 @@
+---
+title: "Reproducible Research with R Workshop"
+subtitle: "Oct. 10, 2022, 9:00 AM–5:00 PM"
+date: "3/1/2023"
+description: "Experience the benefits, principles, and crafts of reproducible research."
+categories: [Workshops]
+image: placeholder.png
+---
+
+The "Reproducible Research with R" workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows [the Carpentries lesson "Reproducible Research with R"](https://datacarpentry.org/rr-workshop/). Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training.
+
+## Links
+
+- Introduction: [slides](https://rbanism.github.io/repro-r-workshop/documents/01-intro-slides.html)
+
+- Organisation: [slides](https://rbanism.github.io/repro-r-workshop/documents/02-organization-slides.html)
+
+- Automation: [lesson](https://rbanism.github.io/repro-r-workshop/documents/03-automation.html) and [script](https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/R/my-first-R-script.R)
+
+- Documentation: [slides](https://rbanism.github.io/repro-r-workshop/documents/04-literate-programming-slides.html) and [R Markdown document](https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/documents/my-awesome-report.Rmd)
+
+- Dissemination: [slides](https://rbanism.github.io/repro-r-workshop/documents/05-publishing-slides.html)
+
+- Wrap-up: [slides](https://rbanism.github.io/repro-r-workshop/documents/06-wrap-up.html)

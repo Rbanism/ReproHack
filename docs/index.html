@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,7 +60,37 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-series1 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-author','listing-description','listing-date','listing-image','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-date","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-series1'] = new List('listing-series1', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -106,16 +138,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#series-1-reproducible-urbanism-research-automation" id="toc-series-1-reproducible-urbanism-research-automation" class="nav-link active" data-scroll-target="#series-1-reproducible-urbanism-research-automation">Series 1: Reproducible Urbanism Research &amp; Automation</a>
-  <ul class="collapse">
-  <li><a href="#reproducible-research-with-r-workshop" id="toc-reproducible-research-with-r-workshop" class="nav-link" data-scroll-target="#reproducible-research-with-r-workshop">1. Reproducible Research with R Workshop</a></li>
-  <li><a href="#urbanism-reprohack" id="toc-urbanism-reprohack" class="nav-link" data-scroll-target="#urbanism-reprohack">2. Urbanism ReproHack</a></li>
-  <li><a href="#challenge" id="toc-challenge" class="nav-link" data-scroll-target="#challenge">3. Challenge</a></li>
-  <li><a href="#wrap-up-event" id="toc-wrap-up-event" class="nav-link" data-scroll-target="#wrap-up-event">4. Wrap-up event</a></li>
-  </ul></li>
+  <li><a href="#series-1-reproducible-urbanism-research-automation" id="toc-series-1-reproducible-urbanism-research-automation" class="nav-link active" data-scroll-target="#series-1-reproducible-urbanism-research-automation">Series 1: Reproducible Urbanism Research &amp; Automation</a></li>
   </ul>
 </nav>
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Challenges">Challenges <span class="quarto-category-count">(1)</span></div><div class="category" data-category="General">General <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Hackathons">Hackathons <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Workshops">Workshops <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -138,46 +164,193 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="series-1-reproducible-urbanism-research-automation" class="level2">
 <h2 class="anchored" data-anchor-id="series-1-reproducible-urbanism-research-automation">Series 1: Reproducible Urbanism Research &amp; Automation</h2>
-<section id="reproducible-research-with-r-workshop" class="level3">
-<h3 class="anchored" data-anchor-id="reproducible-research-with-r-workshop">1. Reproducible Research with R Workshop</h3>
-<p>(Monday, 10 October 2022, 9:00-17:00)</p>
-<p>The “Reproducible Research with R” workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows <a href="https://datacarpentry.org/rr-workshop/">the Carpentries lesson “Reproducible Research with R”</a>. Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training.</p>
-<section id="links" class="level4">
-<h4 class="anchored" data-anchor-id="links">Links:</h4>
-<ul>
-<li><p>Introduction: <a href="https://rbanism.github.io/repro-r-workshop/documents/01-intro-slides.html">slides</a></p></li>
-<li><p>Organisation: <a href="https://rbanism.github.io/repro-r-workshop/documents/02-organization-slides.html">slides</a></p></li>
-<li><p>Automation: <a href="https://rbanism.github.io/repro-r-workshop/documents/03-automation.html">lesson</a> and <a href="https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/R/my-first-R-script.R">script</a></p></li>
-<li><p>Documentation: <a href="https://rbanism.github.io/repro-r-workshop/documents/04-literate-programming-slides.html">slides</a> and <a href="https://github.com/Rbanism/repro-r-workshop-livecode/blob/main/documents/my-awesome-report.Rmd">R Markdown document</a></p></li>
-<li><p>Dissemination: <a href="https://rbanism.github.io/repro-r-workshop/documents/05-publishing-slides.html">slides</a></p></li>
-<li><p>Wrap-up: <a href="https://rbanism.github.io/repro-r-workshop/documents/06-wrap-up.html">slides</a></p></li>
-</ul>
-</section>
-</section>
-<section id="urbanism-reprohack" class="level3">
-<h3 class="anchored" data-anchor-id="urbanism-reprohack">2. Urbanism ReproHack</h3>
-<p>(Friday, 14 October 2022, 13:00-17:00)</p>
-<p>Before the ReproHack, a call for papers was launched to select papers and associated (open) data that will be made available to the participants. A selection of papers using R was not a requirement; the use of other (e.g., Python-based) tool sets was also possible. The Urbanism ReproHack lasted 4 hours, in which teams work together to reproduce a paper submitted by the authors. The event was hosted on the <a href="https://www.reprohack.org/">ReproHack Hub</a>, where participants could also get further acquainted with the global research community concerned with reproducibility.</p>
-<section id="links-1" class="level4">
-<h4 class="anchored" data-anchor-id="links-1">Links:</h4>
-<ul>
-<li><a href="https://www.reprohack.org/event/21/">The Urbanism ReproHack page on the ReproHack Hub</a></li>
-</ul>
-</section>
-</section>
-<section id="challenge" class="level3">
-<h3 class="anchored" data-anchor-id="challenge">3. Challenge</h3>
-<p>(26 October 2022 - 26 January 2023)</p>
-<p>In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a <strong>peer assessment</strong> in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an <strong>expert assessment committee</strong> consisting of at least three members. The first three entries will be awarded in the wrap-up event with vouchers and mentoring hours.</p>
-</section>
-<section id="wrap-up-event" class="level3">
-<h3 class="anchored" data-anchor-id="wrap-up-event">4. Wrap-up event</h3>
-<p>(March 2023, date and time tbd)</p>
-<p>The wrap-up event, open to the wider national and international urbanism research community, will (1) present the principles of reproducibility put forward in this fellowship, (2) announce the results of the challenge, and (3) share a data-informed synthesis of challenges an opportunities of reproducibility emerging from the challenge submissions. The latter is meant to inform the wider community about the learning process.</p>
-<p>All material produced throughout the four stages of this process will be made openly available on the Rbanism website and will be archived on Zenodo for the long term.</p>
+<div id="listing-series1" class="quarto-listing quarto-listing-container-default">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-series1-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-series1'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-categories" data-direction="asc">
+          Categories
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="General" data-listing-date-sort="1677884400000" data-listing-file-modified-sort="1680559287155" data-listing-reading-time-sort="0.45">
+<div class="thumbnail">
+<p><a href="./posts/230403_wrap-up/index.html"> <img src="./posts/230403_wrap-up/placeholder.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/230403_wrap-up/index.html">
+<h3 class="no-anchor listing-title">
+Wrap-up Event
+</h3>
+<div class="listing-subtitle">
+March 2023, Date &amp; Time TBD
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('General'); return false;">
+General
+</div>
+</div>
+<a href="./posts/230403_wrap-up/index.html">
+<div class="listing-description">
+<p>A celebratory closing to our first series of events.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/230403_wrap-up/index.html">
+<div class="listing-date">
+Mar 4, 2023
+</div>
+<div class="listing-author">
+The Rbanism Content Team
+</div>
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Challenges" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1680559197295" data-listing-reading-time-sort="0.56">
+<div class="thumbnail">
+<p><a href="./posts/230403_challenge/index.html"> <img src="./posts/230403_challenge/placeholder.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/230403_challenge/index.html">
+<h3 class="no-anchor listing-title">
+Challenge
+</h3>
+<div class="listing-subtitle">
+Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Challenges'); return false;">
+Challenges
+</div>
+</div>
+<a href="./posts/230403_challenge/index.html">
+<div class="listing-description">
+<p>Find out how reproducible your research is.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/230403_challenge/index.html">
+<div class="listing-date">
+Mar 3, 2023
+</div>
+<div class="listing-author">
+The Rbanism Content Team
+</div>
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Hackathons" data-listing-date-sort="1677711600000" data-listing-file-modified-sort="1680559188980" data-listing-reading-time-sort="0.475">
+<div class="thumbnail">
+<p><a href="./posts/230403_reprohack/index.html"> <img src="./posts/230403_reprohack/placeholder.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/230403_reprohack/index.html">
+<h3 class="no-anchor listing-title">
+Urbanism ReproHack
+</h3>
+<div class="listing-subtitle">
+Oct.&nbsp;14, 2022, 1:00–5:00 PM
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Hackathons'); return false;">
+Hackathons
+</div>
+</div>
+<a href="./posts/230403_reprohack/index.html">
+<div class="listing-description">
+<p>Attempt to reproduce a published paper.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/230403_reprohack/index.html">
+<div class="listing-date">
+Mar 2, 2023
+</div>
+<div class="listing-author">
+The Rbanism Content Team
+</div>
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Workshops" data-listing-date-sort="1677625200000" data-listing-file-modified-sort="1680559179592" data-listing-reading-time-sort="0.545">
+<div class="thumbnail">
+<p><a href="./posts/230403_reproducible-research/index.html"> <img src="./posts/230403_reproducible-research/placeholder.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/230403_reproducible-research/index.html">
+<h3 class="no-anchor listing-title">
+Reproducible Research with R Workshop
+</h3>
+<div class="listing-subtitle">
+Oct.&nbsp;10, 2022, 9:00 AM–5:00 PM
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Workshops'); return false;">
+Workshops
+</div>
+</div>
+<a href="./posts/230403_reproducible-research/index.html">
+<div class="listing-description">
+<p>Experience the benefits, principles, and crafts of reproducible research.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/230403_reproducible-research/index.html">
+<div class="listing-date">
+Mar 1, 2023
+</div>
+<div class="listing-author">
+The Rbanism Content Team
+</div>
+<div class="listing-reading-time">
+0 min
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
-</section>
+
 </section>
 
 </main> <!-- /main -->
