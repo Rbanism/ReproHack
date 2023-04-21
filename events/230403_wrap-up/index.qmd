@@ -1,0 +1,10 @@
+---
+title: "Wrap-up Event"
+subtitle: "March 2023, Date & Time TBD"
+description: "A celebratory closing to our first series of events."
+date: "3/4/2023"
+categories: [General]
+image: placeholder.png
+---
+
+The wrap-up event, open to the wider national and international urbanism research community, will (1) present the lessons learned from the reproducibility stage of the Rbanism project, (2) host an inspirational lecture by [Daniel Nüst](https://nuest.staff.ifgi.de/) about reproducibility in the geosciences and (3) announce the winners of the reproducibility challenge.
