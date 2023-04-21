@@ -2,8 +2,8 @@
 title: "Rbanism: Empowering the urbanism research community to use research software effectively and with confidence"
 
 listing:
-- id: series1
-  contents: posts
+- id: events
+  contents: events
   sort: "date desc"
   categories: true
   sort-ui: [title, date, categories]
@@ -11,7 +11,7 @@ listing:
   fields: [title, subtitle, author, description, date, image, reading-time, categories]
 ---
 
-## Series 1: Reproducible Urbanism Research & Automation
+## Events
 
-:::{#series1}
+:::{#events}
 :::

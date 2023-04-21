@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/230403_wrap-up/index.html",
-      "/posts/230403_challenge/index.html",
-      "/posts/230403_reprohack/index.html",
-      "/posts/230403_reproducible-research/index.html"
+      "/events/230403_wrap-up/index.html",
+      "/events/230403_challenge/index.html",
+      "/events/230403_reprohack/index.html",
+      "/events/230403_reproducible-research/index.html"
     ]
   }
 ]
