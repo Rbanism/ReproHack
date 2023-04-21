@@ -7,7 +7,7 @@ categories: [Hackathons]
 image: placeholder.png
 ---
 
-Before the ReproHack, a call for papers was launched to select papers and associated (open) data that will be made available to the participants. A selection of papers using R was not a requirement; the use of other (e.g., Python-based) tool sets was also possible. The Urbanism ReproHack lasted 4 hours, in which teams work together to reproduce a paper submitted by the authors. The event was hosted on the [ReproHack Hub](https://www.reprohack.org/), where participants could also get further acquainted with the global research community concerned with reproducibility.
+The Urbanism ReproHack is hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack includes both R- and Python-based workflows. The Urbanism ReproHack is hosted on the [ReproHack Hub](https://www.reprohack.org/), where participants can also get further acquainted with the global research community concerned with reproducibility.
 
 ## Links
 
