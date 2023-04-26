@@ -4,7 +4,7 @@ subtitle: "Oct. 10, 2022, 9:00 AM–5:00 PM"
 date: "3/1/2023"
 description: "Experience the benefits, principles, and crafts of reproducible research."
 categories: [Workshops]
-image: photo.png
+image: photo.jpg
 ---
 
 The "Reproducible Research with R" workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows [the Carpentries lesson "Reproducible Research with R"](https://datacarpentry.org/rr-workshop/). Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training.
