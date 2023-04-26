@@ -4,7 +4,7 @@ subtitle: "Oct. 14, 2022, 1:00–5:00 PM"
 description: "Attempt to reproduce a published paper."
 date: "3/2/2023"
 categories: [Hackathons]
-image: placeholder.png
+image: reprohack.png
 ---
 
 The Urbanism ReproHack is a hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack include both R- and Python-based workflows. The Urbanism ReproHack is hosted on the [ReproHack Hub](https://www.reprohack.org/), where participants can also get further acquainted with the global research community concerned with reproducibility.
