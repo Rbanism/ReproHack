@@ -3,7 +3,7 @@ title: "Reproducible Research with R Workshop"
 subtitle: "Oct. 10, 2022, 9:00 AM–5:00 PM"
 date: "3/1/2023"
 description: "Experience the benefits, principles, and crafts of reproducible research."
-categories: [Workshops]
+categories: [Workshops, Reproducibility]
 image: photo.jpg
 ---
 

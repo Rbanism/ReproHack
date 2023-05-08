@@ -3,7 +3,7 @@ title: "Urbanism ReproHack"
 subtitle: "Oct. 14, 2022, 1:00–5:00 PM"
 description: "Attempt to reproduce a published paper."
 date: "3/2/2023"
-categories: [Hackathons]
+categories: [Hackathons, Reproducibility]
 image: reprohack.png
 ---
 
