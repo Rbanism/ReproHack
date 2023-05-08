@@ -9,8 +9,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - resources.qmd
       - about.qmd
+      - resources.qmd
 
 format:
   html:
