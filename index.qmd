@@ -11,6 +11,8 @@ listing:
   fields: [title, subtitle, author, description, date, image, reading-time, categories]
 ---
 
+![](img/rbanism-221019-03.png){width=100%}
+
 ## Events
 
 :::{#events}
