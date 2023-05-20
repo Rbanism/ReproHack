@@ -1,5 +1,5 @@
 ---
-title: "Scaleable GIS for Urbanists Workshop"
+title: "Scalable GIS for Urbanists Workshop"
 subtitle: "May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library"
 date: "5/22/2023"
 description: "Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research."
