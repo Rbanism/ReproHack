@@ -8,7 +8,7 @@ listing:
   categories: true
   sort-ui: [title, date, categories]
   filter-ui: [title, date, categories]
-  fields: [title, subtitle, author, description, date, image, reading-time, categories]
+  fields: [title, subtitle, author, description, date, image, categories]
 ---
 
 ![](img/rbanism-221019-03.png){width=100%}
