@@ -152,5 +152,54 @@
     "title": "Scalable GIS for Urbanists Workshop",
     "section": "Links",
     "text": "Links\n\nWorkshop program: link\nIntroduction: slides\nIntroduction to Big Geodata Insfrastricture, by Serkan Girgin: slides\nSURF infrastructure, by Natalie Danezi: slides\nTutorial 1 - Scaling up the analysis of urban form, by Lukas Beuster:\n\nworkshop repository\n\nTutorial 2 - Scaled-up network analysis using the RS DAT framework, by Francesco Nattino & Ou Ku:\n\nworkshop repository\n\nScale-up exercise in groups: slides\nWrap-up: slides"
+  },
+  {
+    "objectID": "events/230403_repro-challenge/index.html",
+    "href": "events/230403_repro-challenge/index.html",
+    "title": "Challenge",
+    "section": "",
+    "text": "In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a peer assessment in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an expert assessment committee consisting of at least three members. The first three entries will be awarded in an online wrap-up event."
+  },
+  {
+    "objectID": "events/230403_repro-hack/index.html",
+    "href": "events/230403_repro-hack/index.html",
+    "title": "Urbanism ReproHack",
+    "section": "",
+    "text": "The Urbanism ReproHack is a hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack include both R- and Python-based workflows. The Urbanism ReproHack is hosted on the ReproHack Hub, where participants can also get further acquainted with the global research community concerned with reproducibility."
+  },
+  {
+    "objectID": "events/230403_repro-hack/index.html#links",
+    "href": "events/230403_repro-hack/index.html#links",
+    "title": "Urbanism ReproHack",
+    "section": "Links",
+    "text": "Links\n\nThe Urbanism ReproHack page on the ReproHack Hub"
+  },
+  {
+    "objectID": "events/230403_repro-r-workshop/index.html",
+    "href": "events/230403_repro-r-workshop/index.html",
+    "title": "Reproducible Research with R Workshop",
+    "section": "",
+    "text": "The “Reproducible Research with R” workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows the Carpentries lesson “Reproducible Research with R”. Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training."
+  },
+  {
+    "objectID": "events/230403_repro-r-workshop/index.html#links",
+    "href": "events/230403_repro-r-workshop/index.html#links",
+    "title": "Reproducible Research with R Workshop",
+    "section": "Links",
+    "text": "Links\n\nIntroduction: slides\nOrganisation: slides\nAutomation: lesson and script\nDocumentation: slides and R Markdown document\nDissemination: slides\nWrap-up: slides"
+  },
+  {
+    "objectID": "events/230403_repro-wrap-up/index.html",
+    "href": "events/230403_repro-wrap-up/index.html",
+    "title": "Wrap-up Event",
+    "section": "",
+    "text": "The wrap-up event, open to the wider national and international urbanism research community, will (1) present the lessons learned from the reproducibility stage of the Rbanism project, (2) host an inspirational lecture by Daniel Nüst about reproducibility in the geosciences and (3) announce the winners of the reproducibility challenge."
+  },
+  {
+    "objectID": "events/230403_repro-wrap-up/index.html#links",
+    "href": "events/230403_repro-wrap-up/index.html#links",
+    "title": "Wrap-up Event",
+    "section": "Links",
+    "text": "Links\n\nLessons learned and prizes\nLecture by Daniel Nüst\nRecording"
   }
 ]
