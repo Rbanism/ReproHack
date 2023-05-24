@@ -19,18 +19,16 @@ This workshop is organised by TU Delft, Faculty of Architecture and the Built En
 
 - Workshop program: [link](https://rbanism.github.io/scalegis-workshop/)
 
-- Introduction: [slides](https://rbanism.github.io/repro-r-workshop/documents/01-intro-slides.html)
+- Introduction: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)
 
-- Introduction to Big Geodata Insfrastricture, by [Serkan Girgin](https://people.utwente.nl/s.girgin): [slides]()
+- Introduction to Big Geodata Insfrastricture, by [Serkan Girgin](https://people.utwente.nl/s.girgin): [slides](https://doi.org/10.5281/zenodo.7957147)
 
-- SURF infrastructure, by [Natalie Danezi](https://www.surf.nl/data-van-buitenaardse-proporties): [slides]()
+- SURF infrastructure, by [Natalie Danezi](https://www.surf.nl/data-van-buitenaardse-proporties): [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/surf-slides.pdf)
 
 - Tutorial 1 - Scaling up the analysis of urban form, by [Lukas Beuster](https://3d.bk.tudelft.nl/lbeuster/): 
-  - [workshop repository]()
+  - [workshop repository](https://github.com/lukasbeuster/3dgeo_scalable_gis)
 
 - Tutorial 2 - Scaled-up network analysis using the RS DAT framework, by [Francesco Nattino](https://www.esciencecenter.nl/team/dr-francesco-nattino/) & [Ou Ku](https://www.esciencecenter.nl/team/ou-ku-msc/):
   - [workshop repository](https://github.com/RS-DAT/2023-05-22-scalable-GIS)
 
-- Scale-up exercise in groups: [slides]()
-
-- Wrap-up: [slides]()
+- Scale-up exercise in groups and wrap-up: [assignments](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/assignments.pdf)
