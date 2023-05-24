@@ -1,5 +1,5 @@
 ---
-title: "Challenge"
+title: "Reproducibility Challenge"
 subtitle: "Oct. 26, 2022–Jan. 26, 2023"
 description: "Find out how reproducible your research is."
 date: "3/3/2023"
