@@ -6,7 +6,7 @@ This is a curated and evolving list of resources on the topics of reproducibilit
 
 ## Reproducibility
 
-### Rbanism workshop on reproducibility
+### Reproducible Research with R for Urbanists workshop
 
 ##### Introduction
 
@@ -52,3 +52,23 @@ This is a curated and evolving list of resources on the topics of reproducibilit
 -   [GIS and Computational Notebooks](https://gistbok.ucgis.org/bok-topics/gis-and-computational-notebooks)
 -   [Evolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science](https://onlinelibrary.wiley.com/doi/10.1111/gean.12302)
 -   [Reproducible Graduate Theses in GIScience](https://osf.io/j97zp/)
+
+## Scalability
+
+### Scalable GIS workshop
+
+- Workshop program: [link](https://rbanism.github.io/scalegis-workshop/)
+
+- Introduction: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)
+
+- Introduction to Big Geodata Insfrastricture, by [Serkan Girgin](https://people.utwente.nl/s.girgin): [slides](https://doi.org/10.5281/zenodo.7957147)
+
+- SURF infrastructure, by [Natalie Danezi](https://www.surf.nl/data-van-buitenaardse-proporties): [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/surf-slides.pdf)
+
+- Tutorial 1 - Scaling up the analysis of urban form, by [Lukas Beuster](https://3d.bk.tudelft.nl/lbeuster/): [repository](https://github.com/lukasbeuster/3dgeo_scalable_gis)
+
+- Tutorial 2 - Scaled-up network analysis using the RS DAT framework, by [Francesco Nattino](https://www.esciencecenter.nl/team/dr-francesco-nattino/) & [Ou Ku](https://www.esciencecenter.nl/team/ou-ku-msc/): [repository](https://github.com/RS-DAT/2023-05-22-scalable-GIS)
+
+- Scale-up exercise in groups: [assignments](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/assignments.pdf)
+
+- Wrap-up: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)
