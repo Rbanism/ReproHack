@@ -5,7 +5,7 @@ listing:
 - id: events
   contents: events
   sort: "date desc"
-  categories: true
+  categories: false
   sort-ui: [title, date, categories]
   filter-ui: [title, date, categories]
   fields: [title, subtitle, author, description, date, image, categories]
