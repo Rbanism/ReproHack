@@ -1,0 +1,96 @@
+/*-- scss:defaults --*/
+$theme: "rbanism" !default;
+// Color Palette
+$WHITE :      #FFFFFF !default;
+$GRAY  :      #DEE2E6 !default;
+$ORANGE:      #F9A94B !default;
+$PLUM  :      #93278F !default;
+$TEAL  :      #00A99D !default;
+$DARK-PURPLE: #16205F !default;
+
+$TEXT-COLOR: $DARK-PURPLE;
+$LINK-COLOR: $PLUM;
+
+// Headings & Fonts
+@font-face {
+    font-family: 'Montserrat';
+    src:         'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap';
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src:         url('assets/fonts/inconsolata_variableweight-width.ttf');
+}
+
+$font-family-sans-serif: 'Montserrat' , sans-serif !default;
+$font-family-monospace:  'Inconsolata', monospace  !default;
+
+$h1-font-size: 64px !default;
+$h2-font-size: 46px !default;
+$h3-font-size: 28px !default;
+$h4-font-size: 22px !default;
+
+$bold: 700 !default;
+$semibold: 600 !default;
+
+/*-- scss:rules --*/
+//Colors
+*, a, a:hover, {
+  color: $TEXT-COLOR;
+}
+
+// Headings & Fonts
+h1 {
+  font-weight: $bold;
+}
+
+h2, h3, h4 {
+  font-weight: $semibold;
+}
+
+p {
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 400;
+}
+// Buttons
+.btn {
+  &-primary {
+    border-color: shade-color($primary, 10%);
+  }
+  
+  &-secondary {
+    border-color: shade-color($secondary, 10%);
+  }
+
+}
+
+// Navigation Bar
+.navbar-logo {
+  max-height: 46px;
+}
+
+.navbar-title {
+  font-family: Montserrat;
+  font-weight: $bold;
+}
+
+// Items
+// Each item is represented by an entry in an unordered list which spans from the right margin of the title to the left
+// margin of the search section. The two following blocks center the entries horizontally using the full width of the
+// list by emulating a table.
+// Source: https://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css
+.navbar ul {
+  width: 100%;
+  display: table;
+}
+
+.navbar ul li {
+  display: table-cell;
+  width: auto;
+  text-align: center;
+}
+
+.navbar{
+  border-bottom: 1px solid $GRAY;
+}
