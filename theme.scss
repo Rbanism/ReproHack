@@ -1,14 +1,15 @@
 /*-- scss:defaults --*/
-$theme: "rbanism" !default;
-// Color Palette
-$GRAY  :      #DEE2E6 !default;
-$ORANGE:      #F9A94B !default;
-$PLUM  :      #93278F !default;
-$TEAL  :      #00A99D !default;
-$DARK-PURPLE: #16205F !default;
+// Name
+$theme: "Rbanism" !default;
 
-$TEXT-COLOR: $DARK-PURPLE;
-$LINK-COLOR: $PLUM;
+// Color Palette
+$gray       : #DEE2E6 !default;
+$orange     : #F9A94B !default;
+$plum       : #93278F !default;
+$teal       : #00A99D !default;
+$dark-purple: #16205F !default;
+
+$font-color: $dark-purple;
 
 // Headings & Fonts
 @font-face {
@@ -18,110 +19,126 @@ $LINK-COLOR: $PLUM;
 
 @font-face {
     font-family: 'Inconsolata';
+	// FIXME - The link to Google Font does not appear to work.
     src:         url('assets/fonts/inconsolata_variableweight-width.ttf');
 }
 
 $font-family-sans-serif: 'Montserrat' , sans-serif !default;
-$font-family-monospace:  'Inconsolata', monospace  !default;
+$font-family-monospace : 'Inconsolata', monospace  !default;
 
+// These variables are global.
 $h1-font-size: 64px !default;
 $h2-font-size: 46px !default;
 $h3-font-size: 28px !default;
 $h4-font-size: 22px !default;
+// This setting is used in event card titles.
 $h5-font-size: 22px !default;
 
-$bold: 700 !default;
-$semibold: 600 !default;
+$paragraph-font-size : 24px !default;
+$event-description-font-size : 18px !default;
+$button-font-size : 18px !default;
+
+$bold-font-weight     : 700 !default;
+$semi-bold-font-weight: 600 !default;
+
+
+$elem-padding: 30px !default;
 
 /*-- scss:rules --*/
 //Colors
 *, a, a:hover, {
-  color: $TEXT-COLOR;
+  color: $font-color;
 }
 
 // Headings & Fonts
 h1 {
-  font-weight: $bold;
+  font-weight: $bold-font-weight;
 }
 
 h2, h3, h4, h5 {
-  font-weight: $semibold;
-  border-bottom: 0;
+  font-weight: $semi-bold-font-weight;
+  // This disables the default Markdown rendering style.
+  border-bottom: none;
 }
-.card-subtitle {
-  
-  font-size: 18px;
-}
-.quarto-grid-item .card-subtitle{
-  padding-top: 30px;
-}
-.card-text{
-    font-family: Inconsolata;
-  font-size: 18px;
-  font-weight: 400;
-  padding-top: 30px;
-}
+
+
+
 footer, p {
-  font-family: Inconsolata;
-  font-size: 24px;
-  font-weight: 400;
+  font-family: $font-family-monospace;
+  font-size: $paragraph-font-size;
 }
+
 // Buttons
-.btn {
-  &-primary {
-    border-color: shade-color($primary, 10%);
-  }
-  
-  &-secondary {
-    border-color: shade-color($secondary, 10%);
-  }
-
+.filled-button {
+  background-color: $plum;
+  background-image:url("assets/icons/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  color:white;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:50px;
+  padding-right:60px;
 }
 
-// Navigation Bar
-.navbar-logo {
-  max-height: 46px;
+.filled-button:hover {
+  border:none;
+  box-shadow: inset 0px 0px 5px black;
 }
-.navbar {
+
+.empty-button {
   background-color: white;
+  background-image:url("assets/icons/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: 1px solid $plum;
+  border-radius: 8px;
+  color:$plum;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:50px;
+  padding-right:60px;
 }
 
-.navbar-title {
-  font-family: Montserrat;
-  font-weight: $bold;
+.empty-button:hover {
+  border: 1px solid $orange;
+  color: $orange;
 }
 
-// Items
-// Each item is represented by an entry in an unordered list which spans from the right margin of the title to the left
-// margin of the search section. The two following blocks center the entries horizontally using the full width of the
-// list by emulating a table.
-// Source: https://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css
-.navbar ul {
-  width: 100%;
-  display: table;
+// Footer
+// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+.nav-footer {
+  text-align: left;
 }
+
+// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+// Add a top border to the copyright disclaimer.
+.nav-footer-left span:last-of-type {
+  border-top: 1px solid $gray;
+  display: block;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+
 .pillar-link-item::marker, .member-registration-form-list-item::marker {
     font-family: Montserrat;
   font-size:$h3-font-size;
-  font-weight: $semibold;
+  font-weight: $semi-bold-font-weight;
   content: "> ";
 
 }
 .pillar-link-item p, .member-registration-form-list-item   {
   font-family: Montserrat;
   font-size:$h3-font-size;
-  font-weight: $semibold;
+  font-weight: $semi-bold-font-weight;
 }
 
-.navbar ul li {
-  display: table-cell;
-  width: auto;
-  text-align: center;
-}
 
-.navbar{
-  border-bottom: 1px solid $GRAY;
-}
 
 // Page Title
 .quarto-title-banner {
@@ -144,28 +161,10 @@ footer, p {
   text-align: center;
 }
 
-// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
-.nav-footer {
-  text-align: left;
-}
 
-.about-form {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.about-form img {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-iframe {
-  
-  left: 50%;
-  position: absolute;
-  top: 50px;
-  
-}
+
+
+
 .core-team ul {
   display: table;
   width:100%;
@@ -185,10 +184,131 @@ iframe {
   padding:15px;
 }
 
+//-------------------------------------------------------------------------------------------------------------------
 
-// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
-// Add a top border to the copyright disclaimer.
-.nav-footer-left span:last-of-type {
-  border-top: 1px solid $GRAY;
-  display: block;
+// Navigation Bar
+.navbar-logo {
+  max-height: $h2-font-size;
 }
+.navbar {
+  background-color: white;
+}
+
+.navbar-title {
+  font-family: $font-family-sans-serif;
+  font-weight: $bold-font-weight;
+}
+
+// Items
+// Each item is represented by an entry in an unordered list which spans from the right margin of the title to the left
+// margin of the search section. The two following blocks center the entries horizontally using the full width of the
+// list by emulating a table.
+// Source: https://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css
+.navbar ul {
+  width: 100%;
+  display: table;
+}
+
+.navbar ul li {
+  display: table-cell;
+  width: auto;
+  text-align: center;
+}
+
+.navbar{
+  border-bottom: 1px solid $gray;
+}
+
+// Index Header
+.index-header-rbanism, .index-header-community {
+  font-size: $h1-font-size;
+  font-family: $font-family-sans-serif;
+  font-weight: $bold-font-weight;
+}
+
+.index-header-rbanism{
+  color:black;
+}
+.index-header-community{
+  color:orange;
+}
+
+.index-intro{
+  position:relative;
+  margin:auto;
+}
+
+.index-intro div{
+  position: absolute;
+  top: 5%;
+  bottom:5%;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  width:50%;
+  background: white;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.index-intro img{
+  position: relative;
+  top:0;
+  left:33.33%;
+}
+
+// Event Cards
+#events {
+  background:$plum;
+  text-align: center;
+}
+
+#events * {
+  color:white;
+}
+
+.card {
+  background-color: $plum;
+}
+
+.card-body {
+  padding-left: 0;
+}
+
+// Text Color
+.card-body * {
+  color:white;
+}
+.card-subtitle {
+  font-size: $event-description-font-size;
+}
+
+.quarto-grid-item .card-subtitle {
+  padding-top: $elem-padding;
+}
+
+.card-text {
+  font-family: $font-family-monospace;
+  font-size: $event-description-font-size;
+  padding-top: $elem-padding;
+}
+
+// Index Form
+.index-form {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.index-form img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+iframe {
+  left: 50%;
+  position: absolute;
+  top: 5%;
+  
+}
+
