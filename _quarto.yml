@@ -5,48 +5,60 @@ project:
 website:
   title: "Rbanism"
   navbar:
-    background: white
     logo: assets/imgs/placeholder.png
-    search: false
     left:
       - about.qmd
       - resources.qmd
       - meetups.qmd
       - contact.qmd
-  body-footer: |
-    ![](assets/imgs/placeholder.png){height=46px} 
-    <span style="font-family: Montserrat; font-weight: 700">
-        Rbanism
-    </span>
-    <br></br>
-    <br></br>
-    ![](assets/icons/phone.png){height=24px}
-    <span>
-        +31 12 345 6789
-    </span>
-    <br></br>
-    ![](assets/icons/email.png){height=24px} email@domain.tld
-    <br></br>
-    ![](assets/icons/address.png){height=24px} Faculty of Architecture and the Built Environment \
-    ![](assets/imgs/pad.png){width=24px} Julianalaan 134, 2628 BL                                  \
-    ![](assets/imgs/pad.png){width=24px} Delft, The Netherlands
-    <br></br>
-    <br></br>
-    <span style="font-family: Montserrat; font-weight: 700">
-        Follow us
-    </span>\
-    ![](assets/imgs/placeholder.png){height=24px}
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    ![](assets/imgs/placeholder.png){height=24px}
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    ![](assets/imgs/placeholder.png){height=24px}
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    ![](assets/imgs/placeholder.png){height=24px}
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <br></br>
-    © Rbanism 2023. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual 
-    property of their respective owners. All company, product, and service names used throughout this website are for 
-    identification purposes only. The use of these brands, trademarks and names does not imply their endorsement. 
+  search: false
+  page-footer:
+    # FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+    left: |
+      <br>
+      ![](assets/imgs/placeholder.png){height=46px} 
+      <span style="font-family: Montserrat; font-weight: 700">
+          Rbanism
+      </span>
+      <br>
+      <br>
+      <br>
+      <br>
+      ![](assets/icons/phone.png){height=24px}
+      <span>
+          +31 12 345 6789
+      </span>
+      <br>
+      <br>
+      ![](assets/icons/email.png){height=24px} email@domain.tld
+      <br>
+      <br>
+      ![](assets/icons/address.png){height=24px} Faculty of Architecture and the Built Environment \
+      ![](assets/imgs/pad.png){width=24px} Julianalaan 134, 2628 BL                                \
+      ![](assets/imgs/pad.png){width=24px} Delft, The Netherlands
+      <br>
+      <br>
+      <br>
+      <br>
+      <span style="font-family: Montserrat; font-weight: 700">
+          Follow us
+      </span>\
+      ![](assets/imgs/placeholder.png){height=24px}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      ![](assets/imgs/placeholder.png){height=24px}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      ![](assets/imgs/placeholder.png){height=24px}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      ![](assets/imgs/placeholder.png){height=24px}
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      <br>
+      <span style="font-family: Montserrat">
+        <br>
+        © 2023 Rbanism. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual 
+        property of their respective owners. All company, product, and service names used throughout this website are
+        for identification purposes only. The use of these brands, trademarks and names does not imply their endorsement.
+      </span>  
 
 format:
   html:

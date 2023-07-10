@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rbanism - Rbanism: Empowering the urbanism research community to use research software effectively and with confidence</title>
+<title>Rbanism</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,13 +25,9 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,12 +38,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -70,9 +60,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-author','listing-description','listing-date','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-date","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -130,7 +120,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -143,275 +132,98 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Rbanism: Empowering the urbanism research community to use research software effectively and with confidence</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p><img src="img/rbanism-221019-03.png" class="img-fluid" style="width:100.0%"></p>
-<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.</p>
-<section id="join-the-communtiy" class="level2">
-<h2 class="anchored" data-anchor-id="join-the-communtiy">Join the communtiy</h2>
-<p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu">Sign up</a> to join the Rbanism community and stay up to date with our events, activities and resources.</p>
-<p>Please note that we expect all members of the community to follow our <a href="./code-of-conduct.html">Code of Conduct</a>.</p>
+<section id="rbanism-community" class="level1">
+<h1>Rbanism Community</h1>
+<section id="benefits" class="level3">
+<h3 class="anchored" data-anchor-id="benefits">Benefits</h3>
 </section>
-<section id="events" class="level2">
-<h2 class="anchored" data-anchor-id="events">Events</h2>
+<section id="we-want-to-build-digital-competence-and-skills-for" class="level2">
+<h2 class="anchored" data-anchor-id="we-want-to-build-digital-competence-and-skills-for">we want to build digital competence and skills for:</h2>
 </section>
-<section id="h1" class="level1">
-<h1>H1</h1>
-<section id="h2" class="level2">
-<h2 class="anchored" data-anchor-id="h2">H2</h2>
-<section id="h3" class="level3">
-<h3 class="anchored" data-anchor-id="h3">H3</h3>
-<section id="h4" class="level4">
-<h4 class="anchored">H4</h4>
-<div id="listing-events" class="quarto-listing quarto-listing-container-default">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-events-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-events'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-categories" data-direction="asc">
-          Categories
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684702800000" data-listing-file-modified-sort="1688845518526" data-listing-reading-time-sort="1.695">
-<div class="thumbnail">
-<p><a href="./events/230522_scalegis-workshop/index.html"> <img src="./events/230522_scalegis-workshop/photo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./events/230522_scalegis-workshop/index.html">
-<h3 class="no-anchor listing-title" data-anchor-id="h4">
+<section id="community-gatherings" class="level2">
+<h2 class="anchored" data-anchor-id="community-gatherings">Community Gatherings</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent.</p>
+<div id="listing-events" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684702800000" data-listing-file-modified-sort="1688845518526" data-listing-reading-time-sort="1.695">
+<a href="./events/230522_scalegis-workshop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./events/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Scalable GIS for Urbanists Workshop
-</h3>
-<div class="listing-subtitle">
+</h5>
+<div class="card-subtitle listing-subtitle">
 May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Workshops'); return false;">
-Workshops
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Scalability'); return false;">
-Scalability
+<div class="card-text listing-description">
+Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.
 </div>
 </div>
-<a href="./events/230522_scalegis-workshop/index.html">
-<div class="listing-description">
-<p>Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.</p>
 </div>
 </a>
 </div>
-<div class="metadata">
-<a href="./events/230522_scalegis-workshop/index.html">
-<div class="listing-date">
-May 22, 2023
-</div>
-<div class="listing-author">
-The Rbanism Content Team
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677880800000" data-listing-file-modified-sort="1688845518515" data-listing-reading-time-sort="0.29">
-<div class="thumbnail">
-<p><a href="./events/230403_repro-wrap-up/index.html"> <img src="./events/230403_repro-wrap-up/photo.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./events/230403_repro-wrap-up/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677880800000" data-listing-file-modified-sort="1688845518515" data-listing-reading-time-sort="0.29">
+<a href="./events/230403_repro-wrap-up/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./events/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Reproducibility Wrap-up Event
-</h3>
-<div class="listing-subtitle">
+</h5>
+<div class="card-subtitle listing-subtitle">
 Apr.&nbsp;10, 2023, 3:00-4:30 PM
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('General'); return false;">
-General
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
+<div class="card-text listing-description">
+A celebratory closing to our first series of events.
 </div>
 </div>
-<a href="./events/230403_repro-wrap-up/index.html">
-<div class="listing-description">
-<p>A celebratory closing to our first series of events.</p>
 </div>
 </a>
 </div>
-<div class="metadata">
-<a href="./events/230403_repro-wrap-up/index.html">
-<div class="listing-date">
-Mar 4, 2023
-</div>
-<div class="listing-author">
-The Rbanism Content Team
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677794400000" data-listing-file-modified-sort="1688845518504" data-listing-reading-time-sort="0.54">
-<div class="thumbnail">
-<p><a href="./events/230403_repro-challenge/index.html"> <img src="./events/230403_repro-challenge/photo.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./events/230403_repro-challenge/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677794400000" data-listing-file-modified-sort="1688845518504" data-listing-reading-time-sort="0.54">
+<a href="./events/230403_repro-challenge/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./events/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Reproducibility Challenge
-</h3>
-<div class="listing-subtitle">
+</h5>
+<div class="card-subtitle listing-subtitle">
 Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
 </div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Challenges'); return false;">
-Challenges
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
+<div class="card-text listing-description">
+Find out how reproducible your research is.
 </div>
 </div>
-<a href="./events/230403_repro-challenge/index.html">
-<div class="listing-description">
-<p>Find out how reproducible your research is.</p>
 </div>
 </a>
-</div>
-<div class="metadata">
-<a href="./events/230403_repro-challenge/index.html">
-<div class="listing-date">
-Mar 3, 2023
-</div>
-<div class="listing-author">
-The Rbanism Content Team
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Hackathons,Reproducibility" data-listing-date-sort="1677708000000" data-listing-file-modified-sort="1688845518512" data-listing-reading-time-sort="0.36">
-<div class="thumbnail">
-<p><a href="./events/230403_repro-hack/index.html"> <img src="./events/230403_repro-hack/reprohack.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./events/230403_repro-hack/index.html">
-<h3 class="no-anchor listing-title">
-Urbanism ReproHack
-</h3>
-<div class="listing-subtitle">
-Oct.&nbsp;14, 2022, 1:00–5:00 PM
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Hackathons'); return false;">
-Hackathons
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
-</div>
-</div>
-<a href="./events/230403_repro-hack/index.html">
-<div class="listing-description">
-<p>Attempt to reproduce a published paper.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./events/230403_repro-hack/index.html">
-<div class="listing-date">
-Mar 2, 2023
-</div>
-<div class="listing-author">
-The Rbanism Content Team
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Workshops,Reproducibility" data-listing-date-sort="1677621600000" data-listing-file-modified-sort="1688845518513" data-listing-reading-time-sort="0.545">
-<div class="thumbnail">
-<p><a href="./events/230403_repro-r-workshop/index.html"> <img src="./events/230403_repro-r-workshop/photo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./events/230403_repro-r-workshop/index.html">
-<h3 class="no-anchor listing-title">
-Reproducible Research with R Workshop
-</h3>
-<div class="listing-subtitle">
-Oct.&nbsp;10, 2022, 9:00 AM–5:00 PM
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Workshops'); return false;">
-Workshops
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
-</div>
-</div>
-<a href="./events/230403_repro-r-workshop/index.html">
-<div class="listing-description">
-<p>Experience the benefits, principles, and crafts of reproducible research.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./events/230403_repro-r-workshop/index.html">
-<div class="listing-date">
-Mar 1, 2023
-</div>
-<div class="listing-author">
-The Rbanism Content Team
-</div>
-</a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
+</section>
+<section id="join-the-rbanism-community" class="level2">
+<h2 class="anchored" data-anchor-id="join-the-rbanism-community">Join the Rbanism Community!</h2>
+<p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu">Sign up</a> to join the Rbanism community and stay up to date with our events, activities and resources.</p>
+<p>Please note that we expect all members of the community to follow our <a href="./code-of-conduct.html">Code of Conduct</a>.</p>
 
 
 
 </section>
 </section>
-</section>
-</section>
 
-<p><img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br><br> <br><br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br><br> <img src="assets/icons/email.png" height="24"> email@domain.tld <br><br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
-<img src="assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
-<img src="assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands <br><br> <br><br> <span style="font-family: Montserrat; font-weight: 700"> Follow us </span><br>
-<img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <br><br> © Rbanism 2023. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual property of their respective owners. All company, product, and service names used throughout this website are for identification purposes only. The use of these brands, trademarks and names does not imply their endorsement.</p></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -560,6 +372,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><br> <img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br> <br> <br> <br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br> <br> <img src="assets/icons/email.png" height="24"> email@domain.tld <br> <br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
+<img src="assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
+<img src="assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands <br> <br> <br> <br> <span style="font-family: Montserrat; font-weight: 700"> Follow us </span><br>
+<img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/placeholder.png" height="24"> &nbsp;&nbsp;&nbsp;&nbsp; <br> <br> <span style="font-family: Montserrat"> <br> © 2023 Rbanism. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual property of their respective owners. All company, product, and service names used throughout this website are for identification purposes only. The use of these brands, trademarks and names does not imply their endorsement. </span><br>
+</div>   
+  </div>
+</footer>
 
 
 

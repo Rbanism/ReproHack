@@ -1,7 +1,6 @@
 /*-- scss:defaults --*/
 $theme: "rbanism" !default;
 // Color Palette
-$WHITE :      #FFFFFF !default;
 $GRAY  :      #DEE2E6 !default;
 $ORANGE:      #F9A94B !default;
 $PLUM  :      #93278F !default;
@@ -46,9 +45,10 @@ h1 {
 
 h2, h3, h4 {
   font-weight: $semibold;
+  border-bottom: 0;
 }
 
-p {
+footer, p {
   font-family: Inconsolata;
   font-size: 24px;
   font-weight: 400;
@@ -68,6 +68,9 @@ p {
 // Navigation Bar
 .navbar-logo {
   max-height: 46px;
+}
+.navbar {
+  background-color: white;
 }
 
 .navbar-title {
@@ -93,4 +96,30 @@ p {
 
 .navbar{
   border-bottom: 1px solid $GRAY;
+}
+.quarto-title-banner {
+  background: black;
+  opacity: 0.5;
+}
+// TODO
+.quarto-title {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.quarto-title * {
+  color: white;
+  text-align: center;
+}
+// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+.nav-footer {
+  text-align: left;
+}
+
+
+
+// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+// Add a top border to the copyright disclaimer.
+.nav-footer-left span:last-of-type {
+  border-top: 1px solid $GRAY;
+  display: block;
 }

@@ -1,16 +1,6 @@
 ---
-title: "About"
+title: About
+subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 title-block-style: default
 title-block-banner: assets/imgs/placeholder.png
 ---
-# How we got Started
-# Principles and goals
-
-The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.
-
-Our mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the [Carpentries](https://carpentries.org/), hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility.
-
-The Rbanism community was started by the [Rbanism fellowship project](https://www.esciencecenter.nl/claudiu-forgaci/) funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the [TU Delft Department of Urbanism](https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism), [TU Delft Digital Competence Center](https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc), [TU Delft Library Research Data Services](https://www.tudelft.nl/library/research-data-management), the [TU Delft R Café](https://delft-rcafe.github.io/home/Index.html), [Open Science Community Delft](https://osc-delft.github.io/) and [Netherlands eScience Center](https://www.esciencecenter.nl/) in our awareness-raising, capacity- and community-building efforts. 
-
-![](img/rbanism-221019-03.png){width=100%}
-
