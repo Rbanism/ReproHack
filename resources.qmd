@@ -1,8 +1,11 @@
 ---
-title: "Resources"
+title: Resources
+subtitle: This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included.
+title-block-style: default
+title-block-banner: assets/imgs/placeholder.png
 ---
 
-This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included.
+
 
 ## Reproducibility
 

@@ -28,6 +28,7 @@ $h1-font-size: 64px !default;
 $h2-font-size: 46px !default;
 $h3-font-size: 28px !default;
 $h4-font-size: 22px !default;
+$h5-font-size: 22px !default;
 
 $bold: 700 !default;
 $semibold: 600 !default;
@@ -43,11 +44,23 @@ h1 {
   font-weight: $bold;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-weight: $semibold;
   border-bottom: 0;
 }
-
+.card-subtitle {
+  
+  font-size: 18px;
+}
+.quarto-grid-item .card-subtitle{
+  padding-top: 30px;
+}
+.card-text{
+    font-family: Inconsolata;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 30px;
+}
 footer, p {
   font-family: Inconsolata;
   font-size: 24px;
@@ -87,6 +100,18 @@ footer, p {
   width: 100%;
   display: table;
 }
+.pillar-link-item::marker, .member-registration-form-list-item::marker {
+    font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semibold;
+  content: "> ";
+
+}
+.pillar-link-item p, .member-registration-form-list-item   {
+  font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semibold;
+}
 
 .navbar ul li {
   display: table-cell;
@@ -97,24 +122,68 @@ footer, p {
 .navbar{
   border-bottom: 1px solid $GRAY;
 }
+
+// Page Title
 .quarto-title-banner {
   background: black;
   opacity: 0.5;
 }
-// TODO
+
+.quarto-title-banner body .page-columns {
+  display: block;
+}
+
 .quarto-title {
   margin-left: 150px;
   margin-right: 150px;
+  width: inherit;
 }
+
 .quarto-title * {
   color: white;
   text-align: center;
 }
+
 // FIXME - TEXT JUSTIFICATION IS NOT WORKING.
 .nav-footer {
   text-align: left;
 }
 
+.about-form {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.about-form img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+iframe {
+  
+  left: 50%;
+  position: absolute;
+  top: 50px;
+  
+}
+.core-team ul {
+  display: table;
+  width:100%;
+  
+}
+.core-team ul li {
+  display:table-cell;
+  
+  padding:30px;
+  text-align: center;
+  width:auto;
+  
+}
+.core-team div {
+  
+  box-shadow: 5px 5px 10px black;
+  padding:15px;
+}
 
 
 // FIXME - TEXT JUSTIFICATION IS NOT WORKING.

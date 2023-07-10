@@ -22,7 +22,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 :::
 
 ## Join the Rbanism Community!
+Sign up to join the Rbanism community and stay up to date with our events, activities and resources. Please note that we expect all members of the community to follow our [Code of Conduct](code-of-conduct.md).
 
-[Sign up](https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu) to join the Rbanism community and stay up to date with our events, activities and resources.
+<div class="about-form">
+  <img src="https://fakeimg.pl/1000x1000?text=PLACEHOLDER"/>
+  <iframe align="right" width="75%" height="900px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+</div>
 
-Please note that we expect all members of the community to follow our [Code of Conduct](code-of-conduct.md).
+
+
