@@ -11,28 +11,28 @@ $dark-purple: #16205F !default;
 
 $font-color: $dark-purple;
 
-// Headings & Fonts
-@font-face {
-    font-family: 'Montserrat';
-    src:         'https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap';
-}
 
-@font-face {
-    font-family: 'Inconsolata';
-	// FIXME - The link to Google Font does not appear to work.
-    src:         url('assets/fonts/inconsolata_variableweight-width.ttf');
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-$font-family-sans-serif: 'Montserrat' , sans-serif !default;
-$font-family-monospace : 'Inconsolata', monospace  !default;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-// These variables are global.
+$font-family-sans-serif: 'Montserrat', sans-serif !default;
+$font-family-monospace : 'Fira Code' , monospace  !default;
+
 $h1-font-size: 64px !default;
 $h2-font-size: 46px !default;
 $h3-font-size: 28px !default;
 $h4-font-size: 22px !default;
-// This setting is used in event card titles.
+// This heading type is used in event card titles.
 $h5-font-size: 22px !default;
+
+
+// Navigation
+$navbar-bg: white !default;
+
 
 $paragraph-font-size : 24px !default;
 $event-description-font-size : 18px !default;
@@ -42,7 +42,25 @@ $bold-font-weight     : 700 !default;
 $semi-bold-font-weight: 600 !default;
 
 
+
 $elem-padding: 30px !default;
+
+
+
+// Fonts
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-- scss:rules --*/
 //Colors
@@ -190,9 +208,7 @@ footer, p {
 .navbar-logo {
   max-height: $h2-font-size;
 }
-.navbar {
-  background-color: white;
-}
+
 
 .navbar-title {
   font-family: $font-family-sans-serif;
