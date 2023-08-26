@@ -30,7 +30,7 @@ website:
       </span>
       <br>
       <br>
-      ![](assets/icons/email.png){height=24px} email@domain.tld
+      ![](assets/icons/email.png){height=24px} rbanism@tudelft.nl
       <br>
       <br>
       ![](assets/icons/address.png){height=24px} Faculty of Architecture and the Built Environment \
@@ -62,7 +62,7 @@ website:
 
 format:
   html:
-    page-layout: full
+    page-layout: article
     theme: theme.scss
   
 link-external-newwindow: true

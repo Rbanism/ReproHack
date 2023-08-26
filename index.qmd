@@ -1,50 +1,79 @@
 ---
 listing:
-  id: events
-  type: grid
-  contents: events
-  sort: "date desc"
-  max-items: 3
-  categories: false
-  image-height: 100%
-  grid-item-border: false
-  fields: [title, subtitle, description, image]
+  - id: actbar
+    type: grid
+    contents: actbar
+    max-items: 3
+    categories: false
+    image-height: 100%
+    sort: "date asc"
+    grid-item-border: false
+    fields: [subtitle, image]
+  - id: events
+    type: grid
+    contents: events
+    sort: "date desc"
+    max-items: 3
+    categories: false
+    image-height: 100%
+    grid-item-border: false
+    fields: [title, subtitle, description, image]
 ---
-
+:::{.column-page}
 <div class="index-intro">
-  <img src="https://fakeimg.pl/1000x1000?text=PLACEHOLDER" width=66.67%>
+  <img src="https://fakeimg.pl/1500x1500?text=PLACEHOLDER" width=66.67%>
   <div>
   <p class="index-header-rbanism">Rbanism<br><span class="index-header-community">Community</span></p>
   <br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent.</p>
+  <p>Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.</p>
   <br>
   <br>
-  <button class="filled-button" type="button">JOIN THE COMMUNITY</button>
+  <button class="filled-button" type="button">Join the next event</button>
   </div>
 </div>
+:::
+<!-- NOTE - DO NOT MOVE! -->
+<br>
 
+### actbar
+<!-- NOTE - DO NOT MOVE! -->
+::: {.column-screen}
+:::
+
+
+
+::: {layout-ncol=3}
+![Improving awareness](assets/icons/action-bar/improving-awareness.png)
+
+![Stimulating engagement](assets/icons/action-bar/stimulating-engagement.png)
+
+![Building capacity](assets/icons/action-bar/building-capacity.png)
+:::
 
 ### Benefits
-## we want to build digital competence and skills for:
-<ul>
-<li class="pillar">
-Reproducibility
-</li>
-<li class="pillar">
-Automation
-</li>
-<li class="pillar">
-Scalability
-</li>
-</ul>
+<span class="benefits-subtitle">we want to build digital competence and skills for:</span>
+
+::: {layout-ncol=3}
+![Improving awareness](assets/icons/action-bar/improving-awareness.png)
+
+![Stimulating engagement](assets/icons/action-bar/stimulating-engagement.png)
+
+![Building capacity](assets/icons/action-bar/building-capacity.png)
+:::
+
+<!-- NOTE - DO NOT MOVE! -->
 <br>
-<div style="text-align:right;"><button class="empty-button" type="button">DISCOVER MORE</button></div>
 
 ## Events
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent.
 
+<!-- NOTE - DO NOT MOVE! -->
+::: {.column-screen}
+:::
+
 :::{#events}
 :::
+
 
 ## Join the Rbanism Community!
 Sign up to join the Rbanism community and stay up to date with our events, activities and resources. Please note that we expect all members of the community to follow our [Code of Conduct](code-of-conduct.md).
@@ -53,6 +82,3 @@ Sign up to join the Rbanism community and stay up to date with our events, activ
   <img src="https://fakeimg.pl/1000x1000?text=PLACEHOLDER" width=66.67%/>
   <iframe align="right" width="50%" height="90%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 </div>
-
-
-

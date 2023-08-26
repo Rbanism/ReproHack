@@ -57,11 +57,6 @@ $elem-padding: 30px !default;
 
 
 
-
-
-
-
-
 /*-- scss:rules --*/
 //Colors
 *, a, a:hover, {
@@ -242,16 +237,18 @@ footer, p {
   font-weight: $bold-font-weight;
 }
 
-.index-header-rbanism{
+.index-header-rbanism {
   color:black;
 }
-.index-header-community{
+
+.index-header-community {
   color:orange;
 }
 
 .index-intro{
   position:relative;
   margin:auto;
+
 }
 
 .index-intro div{
@@ -265,6 +262,8 @@ footer, p {
   background: white;
   padding-top:30px;
   padding-bottom:30px;
+    display: block;
+overflow: auto;
 }
 .index-intro img{
   position: relative;
@@ -272,7 +271,34 @@ footer, p {
   left:33.33%;
 }
 
-// Event Cards
+
+// Actions
+#actbar {
+  background:$orange;
+}
+
+#actbar h3 {
+  display: none;
+}
+
+#actbar * {
+  color: white;
+}
+
+#actbar figcaption{
+  font-size: $h3-font-size;
+  font-weight: $semi-bold-font-weight;
+  text-align: center;
+}
+
+// Benefits
+.benefits-subtitle {
+  font-family: $font-family-sans-serif;
+  font-size: $h2-font-size;
+  font-weight: $bold-font-weight;
+}
+
+// Events
 #events {
   background:$plum;
   text-align: center;
@@ -327,4 +353,6 @@ iframe {
   top: 5%;
   
 }
+
+
 

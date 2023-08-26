@@ -53,6 +53,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-actbar .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-actbar'] = new List('listing-actbar', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-events .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -84,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -125,54 +153,108 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 
+<div class="column-page">
 <div class="index-intro">
-<img src="https://fakeimg.pl/1000x1000?text=PLACEHOLDER" width="66.67%">
+<img src="https://fakeimg.pl/1500x1500?text=PLACEHOLDER" width="66.67%">
 <div>
 <p class="index-header-rbanism">
 Rbanism<br><span class="index-header-community">Community</span>
 </p>
 <br>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent.
+Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.
 </p>
-<br> <br> <button class="filled-button" type="button">JOIN THE COMMUNITY</button>
+<br> <br> <button class="filled-button" type="button">Join the next event</button>
 </div>
 </div>
+</div>
+<!-- NOTE - DO NOT MOVE! -->
+<p><br></p>
+<section id="actbar" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="actbar">actbar</h3>
+<!-- NOTE - DO NOT MOVE! -->
+<div class="column-screen">
+
+</div>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/improving-awareness.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Improving awareness</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/stimulating-engagement.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Stimulating engagement</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/building-capacity.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Building capacity</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="benefits" class="level3">
 <h3 class="anchored" data-anchor-id="benefits">Benefits</h3>
-</section>
-<section id="we-want-to-build-digital-competence-and-skills-for" class="level2">
-<h2 class="anchored" data-anchor-id="we-want-to-build-digital-competence-and-skills-for">we want to build digital competence and skills for:</h2>
-<ul>
-<li class="pillar">
-Reproducibility
-</li>
-<li class="pillar">
-Automation
-</li>
-<li class="pillar">
-Scalability
-</li>
-</ul>
-<br>
-<div style="text-align:right;">
-<button class="empty-button" type="button">
-DISCOVER MORE
-</button>
+<p><span class="benefits-subtitle">we want to build digital competence and skills for:</span></p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/improving-awareness.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Improving awareness</figcaption><p></p>
+</figure>
 </div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/stimulating-engagement.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Stimulating engagement</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/icons/action-bar/building-capacity.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Building capacity</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<!-- NOTE - DO NOT MOVE! -->
+<p><br></p>
 </section>
-<section id="events" class="level2">
+<section id="events" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="events">Events</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent.</p>
+<!-- NOTE - DO NOT MOVE! -->
+<div class="column-screen">
+
+</div>
 <div id="listing-events" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684702800000" data-listing-file-modified-sort="1688845518526" data-listing-reading-time-sort="1.695">
@@ -215,7 +297,7 @@ A celebratory closing to our first series of events.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677794400000" data-listing-file-modified-sort="1688845518504" data-listing-reading-time-sort="0.54">
+<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677794400000" data-listing-file-modified-sort="1693089201501" data-listing-reading-time-sort="0.54">
 <a href="./events/230403_repro-challenge/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -252,7 +334,14 @@ No matching items
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-actbar">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -403,7 +492,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><br> <img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br> <br> <br> <br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br> <br> <img src="assets/icons/email.png" height="24"> email@domain.tld <br> <br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
+    <div class="nav-footer-left"><br> <img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br> <br> <br> <br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br> <br> <img src="assets/icons/email.png" height="24"> rbanism@tudelft.nl <br> <br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
 <img src="assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
 <img src="assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands <br> <br> <br> <br> <span style="font-family: Montserrat; font-weight: 700"> Follow us </span><br>
 <img src="assets/third-party/logos/github.png" height="24"> &nbsp; <img src="assets/third-party/logos/linkedin.png" height="24"> &nbsp; <img src="assets/third-party/logos/twitter.png" height="24"> &nbsp; <img src="assets/third-party/logos/youtube.png" height="24"> &nbsp; <br> <br> <span style="font-family: Montserrat"> <br> © 2023 Rbanism. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual property of their respective owners. All company, product, and service names used throughout this website are for identification purposes only. The use of these brands, trademarks and names does not imply their endorsement. </span></div>   
