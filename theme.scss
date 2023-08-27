@@ -118,6 +118,7 @@ footer, p {
   padding-right:60px;
 }
 
+
 .empty-button:hover {
   border: 1px solid $orange;
   color: $orange;
@@ -204,7 +205,13 @@ footer, p {
   font-family: $font-family-sans-serif;
   font-weight: $bold-font-weight;
 }
-
+.navbar{
+  border-bottom: 1px solid $gray;
+}
+.navbar a {
+  text-decoration: none;
+}
+/*
 // Items
 // Each item is represented by an entry in an unordered list which spans from the right margin of the title to the left
 // margin of the search section. The two following blocks center the entries horizontally using the full width of the
@@ -220,11 +227,7 @@ footer, p {
   width: auto;
   text-align: center;
 }
-
-.navbar{
-  border-bottom: 1px solid $gray;
-}
-
+*/
 // Index Header
 .index-header-rbanism, .index-header-community {
   font-size: $h1-font-size;

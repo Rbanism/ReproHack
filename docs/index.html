@@ -138,6 +138,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.collapse.navbar-collapse');
+      if (!navbar) {
+          console.log('TODO');
+      }
+    
+      const btn = document.createElement('a');
+      
+      btn.setAttribute('class', 'empty-button');
+      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
+      
+      btn.textContent = 'JOIN THE COMMUNITY';
+        
+      navbar.appendChild(btn);
+  });
+</script>
 <div class="index-intro">
 <img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER" width="66.67%">
 <div>
