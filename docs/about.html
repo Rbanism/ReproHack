@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -45,15 +45,17 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>
-    .quarto-title-block .quarto-title-banner {
-      background-image: url(assets/imgs/placeholder.png);
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(assets/imgs/placeholder.png);
 background-size: cover;
-    }
-    </style>
+      }
+</style>
 
 
 </head>
@@ -78,22 +80,24 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html">
+    <a class="nav-link" href="./resources.html" rel="" target="">
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meetups.html">
+    <a class="nav-link" href="./meetups.html" rel="" target="">
  <span class="menu-text">Meetups</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html">
+    <a class="nav-link" href="./contact.html" rel="" target="">
  <span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -103,7 +107,7 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">About</h1>
-            <p class="subtitle lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="subtitle lead">Discover how we get started, what are our principles and aims.</p>
                       </div>
   </div>
     
@@ -126,55 +130,58 @@ background-size: cover;
 
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis pellentesque id nibh tortor. Est ullamcorper eget nulla facilisi etiam dignissim. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Tincidunt id aliquet risus feugiat in. Ac felis donec et odio pellentesque. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Suspendisse interdum consectetur libero id. Massa eget egestas purus viverra accumsan in. Et leo duis ut diam quam nulla porttitor.</p>
-<section id="mission-vision" class="level2">
-<h2 class="anchored" data-anchor-id="mission-vision">Mission &amp; Vision</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui id. Id volutpat lacus laoreet non curabitur gravida. Egestas diam in arcu cursus euismod quis viverra nibh cras. Tortor condimentum lacinia quis vel eros donec ac odio. Arcu odio ut sem nulla pharetra diam sit amet nisl. At augue eget arcu dictum varius duis at consectetur lorem. Scelerisque purus semper eget duis at tellus at. Enim nec dui nunc mattis enim. Vel fringilla est ullamcorper eget nulla. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Leo vel orci porta non. Magna eget est lorem ipsum dolor sit.</p>
-<p>Urna porttitor rhoncus dolor purus non. Molestie ac feugiat sed lectus vestibulum mattis. Lectus vestibulum mattis ullamcorper velit sed. Volutpat consequat mauris nunc congue nisi vitae. Lacinia quis vel eros donec ac. Eget sit amet tellus cras. Quisque non tellus orci ac auctor augue. Cursus vitae congue mauris rhoncus aenean vel elit. Cras sed felis eget velit aliquet. Morbi tristique senectus et netus. Odio morbi quis commodo odio.</p>
+<section id="how-we-get-started" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-get-started">How we get started</h2>
+<p>The Rbanism community was started by the <a href="https://www.esciencecenter.nl/fellows/claudiu-forgaci/">Rbanism fellowship project</a> funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the <a href="https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism">TU Delft Department of Urbanism</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Digital Competence Center</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Library Research Data Services</a>, the <a href="https://delft-rcafe.github.io/home/Index.html">TU Delft R Café</a>, <a href="https://osc-delft.github.io/">Open Science Community Delft</a> and <a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a> in our awareness-raising, capacity- and community-building efforts.</p>
+</section>
+<section id="principles-and-goals" class="level2">
+<h2 class="anchored" data-anchor-id="principles-and-goals">Principles and goals</h2>
+<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.</p>
+<p>Our mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the <a href="https://carpentries.org/">Carpentries</a>, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility.</p>
 <p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
 </section>
-<section id="values" class="level2">
-<h2 class="anchored" data-anchor-id="values">Values</h2>
+<section id="why-reproducibility-automation-and-scalability" class="level2">
+<h2 class="anchored" data-anchor-id="why-reproducibility-automation-and-scalability">Why reproducibility, automation and scalability?</h2>
 <ol type="1">
-<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac. Dignissim sodales ut eu sem integer vitae justo eget magna. Tellus orci ac auctor augue mauris augue neque. Leo a diam sollicitudin tempor id eu nisl nunc mi. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Phasellus faucibus scelerisque eleifend donec. Elementum nisi quis eleifend quam adipiscing vitae proin. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Interdum consectetur libero id faucibus nisl. Duis convallis convallis tellus id interdum velit. Risus at ultrices mi tempus imperdiet.</p>
+<li><p>Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.</p>
 <ul>
 <ul class="pillar-link-list">
 <li class="pillar-link-item">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html">The Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research</a></p>
 </li>
 </ul>
 </ul></li>
-<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac. Dignissim sodales ut eu sem integer vitae justo eget magna. Tellus orci ac auctor augue mauris augue neque. Leo a diam sollicitudin tempor id eu nisl nunc mi. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Phasellus faucibus scelerisque eleifend donec. Elementum nisi quis eleifend quam adipiscing vitae proin. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Interdum consectetur libero id faucibus nisl. Duis convallis convallis tellus id interdum velit. Risus at ultrices mi tempus imperdiet.</p>
+<li><p>Automation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.</p>
 <ul>
 <ul class="pillar-link-list">
 <li class="pillar-link-item">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><a href="https://rbanism.github.io/repro-r-workshop/documents/03-automation.html">lesson</a></p>
 </li>
 </ul>
 </ul></li>
-<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac. Dignissim sodales ut eu sem integer vitae justo eget magna. Tellus orci ac auctor augue mauris augue neque. Leo a diam sollicitudin tempor id eu nisl nunc mi. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Phasellus faucibus scelerisque eleifend donec. Elementum nisi quis eleifend quam adipiscing vitae proin. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Interdum consectetur libero id faucibus nisl. Duis convallis convallis tellus id interdum velit. Risus at ultrices mi tempus imperdiet.</p>
+<li><p>Scalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.</p>
 <ul>
 <ul class="pillar-link-list">
 <li class="pillar-link-item">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>Introduction: <a href="https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf">slides</a></p>
 </li>
 </ul>
 </ul></li>
 </ol>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis volutpat est velit egestas dui id. Id volutpat lacus laoreet non curabitur gravida. Egestas diam in arcu cursus euismod quis viverra nibh cras. Tortor condimentum lacinia quis vel eros donec ac odio. Arcu odio ut sem nulla pharetra diam sit amet nisl. At augue eget arcu dictum varius duis at consectetur lorem. Scelerisque purus semper eget duis at tellus at. Enim nec dui nunc mattis enim. Vel fringilla est ullamcorper eget nulla. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Leo vel orci porta non. Magna eget est lorem ipsum dolor sit.</p>
+<p>Overall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery.</p>
 </section>
 <section id="members" class="level2">
 <h2 class="anchored" data-anchor-id="members">Members</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Suspendisse potenti nullam ac tortor vitae purus. Vitae elementum curabitur vitae nunc. A lacus vestibulum sed arcu non. Nibh tellus molestie nunc non blandit massa enim nec dui. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Leo urna molestie at elementum eu facilisis. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dignissim convallis aenean et tortor at risus viverra adipiscing. Condimentum vitae sapien pellentesque habitant. In egestas erat imperdiet sed euismod nisi. At lectus urna duis convallis. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. In cursus turpis massa tincidunt.</p>
+<p>While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice</p>
 <ul class="member-registration-form-link-list">
 <li class="member-registration-form-list-item">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<a href="https://forms.office.com/e/25Va69R1h2">Join the community</a>
 </li>
 </ul>
 <p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
 </section>
-<section id="core-team" class="level2">
-<h2 class="anchored" data-anchor-id="core-team">Core Team</h2>
+<section id="core-members" class="level2">
+<h2 class="anchored" data-anchor-id="core-members">Core Members</h2>
 <div class="core-team">
 <ul class="core-team">
 <li class="core-team-member">
@@ -246,10 +253,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </section>
 <section id="visual-identity" class="level2">
 <h2 class="anchored" data-anchor-id="visual-identity">Visual Identity</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Netus et malesuada fames ac turpis egestas sed. Dui nunc mattis enim ut tellus elementum. Euismod quis viverra nibh cras pulvinar mattis nunc. Aliquam sem fringilla ut morbi. Nibh ipsum consequat nisl vel pretium lectus quam id. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Elit ut aliquam purus sit amet luctus venenatis. Habitant morbi tristique senectus et. Quisque non tellus orci ac. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Consectetur purus ut faucibus pulvinar elementum. Est lorem ipsum dolor sit. Non blandit massa enim nec dui nunc mattis enim. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. In cursus turpis massa tincidunt. Non tellus orci ac auctor augue mauris augue neque gravida. Volutpat blandit aliquam etiam erat velit.</p>
-<p>Donec pretium vulputate sapien nec sagittis. Vulputate ut pharetra sit amet aliquam id diam maecenas. Consequat id porta nibh venenatis cras sed felis eget. Nunc mi ipsum faucibus vitae aliquet nec. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Tempor orci eu lobortis elementum nibh tellus molestie. Ultrices neque ornare aenean euismod elementum nisi. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Metus vulputate eu scelerisque felis imperdiet proin. Habitant morbi tristique senectus et netus et. Risus ultricies tristique nulla aliquet enim tortor. Et tortor at risus viverra. Sed enim ut sem viverra aliquet eget sit. Volutpat maecenas volutpat blandit aliquam.</p>
-<p>Tristique senectus et netus et. Egestas congue quisque egestas diam in arcu. Integer enim neque volutpat ac tincidunt vitae semper quis. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Imperdiet dui accumsan sit amet nulla facilisi morbi. Augue neque gravida in fermentum et sollicitudin ac. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. In eu mi bibendum neque egestas congue. Maecenas ultricies mi eget mauris. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Fermentum posuere urna nec tincidunt praesent semper. Feugiat in fermentum posuere urna nec tincidunt praesent. Ante in nibh mauris cursus mattis molestie a iaculis.</p>
-<p>Fermentum dui faucibus in ornare. Nibh ipsum consequat nisl vel pretium. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Ut lectus arcu bibendum at varius vel pharetra vel turpis. Enim nunc faucibus a pellentesque. Habitant morbi tristique senectus et netus. Eget nullam non nisi est sit amet facilisis magna etiam. Congue eu consequat ac felis donec et. Velit ut tortor pretium viverra. Volutpat est velit egestas dui. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra justo nec. Dictumst quisque sagittis purus sit amet volutpat consequat mauris.</p>
+<p>Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers.</p>
+<p>We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events.</p>
+<p>Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise.</p>
+<p>In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.</p>
 <p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
 
 
@@ -283,9 +290,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -350,6 +371,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -393,7 +500,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -406,10 +513,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><br> <img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br> <br> <br> <br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br> <br> <img src="assets/icons/email.png" height="24"> email@domain.tld <br> <br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
+    <div class="nav-footer-left"><br> <img src="assets/imgs/placeholder.png" height="46"> <span style="font-family: Montserrat; font-weight: 700"> Rbanism </span> <br> <br> <br> <br> <img src="assets/icons/phone.png" height="24"> <span> +31 12 345 6789 </span> <br> <br> <img src="assets/icons/email.png" height="24"> rbanism@tudelft.nl <br> <br> <img src="assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
 <img src="assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
 <img src="assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands <br> <br> <br> <br> <span style="font-family: Montserrat; font-weight: 700"> Follow us </span><br>
-<img src="assets/third-party/logos/github.png" height="24"> &nbsp; <img src="assets/third-party/logos/linkedin.png" height="24"> &nbsp; <img src="assets/third-party/logos/twitter.png" height="24"> &nbsp; <img src="assets/third-party/logos/youtube.png" height="24"> &nbsp; <br> <br> <span style="font-family: Montserrat"> <br> © 2023 Rbanism. All third-party brand names, product names, logos, and trademarks are the exclusive intellectual property of their respective owners. All company, product, and service names used throughout this website are for identification purposes only. The use of these brands, trademarks and names does not imply their endorsement. </span></div>   
+<img src="assets/third-party/logos/github.png" height="24"> &nbsp; <img src="assets/third-party/logos/linkedin.png" height="24"> &nbsp; <img src="assets/third-party/logos/twitter.png" height="24"> &nbsp; <img src="assets/third-party/logos/youtube.png" height="24"> &nbsp; <br> <br> <span style="font-family: Montserrat"> <br> © 2023 Rbanism </span></div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 
