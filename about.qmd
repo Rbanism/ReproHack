@@ -2,8 +2,36 @@
 title: About
 subtitle: Discover how we get started, what are our principles and aims.
 title-block-style: default
-title-block-banner: assets/imgs/placeholder.png
+title-block-banner: assets/imgs/placeholders/1920x1080.png
+listing:
+  id: team
+  contents: team
+  fields: [title, description, image, subtitle]
+  grid-item-border: false
+  image-height: 100%
+  grid-columns: 4
+  sort: "date asc"
+  type: grid
+  max-description-length: 99999
 ---
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.collapse.navbar-collapse');
+      if (!navbar) {
+          console.log('TODO');
+      }
+    
+      const btn = document.createElement('a');
+      
+      btn.setAttribute('class', 'empty-button');
+      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
+      
+      btn.textContent = 'JOIN THE COMMUNITY';
+        
+      navbar.appendChild(btn);
+  });
+</script>
 
 ## How we get started
 The Rbanism community was started by the [Rbanism fellowship project](https://www.esciencecenter.nl/fellows/claudiu-forgaci/) funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the [TU Delft Department of Urbanism](https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism), [TU Delft Digital Competence Center](https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc), [TU Delft Library Research Data Services](https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc), the [TU Delft R Café](https://delft-rcafe.github.io/home/Index.html), [Open Science Community Delft](https://osc-delft.github.io/) and [Netherlands eScience Center](https://www.esciencecenter.nl/) in our awareness-raising, capacity- and community-building efforts.
@@ -52,30 +80,24 @@ While Rbanism originated as an academic initiative, our community is open to any
 ![](https://fakeimg.pl/1920x1080?text=PLACEHOLDER)
 
 ## Core Members
-<div class="core-team">
-<ul class="core-team">
-  <li class="core-team-member">
-    <div class="core-team-member"><img src="https://fakeimg.pl/150x150?text=HSHOT"/><h4>Member Name</h4><br><br><p>Profession</p><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-  </li>  
-  <li class="core-team-member">
-        <div class="core-team-member"><img src="https://fakeimg.pl/150x150?text=HSHOT"/><h4>Member Name</h4><br><br><p>Profession</p><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-  </li>  
-  <li class="core-team-member">
-        <div class="core-team-member"><img src="https://fakeimg.pl/150x150?text=HSHOT"/><h4>Member Name</h4><br><br><p>Profession</p><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-  </li>  
-  <li class="core-team-member">
-        <div class="core-team-member"><img src="https://fakeimg.pl/150x150?text=HSHOT"/><h4>Member Name</h4><br><br><p>Profession</p><br><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-  </li>  
-</ul>
-</div>
+:::{#team}
+:::
 
 ## Visual Identity
+::: {layout-ncol=2}
 Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers.
-
 We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events.
-
 Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise.
-
 In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.
+  
+<span><a class="empty-button">DONWLOAD</a></span>
+<br>
+<br>
+<br>
+<br>
+<span><a class="empty-button">DISCOVER MORE</a></span>
+:::
+
+
 
 ![](https://fakeimg.pl/1920x1080?text=PLACEHOLDER)

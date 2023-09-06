@@ -1,0 +1,12 @@
+---
+title: "Reproducibility Challenge"
+subtitle: "Oct. 26, 2022–Jan. 26, 2023"
+description: "Find out how reproducible your research is."
+date: "3/3/2023"
+categories: [Challenges, Reproducibility]
+image: photo.png
+---
+
+In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a **peer assessment** in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an **expert assessment committee** consisting of at least three members. The first three entries will be awarded in an online wrap-up event.
+
+

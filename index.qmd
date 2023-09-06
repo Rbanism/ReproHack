@@ -1,13 +1,21 @@
 ---
 listing:
-  id: events
-  contents: events
-  fields: [title, description, image, subtitle]
-  grid-item-border: false
-  image-height: 100%
-  max-items: 3
-  sort: "date desc"
-  type: grid
+  - id: events
+    contents: events
+    fields: [title, description, image, subtitle]
+    grid-item-border: false
+    image-height: 100%
+    max-items: 3
+    sort: "date desc"
+    type: grid
+  - id: benefits
+    contents: benefits
+    fields: [title, description, image]
+    grid-item-border: false
+    image-height: 100%
+    max-items: 3
+    sort: "date asc"
+    type: grid
 ---
 
 <script>
@@ -73,14 +81,11 @@ listing:
   we want to build digital competence and skills for:
 </span>
 
-<!-- TODO -->
-::: {layout-ncol=3}
-![Improving awareness](assets/icons/action-bar/improving-awareness.png)
-
-![Stimulating engagement](assets/icons/action-bar/stimulating-engagement.png)
-
-![Building capacity](assets/icons/action-bar/building-capacity.png)
+:::{#benefits}
 :::
+
+<div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div>
+<br>
 
 ## Events
 The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.

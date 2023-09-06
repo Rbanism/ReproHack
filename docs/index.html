@@ -79,6 +79,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-benefits .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-benefits'] = new List('listing-benefits', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -209,35 +237,68 @@ Our mission is to build capacity, competence, and confidence for working with da
 <section id="benefits" class="level3">
 <h3 class="anchored" data-anchor-id="benefits">Benefits</h3>
 <p><span class="bar-subtitle"> we want to build digital competence and skills for: </span></p>
-<!-- TODO -->
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/icons/action-bar/improving-awareness.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Improving awareness</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/icons/action-bar/stimulating-engagement.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Stimulating engagement</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="assets/icons/action-bar/building-capacity.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Building capacity</figcaption>
-</figure>
+<div id="listing-benefits" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1694005175733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./benefits/reproducibility/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./benefits/reproducibility/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Reproduciblity
+</h5>
+<div class="card-text listing-description">
+Reproducibility is essential in ensuring that results can be easily verified and replicated. It facilitates the sharing of analyses and solutions, promoting transparency and…
 </div>
 </div>
 </div>
+</a>
 </div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1694005205979" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./benefits/automation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./benefits/automation/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automation
+</h5>
+<div class="card-text listing-description">
+Automation plays a crucial role in the fields of urban planning and programming with the R language. It reduces manual effort, enhances efficiency, and enables the rapid…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1694005232201" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./benefits/scalability/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./benefits/scalability/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Scalability
+</h5>
+<div class="card-text listing-description">
+Scalability is vital for handling large datasets and addressing complex urban challenges. It enables the application of methods and models at the urban or regional scale…
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div class="benefits-button">
+<a class="empty-button" id="benefits">DISCOVER MORE</a>
+</div>
+<p><br></p>
 </section>
 <section id="events" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="events">Events</h2>
@@ -248,7 +309,7 @@ Our mission is to build capacity, competence, and confidence for working with da
 </div>
 <div id="listing-events" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684702800000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684706400000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <a href="./events/230522_scalegis-workshop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -268,7 +329,7 @@ Experience the infrastructure and workflows of large-scale GIS applications rele
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677880800000" data-listing-file-modified-sort="1688845518515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677884400000" data-listing-file-modified-sort="1688845518515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./events/230403_repro-wrap-up/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -288,7 +349,7 @@ A celebratory closing to our first series of events.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677794400000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./events/230403_repro-challenge/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">

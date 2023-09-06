@@ -6,7 +6,10 @@
       "/events/230403_repro-wrap-up/index.html",
       "/events/230403_repro-challenge/index.html",
       "/events/230403_repro-hack/index.html",
-      "/events/230403_repro-r-workshop/index.html"
+      "/events/230403_repro-r-workshop/index.html",
+      "/benefits/reproducibility/index.html",
+      "/benefits/automation/index.html",
+      "/benefits/scalability/index.html"
     ]
   }
 ]

@@ -116,6 +116,7 @@ footer, p {
   padding-bottom:10px;
   padding-left:50px;
   padding-right:60px;
+  text-decoration: none;
 }
 
 
@@ -132,6 +133,10 @@ footer, p {
 
 // FIXME - TEXT JUSTIFICATION IS NOT WORKING.
 // Add a top border to the copyright disclaimer.
+.nav-footer {
+  border-top: 1px solid $gray;
+  display: block;
+}
 .nav-footer-left span:last-of-type {
   border-top: 1px solid $gray;
   display: block;
@@ -159,7 +164,9 @@ footer, p {
   background: black;
   opacity: 0.5;
 }
-
+#title-block-header{
+  height:350px;
+}
 .quarto-title-banner body .page-columns {
   display: block;
 }
@@ -171,27 +178,43 @@ footer, p {
 }
 
 
+li::marker {
+  font-family: $font-family-monospace;
+  font-size: $paragraph-font-size;
+}
+
+.member-registration-form-list-item a{
+  text-decoration: none;
+}
 
 
+#benefits {
+  pointer-events: none;
+}
+#benefits .card * {
+  background-color: white;
+}
+#benefits .card-body * {
+  color:black;
+}
 
-.core-team ul {
-  display: table;
-  width:100%;
-  
+
+#core-members {
+  pointer-events: none;
 }
-.core-team ul li {
-  display:table-cell;
-  
-  padding:30px;
-  text-align: center;
-  width:auto;
-  
+#core-members .card * {
+  background-color: white;
 }
-.core-team div {
-  
-  box-shadow: 5px 5px 10px black;
-  padding:15px;
+#core-members .card-body * {
+  color:black;
 }
+#core-members .card-subtitle.listing-subtitle {
+  font-family: $font-family-monospace;
+}
+#core-members .g-col-1{
+  box-shadow: 5px 5px 5px $gray;
+}
+
 
 //-------------------------------------------------------------------------------------------------------------------
 
@@ -352,6 +375,7 @@ iframe {
   
 }
 
+
 #partners {
   background:$teal;
 }
@@ -362,3 +386,4 @@ iframe {
 .nav-footer {
   display: block;
 }
+
