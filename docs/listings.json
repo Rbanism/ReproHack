@@ -2,14 +2,26 @@
   {
     "listing": "/index.html",
     "items": [
+      "/index/actions/improving_awareness/index.html",
+      "/index/actions/stimulating_engagement/index.html",
+      "/index/actions/building_capacity/index.html",
+      "/index/benefits/reproducibility/index.html",
+      "/index/benefits/automation/index.html",
+      "/index/benefits/scalability/index.html",
       "/events/230522_scalegis-workshop/index.html",
       "/events/230403_repro-wrap-up/index.html",
       "/events/230403_repro-challenge/index.html",
       "/events/230403_repro-hack/index.html",
-      "/events/230403_repro-r-workshop/index.html",
-      "/benefits/reproducibility/index.html",
-      "/benefits/automation/index.html",
-      "/benefits/scalability/index.html"
+      "/events/230403_repro-r-workshop/index.html"
+    ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/team/claudiu-forgaci/index.html",
+      "/team/clementine-cottineau/index.html",
+      "/team/daniele-cannatella/index.html",
+      "/team/dimitris-mantas/index.html"
     ]
   }
 ]

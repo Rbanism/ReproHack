@@ -1,0 +1,14 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#we-want-to-build-digital-competence-and-skills-for');
+      if (!header) {
+          console.log('Could not locate landing page header!');
+      }
+      
+      const btn = document.createElement('h4');
+      
+      btn.textContent = 'Benefits';
+        
+      header.insertBefore(btn, header.firstChild);
+  });
+</script>

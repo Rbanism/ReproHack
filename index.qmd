@@ -1,120 +1,86 @@
 ---
 listing:
-  - id: events
-    contents: events
-    fields: [title, description, image, subtitle]
-    grid-item-border: false
-    image-height: 100%
-    max-items: 3
-    sort: "date desc"
-    type: grid
-  - id: benefits
-    contents: benefits
-    fields: [title, description, image]
-    grid-item-border: false
-    image-height: 100%
-    max-items: 3
+  - id: actions
+    contents: index/actions
+    fields: [title, image]
     sort: "date asc"
     type: grid
+    max-items: 3
+    image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
+    grid-item-align: center
+
+  - id: benefits
+    contents: index/benefits
+    fields: [title, description, image]
+    sort: "date asc"
+    type: default
+    max-items: 3
+    image-align: left
+    image-height: 128px
+
+  - id: events
+    contents: events
+    fields: [title, subtitle, description, image]
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    image-height: 100%
+    grid-item-border: false
 ---
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.querySelector('.collapse.navbar-collapse');
-      if (!navbar) {
-          console.log('TODO');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'JOIN THE COMMUNITY';
-        
-      navbar.appendChild(btn);
-  });
-</script>
+{{< include utils/_navbar.qmd >}}
 
-<div class="index-intro">
-  <img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER" width=66.67%>
-  <div>
-  <!-- FIXME - The header is not rendered properly when the indentation is corrected. -->
-  <p class="index-header-rbanism">
-    Rbanism
-    <br>
-    <span class="index-header-community">
-      Community
-    </span>
-  </p>
-  <br>
-  <p>
-    Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.
-  </p>
-  <br>
-  <br>
-  <button class="filled-button" type="button">
-    Join the next event
-  </button>
-  </div>
-</div>
+:::{.column-body layout-ncol=2}
+{{< include resources/text/_index_header_text.qmd >}}
 
-<br>
-
-### actbar
-<br>
-
-<!-- NOTE - Do NOT move this division! -->
-::: {.column-screen}
+![](https://placehold.co/600x400)
 :::
 
-::: {layout-ncol=3}
-![Improving awareness](https://fakeimg.pl/128x128?text=PLACEHOLDER)
+{{< include utils/index/_index_header_utils.qmd >}}
 
-![Stimulating engagement](https://fakeimg.pl/128x128?text=PLACEHOLDER)
-
-![Building capacity](https://fakeimg.pl/128x128?text=PLACEHOLDER)
+## actions
+:::{.column-screen}
+:::
+:::{#actions}
 :::
 
-### Benefits
-<span class="bar-subtitle">
-  we want to build digital competence and skills for:
-</span>
+## we want to build digital competence and skills for:
+
+{{< include utils/index/_index_benefit_utils.qmd >}}
 
 :::{#benefits}
 :::
 
-<div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div>
-<br>
+<!-- <div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div> -->
 
-## Events
+## Community Gatherings
 The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.
 
-<!-- NOTE - Do NOT move this division! -->
 ::: {.column-screen}
 :::
-
 :::{#events}
 :::
 
 ## Join the Rbanism Community!
-Sign up to join the Rbanism community and stay up to date with our events, activities and resources. Please note that we expect all members of the community to follow our [Code of Conduct](code-of-conduct.md).
+The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.
 
-<div class="index-form">
-  <img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER" width=66.67%/>
-  <iframe align="right" width="50%" height="90%" src="https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIexqwrrc4qZdKgRlneGeIv1NUNUY2UDlXWVdWVzBQWU8xQ0pUTEFGQVBaTSQlQCN0PWcu&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-</div>
+:::{.column-body layout-ncol=2}
+![](https://placehold.co/600x400)
 
-### Partners
-<span class="bar-subtitle">
-  Amazing partners who support us
-</span>
+{{< include resources/text/_index_header_text.qmd >}}
+:::
 
-<!-- NOTE - Do NOT move this division! -->
-::: {.column-screen layout-ncol=3}
-![](https://fakeimg.pl/128x128?text=PLACEHOLDER)
+#### Partners
+Amazing partners who support us!
 
-![](https://fakeimg.pl/128x128?text=PLACEHOLDER)
+:::{.column-screen}
+:::
+::: {.column-body layout-ncol=3}
+![](https://placehold.co/128)
 
-![](https://fakeimg.pl/128x128?text=PLACEHOLDER)
+![](https://placehold.co/128)
+
+![](https://placehold.co/128)
 :::

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Rbanism</title>
+<title>Rbanism - About</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,76 +54,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-actions .list');
+    const listingTargetEl = window.document.querySelector('#listing-team .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-actions'] = new List('listing-actions', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-benefits .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-benefits'] = new List('listing-benefits', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-events .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-events'] = new List('listing-events', options);
+    window['quarto-listings']['listing-team'] = new List('listing-team', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -136,6 +80,13 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(assets/imgs/placeholders/1920x1080.png);
+background-size: cover;
+      }
+</style>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -162,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -185,12 +136,30 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">About</h1>
+            <p class="subtitle lead">Discover how we get started, what are our principles and aims.</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
 
 
 
@@ -211,240 +180,135 @@ ul.task-list li input[type="checkbox"] {
       navbar.appendChild(btn);
   });
 </script>
-<div class="column-body quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<section id="rbanism" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h1>Rbanism</h1>
-<p>Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.</p>
+<section id="how-we-get-started" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-get-started">How we get started</h2>
+<p>The Rbanism community was started by the <a href="https://www.esciencecenter.nl/fellows/claudiu-forgaci/">Rbanism fellowship project</a> funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the <a href="https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism">TU Delft Department of Urbanism</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Digital Competence Center</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Library Research Data Services</a>, the <a href="https://delft-rcafe.github.io/home/Index.html">TU Delft R Café</a>, <a href="https://osc-delft.github.io/">Open Science Community Delft</a> and <a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a> in our awareness-raising, capacity- and community-building efforts.</p>
 </section>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://placehold.co/600x400.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector('#rbanism');
-      if (!header) {
-          console.log('Could not locate landing page header!');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'FIND OUT MORE';
-        
-      header.appendChild(btn);
-  });
-</script>
-<section id="actions" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="actions">actions</h2>
-<div class="column-screen">
-
-</div>
-<div id="listing-actions" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1700561248622" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/improving_awareness/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img src="./index/actions/improving_awareness/improving_awareness.png" class="thumbnail-image card-img" style="height: 128px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Improving Awareness
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1700561286265" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/stimulating_engagement/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img src="./index/actions/stimulating_engagement/stimulating_engagement.png" class="thumbnail-image card-img" style="height: 128px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Stimulating Engagement
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1700561208131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/building_capacity/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center borderless">
-<p class="card-img-top">
-<img src="./index/actions/building_capacity/building_capacity.png" class="thumbnail-image card-img" style="height: 128px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Building Capacity
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<section id="principles-and-goals" class="level2">
+<h2 class="anchored" data-anchor-id="principles-and-goals">Principles and goals</h2>
+<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.</p>
+<p>Our mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the <a href="https://carpentries.org/">Carpentries</a>, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility.</p>
+<p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
 </section>
-<section id="we-want-to-build-digital-competence-and-skills-for" class="level2">
-<h2 class="anchored" data-anchor-id="we-want-to-build-digital-competence-and-skills-for">we want to build digital competence and skills for:</h2>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector('#we-want-to-build-digital-competence-and-skills-for');
-      if (!header) {
-          console.log('Could not locate landing page header!');
-      }
-      
-      const btn = document.createElement('h4');
-      
-      btn.textContent = 'Benefits';
-        
-      header.insertBefore(btn, header.firstChild);
-  });
-</script>
-<div id="listing-benefits" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1700564104866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/reproducibility/index.html"> <img src="./index/benefits/reproducibility/reproducibility.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/reproducibility/index.html">
-<h3 class="no-anchor listing-title">
-Reproducibility
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Reproducibility is essential in ensuring that results can be easily verified and replicated. It facilitates the sharing of analyses and solutions, promoting transparency and collaboration.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./index/benefits/reproducibility/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1700564115240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/automation/index.html"> <img src="./index/benefits/automation/automation.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/automation/index.html">
-<h3 class="no-anchor listing-title">
-Automation
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Automation plays a crucial role in the fields of urban planning and programming with the R language. It reduces manual effort, enhances efficiency, and enables the rapid execution of complex tasks.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./index/benefits/automation/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1700564122126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/scalability/index.html"> <img src="./index/benefits/scalability/scalability.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/scalability/index.html">
-<h3 class="no-anchor listing-title">
-Scalability
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Scalability is vital for handling large datasets and addressing complex urban challenges. It enables the application of methods and models at the urban or regional scale, leading to more informed and sustainable decision-making.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./index/benefits/scalability/index.html"> </a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<!-- <div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div> -->
+<section id="why-reproducibility-automation-and-scalability" class="level2">
+<h2 class="anchored" data-anchor-id="why-reproducibility-automation-and-scalability">Why reproducibility, automation and scalability?</h2>
+<ol type="1">
+<li><p>Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.</p>
+<ul>
+<ul class="pillar-link-list">
+<li class="pillar-link-item">
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html">The Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research</a></p>
+</li>
+</ul>
+</ul></li>
+<li><p>Automation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.</p>
+<ul>
+<ul class="pillar-link-list">
+<li class="pillar-link-item">
+<p><a href="https://rbanism.github.io/repro-r-workshop/documents/03-automation.html">lesson</a></p>
+</li>
+</ul>
+</ul></li>
+<li><p>Scalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.</p>
+<ul>
+<ul class="pillar-link-list">
+<li class="pillar-link-item">
+<p>Introduction: <a href="https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf">slides</a></p>
+</li>
+</ul>
+</ul></li>
+</ol>
+<p>Overall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery.</p>
 </section>
-<section id="community-gatherings" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="community-gatherings">Community Gatherings</h2>
-<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.</p>
-<div class="column-screen">
-
-</div>
-<div id="listing-events" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684706400000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./events/230522_scalegis-workshop/index.html" class="quarto-grid-link">
+<section id="members" class="level2">
+<h2 class="anchored" data-anchor-id="members">Members</h2>
+<p>While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice</p>
+<ul class="member-registration-form-link-list">
+<li class="member-registration-form-list-item">
+<a href="https://forms.office.com/e/25Va69R1h2">Join the community</a>
+</li>
+</ul>
+<p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
+</section>
+<section id="core-members" class="level2">
+<h2 class="anchored" data-anchor-id="core-members">Core Members</h2>
+<div id="listing-team" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1693998128621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./team/claudiu-forgaci/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./team/claudiu-forgaci/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Scalable GIS for Urbanists Workshop
+Claudiu Forgaci
 </h5>
 <div class="card-subtitle listing-subtitle">
-May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library
+Assistant professor TU Delft
 </div>
 <div class="card-text listing-description">
-Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.
+I am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677884400000" data-listing-file-modified-sort="1688845518515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./events/230403_repro-wrap-up/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1693998188449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./team/clementine-cottineau/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./team/clementine-cottineau/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Reproducibility Wrap-up Event
+Clémentine Cottineau
 </h5>
 <div class="card-subtitle listing-subtitle">
-Apr.&nbsp;10, 2023, 3:00-4:30 PM
+PhD in Geography
 </div>
 <div class="card-text listing-description">
-A celebratory closing to our first series of events.
+I am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./events/230403_repro-challenge/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1693998303162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./team/daniele-cannatella/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./team/daniele-cannatella/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Reproducibility Challenge
+Daniele Cannatella
 </h5>
 <div class="card-subtitle listing-subtitle">
-Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
+Assistant professor TU Delft
 </div>
 <div class="card-text listing-description">
-Find out how reproducible your research is.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt mattis. Nulla vel eros rutrum, aliquet orci sit amet, mattis nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida, leo ac placerat hendrerit, ante elit mollis lorem…
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="7772400000" data-listing-file-modified-sort="1693999216832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./team/dimitris-mantas/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./team/dimitris-mantas/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dimitris Mantas
+</h5>
+<div class="card-subtitle listing-subtitle">
+Student Assistant Tu Delft
+</div>
+<div class="card-text listing-description">
+I am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.
 </div>
 </div>
 </div>
@@ -456,43 +320,22 @@ No matching items
 </div>
 </div>
 </section>
-<section id="join-the-rbanism-community" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="join-the-rbanism-community">Join the Rbanism Community!</h2>
-<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.</p>
-<div class="column-body quarto-layout-panel">
+<section id="visual-identity" class="level2">
+<h2 class="anchored" data-anchor-id="visual-identity">Visual Identity</h2>
+<div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://placehold.co/600x400.png" class="img-fluid"></p>
+<p>Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.</p>
 </div>
-<section id="rbanism-1" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h1>Rbanism</h1>
-<p>Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.</p>
-</section>
-</div>
-</div>
-<section id="partners" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="partners">Partners</h4>
-<p>Amazing partners who support us!</p>
-<div class="column-screen">
-
-</div>
-<div class="column-body quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><span><a class="empty-button">DONWLOAD</a></span> <br> <br> <br> <br> <span><a class="empty-button">DISCOVER MORE</a></span></p>
 </div>
 </div>
 </div>
+<p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
