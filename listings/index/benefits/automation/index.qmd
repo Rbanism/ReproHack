@@ -1,0 +1,6 @@
+---
+title: Automation
+description: Automation plays a crucial role in the fields of urban planning and programming with the R language. It reduces manual effort, enhances efficiency, and enables the rapid execution of complex tasks.
+date: 2/1/1970
+image: ../../../../assets/icons/benefits/automation.svg
+---

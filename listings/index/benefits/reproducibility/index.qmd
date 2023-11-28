@@ -1,0 +1,6 @@
+---
+title: Reproducibility
+description: Reproducibility is essential in ensuring that results can be easily verified and replicated. It facilitates the sharing of analyses and solutions, promoting transparency and collaboration.
+date: 1/1/1970
+image: ../../../../assets/icons/benefits/reproducibility.svg
+---

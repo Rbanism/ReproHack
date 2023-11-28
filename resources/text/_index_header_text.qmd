@@ -1,4 +1,0 @@
-# Rbanism
-
-Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism
-research community at large.

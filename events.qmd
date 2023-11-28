@@ -1,0 +1,45 @@
+---
+title: "Events"
+listing:
+  - id: event_latest
+    contents: listings/events/posts
+    fields: [title, subtitle, description, image, categories]
+    type: default
+    max-items: 1
+    image-align: left
+    image-height: 128px
+    grid-item-border: false
+    
+  - id: event_categs
+    contents: listings/events/categories
+    fields: [title, image]
+    sort: "date asc"
+    type: grid
+    max-items: 3
+    image-height: 128px
+    grid-item-border: true
+    
+  - id: events
+    contents: listings/events/posts
+    fields: [title, subtitle, description, image, categories]
+    type: default
+    max-items: 3
+    image-align: left
+    image-height: 128px
+    grid-item-border: false
+---
+
+## New community gatherings
+
+::: {#event_latest}
+:::
+
+## Discover the community gatherings
+
+::: {#event_categs}
+:::
+
+## Recents community gatherings
+
+::: {#events}
+:::

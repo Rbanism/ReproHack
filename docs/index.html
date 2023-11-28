@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -135,6 +135,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-partners .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-partners'] = new List('listing-partners', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -150,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/imgs/placeholder.png" alt="" class="navbar-logo">
+    <img src="./assets/icons/rbanism.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rbanism</span>
@@ -170,15 +198,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meetups.html" rel="" target="">
- <span class="menu-text">Meetups</span></a>
+    <a class="nav-link" href="./events.html" rel="" target="">
+ <span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html" rel="" target="">
  <span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./registration.html" rel="" target="">
+ <span class="menu-text">JOIN THE COMMUNITY</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -194,37 +232,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.querySelector('.collapse.navbar-collapse');
-      if (!navbar) {
-          console.log('TODO');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'JOIN THE COMMUNITY';
-        
-      navbar.appendChild(btn);
-  });
-</script>
 <div class="column-body quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
-<section id="rbanism" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h1>Rbanism</h1>
+<section id="rbanism-community" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<h1>Rbanism <br> <span id="index-header-community">Community</span></h1>
 <p>Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.</p>
 </section>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://placehold.co/600x400.png" class="img-fluid"></p>
+<p><img src="https://placehold.co/640x480.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector('#rbanism');
+      const header = document.querySelector('#rbanism-community');
       if (!header) {
           console.log('Could not locate landing page header!');
       }
@@ -239,6 +260,7 @@ ul.task-list li input[type="checkbox"] {
       header.appendChild(btn);
   });
 </script>
+<!-- NOTE: Do not change the title of this this header! -->
 <section id="actions" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="actions">actions</h2>
 <div class="column-screen">
@@ -246,11 +268,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div id="listing-actions" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1700561248622" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/improving_awareness/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701192290387" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/actions/improving_awareness/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./index/actions/improving_awareness/improving_awareness.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./assets/icons/actions/improving_awareness.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -260,11 +282,11 @@ Improving Awareness
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1700561286265" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/stimulating_engagement/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1701192278049" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/actions/stimulating_engagement/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./index/actions/stimulating_engagement/stimulating_engagement.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./assets/icons/actions/stimulating_engagement.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -274,11 +296,11 @@ Stimulating Engagement
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1700561208131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./index/actions/building_capacity/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1701192300744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/actions/building_capacity/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./index/actions/building_capacity/building_capacity.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./assets/icons/actions/building_capacity.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -310,70 +332,58 @@ No matching items
       header.insertBefore(btn, header.firstChild);
   });
 </script>
-<div id="listing-benefits" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1700564104866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/reproducibility/index.html"> <img src="./index/benefits/reproducibility/reproducibility.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/reproducibility/index.html">
-<h3 class="no-anchor listing-title">
+<div id="listing-benefits" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701192088686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/benefits/reproducibility/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/icons/benefits/reproducibility.svg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Reproducibility
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-text listing-description">
+Reproducibility is essential in ensuring that results can be easily verified and replicated. It facilitates the sharing of analyses and solutions, promoting transparency and…
 </div>
-<div class="listing-description">
-<p>Reproducibility is essential in ensuring that results can be easily verified and replicated. It facilitates the sharing of analyses and solutions, promoting transparency and collaboration.</p>
+</div>
 </div>
 </a>
 </div>
-<div class="metadata">
-<a href="./index/benefits/reproducibility/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1700564115240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/automation/index.html"> <img src="./index/benefits/automation/automation.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/automation/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1701192108847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/benefits/automation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/icons/benefits/automation.svg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Automation
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-text listing-description">
+Automation plays a crucial role in the fields of urban planning and programming with the R language. It reduces manual effort, enhances efficiency, and enables the rapid…
 </div>
-<div class="listing-description">
-<p>Automation plays a crucial role in the fields of urban planning and programming with the R language. It reduces manual effort, enhances efficiency, and enables the rapid execution of complex tasks.</p>
+</div>
 </div>
 </a>
 </div>
-<div class="metadata">
-<a href="./index/benefits/automation/index.html"> </a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1700564122126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./index/benefits/scalability/index.html"> <img src="./index/benefits/scalability/scalability.png" class="thumbnail-image" style="height: 128px;"> </a></p>
-</div>
-<div class="body">
-<a href="./index/benefits/scalability/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1701192008487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/benefits/scalability/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/icons/benefits/scalability.svg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Scalability
-</h3>
-<div class="listing-subtitle">
-
+</h5>
+<div class="card-text listing-description">
+Scalability is vital for handling large datasets and addressing complex urban challenges. It enables the application of methods and models at the urban or regional scale…
 </div>
-<div class="listing-description">
-<p>Scalability is vital for handling large datasets and addressing complex urban challenges. It enables the application of methods and models at the urban or regional scale, leading to more informed and sustainable decision-making.</p>
+</div>
 </div>
 </a>
-</div>
-<div class="metadata">
-<a href="./index/benefits/scalability/index.html"> </a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -391,10 +401,10 @@ No matching items
 <div id="listing-events" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684706400000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<a href="./events/230522_scalegis-workshop/index.html" class="quarto-grid-link">
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./listings/events/posts/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -411,10 +421,10 @@ Experience the infrastructure and workflows of large-scale GIS applications rele
 </a>
 </div>
 <div class="g-col-1" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677884400000" data-listing-file-modified-sort="1688845518515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./events/230403_repro-wrap-up/index.html" class="quarto-grid-link">
+<a href="./listings/events/posts/230403_repro-wrap-up/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./listings/events/posts/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -431,10 +441,10 @@ A celebratory closing to our first series of events.
 </a>
 </div>
 <div class="g-col-1" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./events/230403_repro-challenge/index.html" class="quarto-grid-link">
+<a href="./listings/events/posts/230403_repro-challenge/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./events/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -458,35 +468,47 @@ No matching items
 </section>
 <section id="join-the-rbanism-community" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="join-the-rbanism-community">Join the Rbanism Community!</h2>
-<p>The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.</p>
-<div class="column-body quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://placehold.co/600x400.png" class="img-fluid"></p>
-</div>
-<section id="rbanism-1" class="level1 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<h1>Rbanism</h1>
-<p>Our mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large.</p>
-</section>
-</div>
-</div>
+<p>Sign up to join the Rbanism community and stay up to date with our events, activities and resources.</p>
+<p>Please note that we expect all members of the community to follow our Code of Conduct.</p>
+<p><img src="https://placehold.co/1920x1080.png" class="img-fluid"></p>
 <section id="partners" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="partners">Partners</h4>
 <p>Amazing partners who support us!</p>
 <div class="column-screen">
 
 </div>
-<div class="column-body quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
+<div id="listing-partners" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701189426722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/partners/tud/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img src="./assets/icons/partners/tud.svg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
+</a>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
-<p><img src="https://placehold.co/128.png" class="img-fluid"></p>
+<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1701189348347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/partners/oscd/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img src="./assets/icons/partners/oscd.png" class="thumbnail-image card-img" style="height: 128px;">
+</p>
 </div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1701189343787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/index/partners/nlesc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center borderless">
+<p class="card-img-top">
+<img src="./assets/icons/partners/nlesc.svg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
 </div>
 

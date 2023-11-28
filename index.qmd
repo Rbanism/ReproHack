@@ -1,7 +1,7 @@
 ---
 listing:
   - id: actions
-    contents: index/actions
+    contents: listings/index/actions
     fields: [title, image]
     sort: "date asc"
     type: grid
@@ -12,34 +12,45 @@ listing:
     grid-item-align: center
 
   - id: benefits
-    contents: index/benefits
+    contents: listings/index/benefits
     fields: [title, description, image]
     sort: "date asc"
-    type: default
+    type: grid
     max-items: 3
-    image-align: left
     image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
 
   - id: events
-    contents: events
+    contents: listings/events/posts
     fields: [title, subtitle, description, image]
     sort: "date desc"
     type: grid
     max-items: 3
     image-height: 100%
     grid-item-border: false
+
+  - id: partners
+    contents: listings/index/partners
+    fields: [image]
+    sort: "date asc"
+    type: grid
+    max-items: 3
+    image-height: 128px
+    grid-columns: 3
+    grid-item-border: false
+    grid-item-align: center
 ---
 
-{{< include utils/_navbar.qmd >}}
-
 :::{.column-body layout-ncol=2}
-{{< include resources/text/_index_header_text.qmd >}}
+{{< include resources/text/index/header.qmd >}}
 
-![](https://placehold.co/600x400)
+![](https://placehold.co/640x480)
 :::
 
 {{< include utils/index/_index_header_utils.qmd >}}
 
+<!-- NOTE: Do not change the title of this this header! -->
 ## actions
 :::{.column-screen}
 :::
@@ -64,23 +75,14 @@ The Rbanism community aims to empower urbanism researchers, students, educators 
 :::
 
 ## Join the Rbanism Community!
-The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.
+{{< include resources/text/index/signup.qmd >}}
 
-:::{.column-body layout-ncol=2}
-![](https://placehold.co/600x400)
-
-{{< include resources/text/_index_header_text.qmd >}}
-:::
+![](https://placehold.co/1920x1080)
 
 #### Partners
-Amazing partners who support us!
+{{< include resources/text/index/partners.qmd >}}
 
 :::{.column-screen}
 :::
-::: {.column-body layout-ncol=3}
-![](https://placehold.co/128)
-
-![](https://placehold.co/128)
-
-![](https://placehold.co/128)
+:::{#partners}
 :::

@@ -15,24 +15,6 @@ listing:
   max-description-length: 99999
 ---
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.querySelector('.collapse.navbar-collapse');
-      if (!navbar) {
-          console.log('TODO');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'JOIN THE COMMUNITY';
-        
-      navbar.appendChild(btn);
-  });
-</script>
-
 ## How we get started
 The Rbanism community was started by the [Rbanism fellowship project](https://www.esciencecenter.nl/fellows/claudiu-forgaci/) funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the [TU Delft Department of Urbanism](https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism), [TU Delft Digital Competence Center](https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc), [TU Delft Library Research Data Services](https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc), the [TU Delft R Café](https://delft-rcafe.github.io/home/Index.html), [Open Science Community Delft](https://osc-delft.github.io/) and [Netherlands eScience Center](https://www.esciencecenter.nl/) in our awareness-raising, capacity- and community-building efforts.
 
@@ -77,7 +59,7 @@ While Rbanism originated as an academic initiative, our community is open to any
 <li class="member-registration-form-list-item">[Join the community](https://forms.office.com/e/25Va69R1h2)</li>
 </ul>
 
-![](https://fakeimg.pl/1920x1080?text=PLACEHOLDER)
+![](https://placehold.co/1920x1080)
 
 ## Core Members
 :::{#team}
@@ -100,4 +82,4 @@ In summary, our logo stands as the vital visual emblem that encapsulates the ess
 
 
 
-![](https://fakeimg.pl/1920x1080?text=PLACEHOLDER)
+![](https://placehold.co/1920x1080)

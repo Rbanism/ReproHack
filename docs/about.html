@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-description','listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -101,7 +101,7 @@ background-size: cover;
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/imgs/placeholder.png" alt="" class="navbar-logo">
+    <img src="./assets/icons/rbanism.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rbanism</span>
@@ -121,15 +121,25 @@ background-size: cover;
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meetups.html" rel="" target="">
- <span class="menu-text">Meetups</span></a>
+    <a class="nav-link" href="./events.html" rel="" target="">
+ <span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html" rel="" target="">
  <span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./registration.html" rel="" target="">
+ <span class="menu-text">JOIN THE COMMUNITY</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -163,23 +173,6 @@ background-size: cover;
 
 
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.querySelector('.collapse.navbar-collapse');
-      if (!navbar) {
-          console.log('TODO');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'JOIN THE COMMUNITY';
-        
-      navbar.appendChild(btn);
-  });
-</script>
 <section id="how-we-get-started" class="level2">
 <h2 class="anchored" data-anchor-id="how-we-get-started">How we get started</h2>
 <p>The Rbanism community was started by the <a href="https://www.esciencecenter.nl/fellows/claudiu-forgaci/">Rbanism fellowship project</a> funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the <a href="https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism">TU Delft Department of Urbanism</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Digital Competence Center</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Library Research Data Services</a>, the <a href="https://delft-rcafe.github.io/home/Index.html">TU Delft R Café</a>, <a href="https://osc-delft.github.io/">Open Science Community Delft</a> and <a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a> in our awareness-raising, capacity- and community-building efforts.</p>
@@ -228,92 +221,13 @@ background-size: cover;
 <a href="https://forms.office.com/e/25Va69R1h2">Join the community</a>
 </li>
 </ul>
-<p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
+<p><img src="https://placehold.co/1920x1080.png" class="img-fluid"></p>
 </section>
 <section id="core-members" class="level2">
 <h2 class="anchored" data-anchor-id="core-members">Core Members</h2>
 <div id="listing-team" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1693998128621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./team/claudiu-forgaci/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./team/claudiu-forgaci/photo.png" class="thumbnail-image card-img" style="height: 100%;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Claudiu Forgaci
-</h5>
-<div class="card-subtitle listing-subtitle">
-Assistant professor TU Delft
-</div>
-<div class="card-text listing-description">
-I am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1693998188449" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./team/clementine-cottineau/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./team/clementine-cottineau/photo.png" class="thumbnail-image card-img" style="height: 100%;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Clémentine Cottineau
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD in Geography
-</div>
-<div class="card-text listing-description">
-I am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1693998303162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./team/daniele-cannatella/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./team/daniele-cannatella/photo.png" class="thumbnail-image card-img" style="height: 100%;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Daniele Cannatella
-</h5>
-<div class="card-subtitle listing-subtitle">
-Assistant professor TU Delft
-</div>
-<div class="card-text listing-description">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt mattis. Nulla vel eros rutrum, aliquet orci sit amet, mattis nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida, leo ac placerat hendrerit, ante elit mollis lorem…
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="7772400000" data-listing-file-modified-sort="1693999216832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./team/dimitris-mantas/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./team/dimitris-mantas/photo.png" class="thumbnail-image card-img" style="height: 100%;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Dimitris Mantas
-</h5>
-<div class="card-subtitle listing-subtitle">
-Student Assistant Tu Delft
-</div>
-<div class="card-text listing-description">
-I am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.
-</div>
-</div>
-</div>
-</a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -332,7 +246,7 @@ No matching items
 </div>
 </div>
 </div>
-<p><img src="https://fakeimg.pl/1920x1080?text=PLACEHOLDER.png" class="img-fluid"></p>
+<p><img src="https://placehold.co/1920x1080.png" class="img-fluid"></p>
 
 
 

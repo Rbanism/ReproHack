@@ -61,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/imgs/placeholder.png" alt="" class="navbar-logo">
+    <img src="./assets/icons/rbanism.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Rbanism</span>
@@ -81,15 +81,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./meetups.html" rel="" target="">
- <span class="menu-text">Meetups</span></a>
+    <a class="nav-link" href="./events.html" rel="" target="">
+ <span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contact.html" rel="" target="" aria-current="page">
  <span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./registration.html" rel="" target="">
+ <span class="menu-text">JOIN THE COMMUNITY</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -120,23 +130,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const navbar = document.querySelector('.collapse.navbar-collapse');
-      if (!navbar) {
-          console.log('TODO');
-      }
-    
-      const btn = document.createElement('a');
-      
-      btn.setAttribute('class', 'empty-button');
-      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
-      
-      btn.textContent = 'JOIN THE COMMUNITY';
-        
-      navbar.appendChild(btn);
-  });
-</script>
 
 
 

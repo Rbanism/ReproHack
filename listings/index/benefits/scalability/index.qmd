@@ -1,0 +1,6 @@
+---
+title: Scalability
+description: Scalability is vital for handling large datasets and addressing complex urban challenges. It enables the application of methods and models at the urban or regional scale, leading to more informed and sustainable decision-making.
+date: 3/1/1970
+image: ../../../../assets/icons/benefits/scalability.svg
+---

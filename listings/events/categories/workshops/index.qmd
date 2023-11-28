@@ -1,0 +1,5 @@
+---
+title: Workshops
+date: 1970-01-02
+image: stimulating_engagement.png
+---

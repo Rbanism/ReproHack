@@ -1,6 +1,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector('#rbanism');
+      const header = document.querySelector('#rbanism-community');
       if (!header) {
           console.log('Could not locate landing page header!');
       }

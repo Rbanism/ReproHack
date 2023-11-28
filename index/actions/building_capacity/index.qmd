@@ -1,5 +1,0 @@
----
-title: Building Capacity
-date: 1970-01-03
-image: building_capacity.png
----

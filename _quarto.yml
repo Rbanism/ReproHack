@@ -13,12 +13,15 @@ project:
 website:
   title: "Rbanism"
   navbar:
-    logo: assets/imgs/placeholder.png
+    logo: assets/icons/rbanism.png
     left:
       - about.qmd
       - resources.qmd
-      - meetups.qmd
+      - events.qmd
+      - blog.qmd
       - contact.qmd
+    right:
+      - registration.qmd
   search: false
   page-footer:
     # NOTE - The specified justification is overriden in the CSS.
