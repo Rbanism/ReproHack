@@ -58,8 +58,39 @@ $elem-to-elem-padding: 2.0rem !default;
 
 /*-- scss:rules --*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Dimensioning
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Global Rules
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Buttons
+.filled-button {
+  background-color: $plum;
+  background-image:url("assets/icons/button/arrow_wh.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  color:white;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+.filled-button:hover {
+  border:none;
+  box-shadow: inset 0px 0px 5px black;
+}
+
 // Headings & Text
 *, a, .a, a:hover, {
   color: $font-color;
@@ -128,7 +159,7 @@ p, .p {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Global Rules
+// GLOBAL RULES
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -158,25 +189,46 @@ p, .p {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Index
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Header
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Set the title accent color.
+#index-header-community {
+	color: $orange;
+}
+
+// Space the button below the paragraph.
+#rbanism-community .quarto-layout-cell figure, .quarto-layout-cell>p {
+	margin-bottom: 2em;
+}
+
+// Align the button with the paragraph.
+#rbanism-community > a {
+	margin:0.2em;
+}
+
 .quarto-layout-panel {
   margin-bottom: $elem-to-bord-padding;
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Actions
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#actions h2 {
+  display: none;
+}
+
 #actions {
   background: $orange;
   pointer-events: none;
 }
 
-#actions h2 {
-  display: none;
-}
+
 
 #actions #listing-actions {
   padding-top: $elem-to-bord-padding;
   padding-bottom: $elem-to-bord-padding;
 }
+
 #actions .quarto-grid-item .card-title {
   color: $white;
 }
@@ -187,9 +239,16 @@ p, .p {
   padding-top: $elem-to-elem-padding;
 }
 
-//#actions .quarto-grid-item .card-title {
-//  margin-bottom: 0em;
-//}
+#actions .quarto-grid-item .card-title {
+  margin-bottom: 0em;
+}
+
+
+
+
+
+
+
 
 // Benefits
 #we-want-to-build-digital-competence-and-skills-for {
@@ -212,32 +271,7 @@ p, .p {
 //  border-bottom: 0;
 //}
 
-// See https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Media_objects.
-//@media (min-width: 500px) {
-#we-want-to-build-digital-competence-and-skills-for .quarto-grid-item.card.h-100.card-left {
-	display: grid;
-	grid-template-columns: fit-content(200px) 1fr;
-	grid-template-rows: 1fr auto;
-	grid-template-areas:
-		"image content"
-		"image footer";
-	grid-gap: 20px;
-	margin-bottom: 4em;
-	}
 
-
-
-#we-want-to-build-digital-competence-and-skills-for .card-img-top {
-  grid-area: image;
-}
-
-#we-want-to-build-digital-competence-and-skills-for .no-anchor card-title listing-title {
-  grid-area: content;
-}
-
- #we-want-to-build-digital-competence-and-skills-for.card-text listing-description {
-  grid-area: footer;
-}
 
 
 // Community Gatherings
@@ -340,26 +374,7 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 //}
 //
 //// Buttons
-//.filled-button {
-//  background-color: $plum;
-//  background-image:url("assets/icons/arrow.png");
-//  background-repeat: no-repeat;
-//  background-position: right 15px center;
-//  background-size:$button-font-size auto;
-//  border: none;
-//  border-radius: 8px;
-//  box-shadow: 0px 0px 5px black;
-//  color:white;
-//  padding-top: 10px;
-//  padding-bottom:10px;
-//  padding-left:50px;
-//  padding-right:60px;
-//}
-//
-//.filled-button:hover {
-//  border:none;
-//  box-shadow: inset 0px 0px 5px black;
-//}
+
 //
 //.empty-button {
 //  background-color: white;

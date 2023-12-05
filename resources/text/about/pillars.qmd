@@ -1,0 +1,25 @@
+1. Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.
+
+    <ul>
+    <ul class="pillar-link-list">
+    <li class="pillar-link-item">[The Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html)</li>
+    </ul>
+    </ul>
+
+2. Automation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.
+
+    <ul>
+    <ul class="pillar-link-list">
+    <li class="pillar-link-item">[lesson](https://rbanism.github.io/repro-r-workshop/documents/03-automation.html)</li>
+    </ul>
+    </ul>
+
+3.  Scalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.
+
+    <ul>
+    <ul class="pillar-link-list">
+    <li class="pillar-link-item">Introduction: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)</li>
+    </ul>
+    </ul>
+
+Overall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery.

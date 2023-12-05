@@ -20,6 +20,7 @@ listing:
     image-height: 128px
     grid-columns: 3
     grid-item-border: false
+    max-description-length: 99999
 
   - id: events
     contents: listings/events/posts
@@ -42,47 +43,56 @@ listing:
     grid-item-align: center
 ---
 
-:::{.column-body layout-ncol=2}
+::: {layout-ncol=2}
 {{< include resources/text/index/header.qmd >}}
 
-![](https://placehold.co/640x480)
+![](assets/imgs/index/header.jpg)
 :::
 
 {{< include utils/index/_index_header_utils.qmd >}}
 
+
 <!-- NOTE: Do not change the title of this this header! -->
 ## actions
-:::{.column-screen}
+::: {.column-screen}
 :::
-:::{#actions}
+
+::: {#actions}
 :::
+
 
 ## we want to build digital competence and skills for:
 
 {{< include utils/index/_index_benefit_utils.qmd >}}
 
-:::{#benefits}
+::: {#benefits}
 :::
 
 <!-- <div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div> -->
 
+
 ## Community Gatherings
-The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence.
 
 ::: {.column-screen}
 :::
-:::{#events}
+
+{{< include resources/text/index/events.qmd >}}
+
+::: {#events}
 :::
+
 
 ## Join the Rbanism Community!
-{{< include resources/text/index/signup.qmd >}}
 
-![](https://placehold.co/1920x1080)
+{{< include resources/text/index/registration.qmd >}}
+
 
 #### Partners
+
+::: {.column-screen}
+:::
+
 {{< include resources/text/index/partners.qmd >}}
 
-:::{.column-screen}
-:::
-:::{#partners}
+::: {#partners}
 :::

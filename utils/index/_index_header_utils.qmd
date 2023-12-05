@@ -2,15 +2,15 @@
   document.addEventListener('DOMContentLoaded', function() {
       const header = document.querySelector('#rbanism-community');
       if (!header) {
-          console.log('Could not locate landing page header!');
+          console.log('Could not locate index header!');
       }
     
       const btn = document.createElement('a');
       
-      btn.setAttribute('class', 'empty-button');
+      btn.setAttribute('class', 'filled-button');
       btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
       
-      btn.textContent = 'FIND OUT MORE';
+      btn.textContent = 'Join the next event';
         
       header.appendChild(btn);
   });
