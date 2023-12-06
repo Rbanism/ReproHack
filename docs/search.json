@@ -35,8 +35,8 @@
     "text": "Join the Rbanism Community!\nSign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct.\n\n\nPartners\n\n\n\nAmazing partners who support us!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "resources/text/index/signup.html",
-    "href": "resources/text/index/signup.html",
+    "objectID": "resources/text/index/registration.html",
+    "href": "resources/text/index/registration.html",
     "title": "Rbanism",
     "section": "",
     "text": "Sign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
@@ -47,6 +47,27 @@
     "title": "Rbanism  Community",
     "section": "",
     "text": "Rbanism  Community\nOur mission is to build capacity, competence, and confidence for working with data and research software in the urbanism research community at large."
+  },
+  {
+    "objectID": "resources/text/about/vision.html",
+    "href": "resources/text/about/vision.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.\nOur mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the Carpentries, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility."
+  },
+  {
+    "objectID": "resources/text/about/pillars.html",
+    "href": "resources/text/about/pillars.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\nAutomation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.\n\n\n\nlesson\n\n\n\nScalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.\n\n\n\nIntroduction: slides\n\n\n\n\nOverall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery."
+  },
+  {
+    "objectID": "resources/text/about/header.html",
+    "href": "resources/text/about/header.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community was started by the Rbanism fellowship project funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the TU Delft Department of Urbanism, TU Delft Digital Competence Center, TU Delft Library Research Data Services, the TU Delft R Café, Open Science Community Delft and Netherlands eScience Center in our awareness-raising, capacity- and community-building efforts."
   },
   {
     "objectID": "listings/events/posts/230522_scalegis-workshop/index.html",
@@ -144,21 +165,21 @@
     "href": "about.html#members",
     "title": "About",
     "section": "Members",
-    "text": "Members\nWhile Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community"
+    "text": "Members\nWhile Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community\n\n\n\n\n\nOur community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals."
   },
   {
     "objectID": "about.html#core-members",
     "href": "about.html#core-members",
     "title": "About",
     "section": "Core Members",
-    "text": "Core Members\n\n\n\n\n\nNo matching items"
+    "text": "Core Members\n\n\n\n\n\n\n\n\n\n\nClaudiu Forgaci\n\n\nAssistant Professor, TU Delft\n\n\nI am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.\n\n\n\n\n\n\n\n\n\n\n\n\n\nClémentine Cottineau\n\n\nPhD in Geography\n\n\nI am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDaniele Cannatella\n\n\nAssistant Professor, TU Delft\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt mattis. Nulla vel eros rutrum, aliquet orci sit amet, mattis nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida, leo ac placerat hendrerit, ante elit mollis lorem.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDimitris Mantas\n\n\nStudent Assistant, TU Delft\n\n\nI am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html#visual-identity",
     "href": "about.html#visual-identity",
     "title": "About",
     "section": "Visual Identity",
-    "text": "Visual Identity\n\n\n\nOur logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.\n\n\nDONWLOAD     DISCOVER MORE"
+    "text": "Visual Identity\n\n\n\nOur logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.\n\n\nDONWLOAD DISCOVER MORE"
   },
   {
     "objectID": "listings/events/posts/230403_repro-hack/index.html",
@@ -210,6 +231,27 @@
     "text": "Participants who are asked to stop any unacceptable behavior are expected to comply immediately. Community Coordinator(s) and event organizers retain the right to take appropriate actions, including: (i) mediation between complainant and alleged perpetrator(s), to reach an amicable resolution; (ii) issue a verbal warning; (iii) expel the offender(s) from the event (particularly if a participant’s immediate safety is threatened); and/or, (iv) exp the offender(s) from the Rbanism community. Community Coordinator(s) and event organizers will also discuss with the complainant whether they wish to contact the confidential advisor(s) at the affiliated University. The alleged perpetrator(s) will be notified of a complaint as soon as possible, and be given a chance to respond to the complaint."
   },
   {
+    "objectID": "resources/text/about/members.html",
+    "href": "resources/text/about/members.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community\n\n\n\n\n\nOur community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals."
+  },
+  {
+    "objectID": "resources/text/about/vi.html",
+    "href": "resources/text/about/vi.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research."
+  },
+  {
+    "objectID": "resources/text/index/events.html",
+    "href": "resources/text/index/events.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence."
+  },
+  {
     "objectID": "resources/text/index/partners.html",
     "href": "resources/text/index/partners.html",
     "title": "Rbanism",
@@ -236,61 +278,5 @@
     "title": "Resources",
     "section": "Scalability",
     "text": "Scalability\n\nScalable GIS workshop\n\nWorkshop program: link\nIntroduction: slides\nIntroduction to Big Geodata Insfrastricture, by Serkan Girgin: slides\nSURF infrastructure, by Natalie Danezi: slides\nTutorial 1 - Scaling up the analysis of urban form, by Lukas Beuster: repository\nTutorial 2 - Scaled-up network analysis using the RS DAT framework, by Francesco Nattino & Ou Ku: repository\nScale-up exercise in groups: assignments\nWrap-up: slides"
-  },
-  {
-    "objectID": "resources/text/about/vision.html",
-    "href": "resources/text/about/vision.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.\nOur mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the Carpentries, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility."
-  },
-  {
-    "objectID": "resources/text/about/pillars.html",
-    "href": "resources/text/about/pillars.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\nAutomation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.\n\n\n\nlesson\n\n\n\nScalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.\n\n\n\nIntroduction: slides\n\n\n\n\nOverall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery."
-  },
-  {
-    "objectID": "resources/text/about/header.html",
-    "href": "resources/text/about/header.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "The Rbanism community was started by the Rbanism fellowship project funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the TU Delft Department of Urbanism, TU Delft Digital Competence Center, TU Delft Library Research Data Services, the TU Delft R Café, Open Science Community Delft and Netherlands eScience Center in our awareness-raising, capacity- and community-building efforts."
-  },
-  {
-    "objectID": "resources/text/index/register.html",
-    "href": "resources/text/index/register.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "Sign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
-  },
-  {
-    "objectID": "resources/text/about/vi.html",
-    "href": "resources/text/about/vi.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research."
-  },
-  {
-    "objectID": "resources/text/about/members.html",
-    "href": "resources/text/about/members.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community"
-  },
-  {
-    "objectID": "resources/text/index/registration.html",
-    "href": "resources/text/index/registration.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "Sign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
-  },
-  {
-    "objectID": "resources/text/index/events.html",
-    "href": "resources/text/index/events.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence."
   }
 ]

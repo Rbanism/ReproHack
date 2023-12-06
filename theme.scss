@@ -58,27 +58,23 @@ $elem-to-elem-padding: 2.0rem !default;
 
 /*-- scss:rules --*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Dimensioning
+// Global
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Global Rules
+#quarto-margin-sidebar
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Buttons
-.filled-button {
-  background-color: $plum;
-  background-image:url("assets/icons/button/arrow_wh.svg");
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.empty-button {
+  background-color: white;
+  background-image:url("assets/icons/button/arrow_cl.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size:$button-font-size auto;
-  border: none;
+  border: 1px solid $plum;
   border-radius: 8px;
-  box-shadow: 0px 0px 5px black;
-  color:white;
+  color:$plum;
   padding-top: 10px;
   padding-bottom:10px;
   padding-left:30px;
@@ -86,12 +82,14 @@ $elem-to-elem-padding: 2.0rem !default;
   text-decoration: none;
 }
 
-.filled-button:hover {
-  border:none;
-  box-shadow: inset 0px 0px 5px black;
-}
 
-// Headings & Text
+.empty-button:hover {
+  border: 1px solid $orange;
+  color: $orange;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Text
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 *, a, .a, a:hover, {
   color: $font-color;
 }
@@ -113,7 +111,9 @@ h2, .h2, h3, .h3, h4, .h4 {
 p, .p {
   font-family: $font-family-monospace;
 }
-
+#quarto-document-content  ul {
+	  font-family: $font-family-monospace;
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Navigation Bar
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -305,7 +305,81 @@ p, .p {
   font-size: $h2-font-size;
   font-weight: $bold-font-weight;
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// About
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Header
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#title-block-header > div.quarto-title-banner.page-columns.page-full > div > h1 {
+	text-align:center;
+	color:white;
+}
+#title-block-header > div.quarto-title-banner.page-columns.page-full > div > p {
+	text-align:center;
+	color:white;
+}
+#title-block-header > div.quarto-title-banner.page-columns.page-full:after {
+	background: rgba(204, 0, 255, 0.7);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Pillars
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#why-reproducibility-automation-and-scalability > ol {
+	padding-left: 1.1rem;
+}
 
+.pillar-link-item::marker, .member-registration-form-list-item::marker {
+  font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+  content: "> ";
+
+}
+
+.pillar-link-item p, .member-registration-form-list-item   {
+  font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Members
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#members > ul > li > a {
+	text-decoration:none;
+}
+
+#members > div {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#members > div > div {
+  width:66.67%;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Visual Identity
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#visual-identity > div:nth-child(2) > div > div:nth-child(1) {
+	flex-basis:66.67% !important; 
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) {
+	flex-basis:33.33% !important; 
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) > p > a:nth-child(1){
+	display:block;
+	margin-bottom:1rem;
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) > p > a:nth-child(2){
+	display:block;
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Events
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -345,27 +419,6 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 
 
 
-
-
-
-
-//
-////Colors
-//*, a, a:hover, {
-//  color: $font-color;
-//}
-//
-//// Headings & Fonts
-//h1 {
-//  font-weight: $bold-font-weight;
-//}
-//
-//h2, h3, h4, h5 {
-//  font-weight: $semi-bold-font-weight;
-//  // This disables the default Markdown rendering style.
-//  border-bottom: none;
-//}
-//
 //
 //
 //footer, p {
@@ -376,27 +429,7 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 //// Buttons
 
 //
-//.empty-button {
-//  background-color: white;
-//  background-image:url("assets/icons/arrow.png");
-//  background-repeat: no-repeat;
-//  background-position: right 15px center;
-//  background-size:$button-font-size auto;
-//  border: 1px solid $plum;
-//  border-radius: 8px;
-//  color:$plum;
-//  padding-top: 10px;
-//  padding-bottom:10px;
-//  padding-left:50px;
-//  padding-right:60px;
-//  text-decoration: none;
-//}
-//
-//
-//.empty-button:hover {
-//  border: 1px solid $orange;
-//  color: $orange;
-//}
+
 //
 //// Footer
 //// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
@@ -417,60 +450,7 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 //
 ////-------------------------------------------------------------------------------------------------------------------
 //
-//.pillar-link-item::marker, .member-registration-form-list-item::marker {
-//    font-family: Montserrat;
-//  font-size:$h3-font-size;
-//  font-weight: $semi-bold-font-weight;
-//  content: "> ";
-//
-//}
-//.pillar-link-item p, .member-registration-form-list-item   {
-//  font-family: Montserrat;
-//  font-size:$h3-font-size;
-//  font-weight: $semi-bold-font-weight;
-//}
-//
-//
-//
-//// Page Title
-//.quarto-title-banner {
-//  background: black;
-//  opacity: 0.5;
-//}
-//#title-block-header{
-//  height:350px;
-//}
-//.quarto-title-banner body .page-columns {
-//  display: block;
-//}
-//
-//
-//.quarto-title * {
-//  color: white;
-//  text-align: center;
-//}
-//
-//
-//li::marker {
-//  font-family: $font-family-monospace;
-//  font-size: $paragraph-font-size;
-//}
-//
-//.member-registration-form-list-item a{
-//  text-decoration: none;
-//}
-//
-//
-//#benefits {
-//  pointer-events: none;
-//}
-//#benefits .card * {
-//  background-color: white;
-//}
-//#benefits .card-body * {
-//  color:black;
-//}
-//
+
 //
 //#core-members {
 //  pointer-events: none;
@@ -490,157 +470,26 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 //
 //
 ////-------------------------------------------------------------------------------------------------------------------
-//
 
-///*
-//// Items
-//// Each item is represented by an entry in an unordered list which spans from the right margin of the title to the left
-//// margin of the search section. The two following blocks center the entries horizontally using the full width of the
-//// list by emulating a table.
-//// Source: https://stackoverflow.com/questions/9894176/make-li-fit-the-width-of-the-ul-using-css
-//.navbar ul {
-//  width: 100%;
-//  display: table;
-//}
-////
-//.navbar ul li {
-//  display: table-cell;
-////  width: auto;
-//  text-align: left;
-//}
-//*/
-//// Index Header
-//.index-header-rbanism, .index-header-community {
-//  font-size: $h1-font-size;
-//  font-family: $font-family-sans-serif;
-//  font-weight: $bold-font-weight;
-//}
-//
-//.index-header-rbanism {
-//  color:black;
-//}
-//
-//.index-header-community {
-//  color:orange;
-//}
-//
-//.index-intro{
-//  position:relative;
-//  margin:auto;
-//
-//}
-//
-//.index-intro div{
-//  position: absolute;
-//  top: 5%;
-//  bottom:5%;
-//  margin-top: auto;
-//  margin-bottom: auto;
-//  left: 0;
-//  width:50%;
-//  background: white;
-//  padding-top:30px;
-//  padding-bottom:30px;
-//    display: block;
-//overflow: auto;
-//}
-//.index-intro img{
-//  position: relative;
-//  top:0;
-//  left:33.33%;
-//}
-//
-//
-//// Actions
-//#actbar {
-//  background:$orange;
-//}
-//
-//#actbar h3 {
-//  display: none;
-//}
-//
-//#actbar * {
-//  color: white;
-//}
-//
-//#actbar figcaption{
-//  font-size: $h3-font-size;
-//  font-weight: $semi-bold-font-weight;
-//  text-align: center;
-//}
-//
-//// Benefits
-//.bar-subtitle {
-//  font-family: $font-family-sans-serif;
-//  font-size: $h2-font-size;
-//  font-weight: $bold-font-weight;
-//}
-//
-//// Events
-//#events {
-//  background:$plum;
-//  text-align: center;
-//}
-//
 
-//
-//.card {
-//  background-color: $plum;
-//}
-//
-//.card-body {
-//  padding-left: 0;
-//}
-//
-//// Text Color
-//.card-body * {
-//  color:white;
-//}
-//.card-subtitle {
-//  font-size: $event-description-font-size;
-//}
-//
-//.quarto-grid-item .card-subtitle {
-//  padding-top: $elem-padding;
-//}
-//
-//.card-text {
-//  font-family: $font-family-monospace;
-//  font-size: $event-description-font-size;
-//  padding-top: $elem-padding;
-//}
-//
-//// Index Form
-//.index-form {
-//  position: relative;
-//  top: 0;
-//  left: 0;
-//}
-//
-//.index-form img {
-//  position: relative;
-//  top: 0;
-//  left: 0;
-//}
-//
-//iframe {
-//  left: 50%;
-//  position: absolute;
-//  top: 5%;
-//  
-//}
-//
-//
-//#partners {
-//  background:$teal;
-//}
-//#partners * {
-//  color: white;
-//  text-align: center;
-//}
-//.nav-footer {
-//  display: block;
-//}
-//
-//
+.filled-button {
+  background-color: $plum;
+  background-image:url("assets/icons/button/arrow_wh.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  color:white;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+.filled-button:hover {
+  border:none;
+  box-shadow: inset 0px 0px 5px black;
+}

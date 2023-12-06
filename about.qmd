@@ -6,11 +6,11 @@ title-block-banner: assets/imgs/about/header.jpg
 
 listing:
   id: team
-  contents: team
+  contents: listings/about/team
   fields: [title, subtitle, description, image]
-  sort: "date desc"
+  sort: "date asc"
   type: grid
-  max-items: 3
+  max-items: 4
   image-height: 128px
   grid-item-border: false
   max-description-length: 99999
@@ -47,12 +47,10 @@ listing:
 ::: {layout-ncol=2}
 {{< include resources/text/about/vi.qmd >}}
   
-<span><a class="empty-button">DONWLOAD</a></span>
-<br>
-<br>
-<br>
-<br>
-<span><a class="empty-button">DISCOVER MORE</a></span>
+<div>
+<a class="empty-button">DONWLOAD</a>
+<a class="empty-button">DISCOVER MORE</a>
+</div>
 :::
 
 ::: {layout-ncol=2}

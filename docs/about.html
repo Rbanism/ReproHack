@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -221,13 +221,97 @@ background-size: cover;
 <a href="https://forms.office.com/e/25Va69R1h2">Join the community</a>
 </li>
 </ul>
-<p><img src="https://placehold.co/1920x1080.png" class="img-fluid"></p>
+<div class="members-img">
+<img src="assets/imgs/about/members.jpg" alt="Snow" style="width:100%;">
+<div class="bottom-left">
+Our community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals.
+</div>
+</div>
 </section>
 <section id="core-members" class="level2">
 <h2 class="anchored" data-anchor-id="core-members">Core Members</h2>
 <div id="listing-team" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701835880146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/about/team/claudiu-forgaci/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/imgs/about/team/claudiu.jpg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Claudiu Forgaci
+</h5>
+<div class="card-subtitle listing-subtitle">
+Assistant Professor, TU Delft
+</div>
+<div class="card-text listing-description">
+I am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1701835874512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/about/team/clementine-cottineau/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/imgs/about/team/clementine.jpg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Clémentine Cottineau
+</h5>
+<div class="card-subtitle listing-subtitle">
+PhD in Geography
+</div>
+<div class="card-text listing-description">
+I am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1701835869554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/about/team/daniele-cannatella/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/imgs/about/team/daniele.jpg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Daniele Cannatella
+</h5>
+<div class="card-subtitle listing-subtitle">
+Assistant Professor, TU Delft
+</div>
+<div class="card-text listing-description">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt mattis. Nulla vel eros rutrum, aliquet orci sit amet, mattis nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida, leo ac placerat hendrerit, ante elit mollis lorem.
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="7772400000" data-listing-file-modified-sort="1701835866234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./listings/about/team/dimitris-mantas/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left borderless">
+<p class="card-img-top">
+<img src="./assets/imgs/about/team/dimitris.jpg" class="thumbnail-image card-img" style="height: 128px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dimitris Mantas
+</h5>
+<div class="card-subtitle listing-subtitle">
+Student Assistant, TU Delft
+</div>
+<div class="card-text listing-description">
+I am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -242,7 +326,7 @@ No matching items
 <p>Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.</p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><span><a class="empty-button">DONWLOAD</a></span> <br> <br> <br> <br> <span><a class="empty-button">DISCOVER MORE</a></span></p>
+<p><a class="empty-button">DONWLOAD</a> <a class="empty-button">DISCOVER MORE</a></p>
 </div>
 </div>
 </div>
