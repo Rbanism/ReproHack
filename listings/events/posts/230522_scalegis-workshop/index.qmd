@@ -15,7 +15,7 @@ Scalable GIS for Urbanists is open to all researchers in the Netherlands from th
 
 This workshop is organised by TU Delft, Faculty of Architecture and the Built Environment, Department of Urbanism, in collaboration with the TU Delft Library, and it is part of the Netherlands eScience Center fellowship project [Rbanism](https://www.esciencecenter.nl/claudiu-forgaci/), targeting digital competence in the urbanism research community.
 
-## Links
+### > Links
 
 - Workshop program: [link](https://rbanism.github.io/scalegis-workshop/)
 
