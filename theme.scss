@@ -421,7 +421,19 @@ div.quarto-post .thumbnail {
 div.quarto-post .thumbnail img {
     object-fit: scale-down;
 }
+div.quarto-post{
+  border-bottom: none;
+}
 
+
+div.quarto-post .listing-categories{
+  pointer-events: none;
+}
+
+@media (max-width: 767.98px){.quarto-post.image-right, .quarto-post.image-left {
+    gap: 0em;
+    flex-direction: column-reverse;
+}}
 
 // Categories
 div.quarto-post .listing-categories .listing-category[onclick="window.quartoListingCategory('Challenges'); return false;"]{

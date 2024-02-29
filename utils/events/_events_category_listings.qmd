@@ -1,0 +1,88 @@
+<script>
+window.quartoListingCategory1 = (category) => {
+  if (categoriesLoaded) {
+    activateCategory1(category);
+    setCategoryHash(category);
+  }
+};
+
+function activateCategory1(category) {
+  // Deactivate existing categories
+  const activeEls = window.document.querySelectorAll(
+    ".quarto-listing-category .category.active"
+  );
+  for (const activeEl of activeEls) {
+    activeEl.classList.remove("active");
+  }
+
+  // Activate this category
+  const categoryEl = window.document.querySelector(
+    `.quarto-listing-category .category[data-category='${category}'`
+  );
+  if (categoryEl) {
+    categoryEl.classList.add("active");
+  }
+
+  // Filter the listings to this category
+  filterListingCategory1(category);
+};
+
+function filterListingCategory1(category) {
+  const listingIds = Object.keys(window["quarto-listings"]);
+  const index = listingIds.indexOf("listing-event_categs");
+if (index > -1) { // only splice array when item is found
+  listingIds.splice(index, 1); // 2nd parameter means remove one item only
+}
+  for (const listingId of listingIds) {
+    const list = window["quarto-listings"][listingId];
+    if (list) {
+      if (category === "") {
+        // resets the filter
+        list.filter();
+      } else {
+        // filter to this category
+        list.filter(function (item) {
+          const itemValues = item.values();
+          if (itemValues.categories !== null) {
+            const categories = itemValues.categories.split(",");
+            return categories.includes(category);
+          } else {
+            return false;
+          }
+        });
+      }
+    }
+  }
+};
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(1) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Challenges'); return false;");
+
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(2) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Workshops'); return false;");
+
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(3) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Social Events'); return false;");
+
+  });
+</script>

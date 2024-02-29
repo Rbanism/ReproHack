@@ -21,11 +21,11 @@
   {
     "listing": "/events.html",
     "items": [
-      "/listings/events/posts/230403_repro-challenge/index.html",
-      "/listings/events/posts/230403_repro-wrap-up/index.html",
-      "/listings/events/posts/230403_repro-r-workshop/index.html",
       "/listings/events/posts/230522_scalegis-workshop/index.html",
+      "/listings/events/posts/230403_repro-wrap-up/index.html",
+      "/listings/events/posts/230403_repro-challenge/index.html",
       "/listings/events/posts/230403_repro-hack/index.html",
+      "/listings/events/posts/230403_repro-r-workshop/index.html",
       "/listings/events/categories/challenges/index.html",
       "/listings/events/categories/workshops/index.html",
       "/listings/events/categories/social/index.html"

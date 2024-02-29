@@ -6,6 +6,7 @@ listing:
     fields: [title, subtitle, description, image, categories]
     type: default
     max-items: 1
+    sort: "date desc"
     image-align: left
     image-height: 128px
     grid-item-border: false
@@ -17,17 +18,19 @@ listing:
     type: grid
     max-items: 3
     image-height: 128px
-    grid-item-border: true
+    grid-item-border: false
     
   - id: events
     contents: listings/events/posts
     fields: [title, subtitle, description, image, categories]
     type: default
-    max-items: 3
+    page-size: 3
+    sort: "date desc"
     image-align: left
     image-height: 128px
     grid-item-border: false
 ---
+{{< include utils/events/_events_category_listings.qmd >}}
 
 ## New community gatherings
 
@@ -39,7 +42,7 @@ listing:
 ::: {#event_categs}
 :::
 
-## Recents community gatherings
+## Recent community gatherings
 
 ::: {#events}
 :::

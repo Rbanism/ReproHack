@@ -118,7 +118,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-description','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 3,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
@@ -215,39 +216,127 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<script>
+window.quartoListingCategory1 = (category) => {
+  if (categoriesLoaded) {
+    activateCategory1(category);
+    setCategoryHash(category);
+  }
+};
+
+function activateCategory1(category) {
+  // Deactivate existing categories
+  const activeEls = window.document.querySelectorAll(
+    ".quarto-listing-category .category.active"
+  );
+  for (const activeEl of activeEls) {
+    activeEl.classList.remove("active");
+  }
+
+  // Activate this category
+  const categoryEl = window.document.querySelector(
+    `.quarto-listing-category .category[data-category='${category}'`
+  );
+  if (categoryEl) {
+    categoryEl.classList.add("active");
+  }
+
+  // Filter the listings to this category
+  filterListingCategory1(category);
+};
+
+function filterListingCategory1(category) {
+  const listingIds = Object.keys(window["quarto-listings"]);
+  const index = listingIds.indexOf("listing-event_categs");
+if (index > -1) { // only splice array when item is found
+  listingIds.splice(index, 1); // 2nd parameter means remove one item only
+}
+  for (const listingId of listingIds) {
+    const list = window["quarto-listings"][listingId];
+    if (list) {
+      if (category === "") {
+        // resets the filter
+        list.filter();
+      } else {
+        // filter to this category
+        list.filter(function (item) {
+          const itemValues = item.values();
+          if (itemValues.categories !== null) {
+            const categories = itemValues.categories.split(",");
+            return categories.includes(category);
+          } else {
+            return false;
+          }
+        });
+      }
+    }
+  }
+};
+
+  document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(1) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Challenges'); return false;");
+
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(2) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Workshops'); return false;");
+
+  });
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#listing-event_categs > div.list.grid.quarto-listing-cols-3 > div:nth-child(3) > a');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      header.setAttribute('href' , '');
+      header.setAttribute('onclick' , "window.quartoListingCategory1('Social Events'); return false;");
+
+  });
+</script>
 <section id="new-community-gatherings" class="level2">
 <h2 class="anchored" data-anchor-id="new-community-gatherings">New community gatherings</h2>
 <div id="listing-event_latest" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-left" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684706400000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./listings/events/posts/230403_repro-challenge/index.html"> <img src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image" style="height: 128px;"> </a></p>
+<p><a href="./listings/events/posts/230522_scalegis-workshop/index.html"> <img src="./listings/events/posts/230522_scalegis-workshop/photo.jpg" class="thumbnail-image" style="height: 128px;"> </a></p>
 </div>
 <div class="body">
-<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html">
 <h3 class="no-anchor listing-title">
-Reproducibility Challenge
+Scalable GIS for Urbanists Workshop
 </h3>
 <div class="listing-subtitle">
-Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
+May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Challenges'); return false;">
-Challenges
+<div class="listing-category" onclick="window.quartoListingCategory('Workshops'); return false;">
+Workshops
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
+<div class="listing-category" onclick="window.quartoListingCategory('Scalability'); return false;">
+Scalability
 </div>
 </div>
-<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html">
 <div class="listing-description">
-<p>Find out how reproducible your research is.</p>
+<p>Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.</p>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./listings/events/posts/230403_repro-challenge/index.html"> </a>
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html"> </a>
 </div>
 </div>
 </div>
@@ -260,11 +349,11 @@ No matching items
 <h2 class="anchored" data-anchor-id="discover-the-community-gatherings">Discover the community gatherings</h2>
 <div id="listing-event_categs" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701195522978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1709209992364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./listings/events/categories/challenges/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
+<div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/categories/challenges/improving_awareness.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./listings/events/categories/challenges/challenges.png" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -274,11 +363,11 @@ Challenges
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1701195528369" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-listing-date-sort="82800000" data-listing-file-modified-sort="1709210005140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./listings/events/categories/workshops/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
+<div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/categories/workshops/stimulating_engagement.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./listings/events/categories/workshops/workshops.png" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -288,11 +377,11 @@ Workshops
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1701195518108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-listing-date-sort="169200000" data-listing-file-modified-sort="1709209997957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <a href="./listings/events/categories/social/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
+<div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/categories/social/building_capacity.png" class="thumbnail-image card-img" style="height: 128px;">
+<img src="./listings/events/categories/social/social.png" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -308,39 +397,39 @@ No matching items
 </div>
 </div>
 </section>
-<section id="recents-community-gatherings" class="level2">
-<h2 class="anchored" data-anchor-id="recents-community-gatherings">Recents community gatherings</h2>
+<section id="recent-community-gatherings" class="level2">
+<h2 class="anchored" data-anchor-id="recent-community-gatherings">Recent community gatherings</h2>
 <div id="listing-events" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-left" data-index="0" data-categories="Workshops,Scalability" data-listing-date-sort="1684706400000" data-listing-file-modified-sort="1688845518526" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./listings/events/posts/230403_repro-challenge/index.html"> <img src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image" style="height: 128px;"> </a></p>
+<p><a href="./listings/events/posts/230522_scalegis-workshop/index.html"> <img src="./listings/events/posts/230522_scalegis-workshop/photo.jpg" class="thumbnail-image" style="height: 128px;"> </a></p>
 </div>
 <div class="body">
-<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html">
 <h3 class="no-anchor listing-title">
-Reproducibility Challenge
+Scalable GIS for Urbanists Workshop
 </h3>
 <div class="listing-subtitle">
-Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
+May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library
 </div>
 </a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Challenges'); return false;">
-Challenges
+<div class="listing-category" onclick="window.quartoListingCategory('Workshops'); return false;">
+Workshops
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
+<div class="listing-category" onclick="window.quartoListingCategory('Scalability'); return false;">
+Scalability
 </div>
 </div>
-<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html">
 <div class="listing-description">
-<p>Find out how reproducible your research is.</p>
+<p>Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.</p>
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./listings/events/posts/230403_repro-challenge/index.html"> </a>
+<a href="./listings/events/posts/230522_scalegis-workshop/index.html"> </a>
 </div>
 </div>
 <div class="quarto-post image-left" data-index="1" data-categories="General,Reproducibility" data-listing-date-sort="1677884400000" data-listing-file-modified-sort="1688845518515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
@@ -374,9 +463,71 @@ Reproducibility
 <a href="./listings/events/posts/230403_repro-wrap-up/index.html"> </a>
 </div>
 </div>
-<div class="quarto-post image-left" data-index="2" data-categories="Workshops,Reproducibility" data-listing-date-sort="1677625200000" data-listing-file-modified-sort="1688845518513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-left" data-index="2" data-categories="Challenges,Reproducibility" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1693093816215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
-<p><a href="./listings/events/posts/230403_repro-r-workshop/index.html"> <img src="./listings/events/posts/230403_repro-r-workshop/photo.jpg" class="thumbnail-image" style="height: 128px;"> </a></p>
+<p><a href="./listings/events/posts/230403_repro-challenge/index.html"> <img src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image" style="height: 128px;"> </a></p>
+</div>
+<div class="body">
+<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<h3 class="no-anchor listing-title">
+Reproducibility Challenge
+</h3>
+<div class="listing-subtitle">
+Oct.&nbsp;26, 2022–Jan.&nbsp;26, 2023
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Challenges'); return false;">
+Challenges
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
+Reproducibility
+</div>
+</div>
+<a href="./listings/events/posts/230403_repro-challenge/index.html">
+<div class="listing-description">
+<p>Find out how reproducible your research is.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./listings/events/posts/230403_repro-challenge/index.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="3" data-categories="Hackathons,Reproducibility" data-listing-date-sort="1677711600000" data-listing-file-modified-sort="1688845518512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./listings/events/posts/230403_repro-hack/index.html"> <img data-src="./listings/events/posts/230403_repro-hack/reprohack.png" class="thumbnail-image" style="height: 128px;"> </a></p>
+</div>
+<div class="body">
+<a href="./listings/events/posts/230403_repro-hack/index.html">
+<h3 class="no-anchor listing-title">
+Urbanism ReproHack
+</h3>
+<div class="listing-subtitle">
+Oct.&nbsp;14, 2022, 1:00–5:00 PM
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Hackathons'); return false;">
+Hackathons
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
+Reproducibility
+</div>
+</div>
+<a href="./listings/events/posts/230403_repro-hack/index.html">
+<div class="listing-description">
+<p>Attempt to reproduce a published paper.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./listings/events/posts/230403_repro-hack/index.html"> </a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="4" data-categories="Workshops,Reproducibility" data-listing-date-sort="1677625200000" data-listing-file-modified-sort="1688845518513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./listings/events/posts/230403_repro-r-workshop/index.html"> <img data-src="./listings/events/posts/230403_repro-r-workshop/photo.jpg" class="thumbnail-image" style="height: 128px;"> </a></p>
 </div>
 <div class="body">
 <a href="./listings/events/posts/230403_repro-r-workshop/index.html">
@@ -409,6 +560,9 @@ Reproducibility
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="events-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
