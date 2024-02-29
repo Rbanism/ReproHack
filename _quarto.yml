@@ -1,9 +1,5 @@
 format:
   html:
-#    toc: true
-#    toc-location: left
-#    grid:
-#      body-width: 1250px
     theme: theme.scss
   
 link-external-newwindow: true
@@ -23,7 +19,6 @@ website:
       - about.qmd
       - resources.qmd
       - events.qmd
-      - blog.qmd
       - contact.qmd
     right:
       - registration.qmd

@@ -87,6 +87,28 @@ $elem-to-elem-padding: 2.0rem !default;
   border: 1px solid $orange;
   color: $orange;
 }
+
+a.empty-button {
+  background-color: white;
+  background-image:url("assets/icons/button/arrow_cl.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: 1px solid $plum;
+  border-radius: 8px;
+  color:$plum;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+
+a.empty-button:hover {
+  border: 1px solid $orange;
+  color: $orange;
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Text
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -94,10 +116,7 @@ $elem-to-elem-padding: 2.0rem !default;
   color: $font-color;
 }
 
-//h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-//    opacity: 1;
-//    margin: 0em;
-//}
+
 
 h1, .h1 {
   font-weight: $bold-font-weight;
@@ -315,6 +334,14 @@ p, .p {
 	text-align:center;
 	color:white;
 }
+
+.quarto-title-block .quarto-title-banner {
+  background-blend-mode: overlay;
+}
+.quarto-title-banner{
+  background-color: #00000033;
+}
+
 #title-block-header > div.quarto-title-banner.page-columns.page-full > div > p {
 	text-align:center;
 	color:white;
@@ -416,8 +443,23 @@ div.quarto-post .listing-categories .listing-category[onclick="window.quartoList
 // Contact
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Resources
 
-
+#TOC{
+  font-family: $font-family-monospace;
+  border: none;
+  //border-radius: 8px;
+  //box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#toc-title{
+  display: none;
+}
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid $orange;
+}
+.sidebar nav[role=doc-toc]>ul a {
+    border-left: 1px solid $teal;
+}
 
 //
 //
