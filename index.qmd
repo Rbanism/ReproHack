@@ -47,23 +47,30 @@ listing:
     sort: "date asc"
     type: grid
     max-items: 3
-    image-height: 128px
+    image-height: 64px
     grid-columns: 3
     grid-item-border: false
     grid-item-align: center
 ---
 
+
 ::: {layout-ncol=2}
+
 {{< include resources/text/index/header.qmd >}}
 
 ![](assets/imgs/index/header.jpg)
+
 :::
 
 {{< include utils/index/_index_header_utils.qmd >}}
 
 
 <!-- NOTE: Do not change the title of this this header! -->
-## actions
+
+<!-- {{< include utils/index/_index_actions_utils.qmd >}} -->
+
+## We reach out to the community to: {#actions}
+
 ::: {.column-screen}
 :::
 
@@ -71,9 +78,9 @@ listing:
 :::
 
 
-## we want to build digital competence and skills for:
+## We build digital competence and skills for: {#benefits}
 
-{{< include utils/index/_index_benefit_utils.qmd >}}
+<!-- {{< include utils/index/_index_benefit_utils.qmd >}} -->
 
 ::: {#benefits}
 :::
@@ -81,12 +88,12 @@ listing:
 <!-- <div class="benefits-button"><a class="empty-button" id="benefits">DISCOVER MORE</a></div> -->
 
 
-## Community Gatherings
+## Our latest events: {#events}
 
 ::: {.column-screen}
 :::
 
-{{< include resources/text/index/events.qmd >}}
+<!-- {{< include resources/text/index/events.qmd >}} -->
 
 ::: {#events}
 :::
@@ -106,12 +113,12 @@ listing:
 {{< include resources/text/index/registration.qmd >}}
 
 
-#### Partners
+## Amazing partners who supported us: {#partners}
 
 ::: {.column-screen}
 :::
 
-{{< include resources/text/index/partners.qmd >}}
+<!-- {{< include resources/text/index/partners.qmd >}} -->
 
 ::: {#partners}
 :::
