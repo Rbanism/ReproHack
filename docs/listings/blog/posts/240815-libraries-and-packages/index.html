@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="1970-01-03">
+<meta name="author" content="Claudiu Forgaci">
 
-<title>Rbanism - Build Capacity</title>
+<title>Rbanism - Libraries and Packages</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,6 +87,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../../contact.html"> 
 <span class="menu-text">Get in touch</span></a>
   </li>  
@@ -113,20 +117,20 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Build<br> Capacity</h1>
+<h1 class="title">Libraries and Packages</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 3, 1970</p>
-    </div>
+             <p>Claudiu Forgaci </p>
+          </div>
   </div>
+    
   
     
   </div>
@@ -136,6 +140,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><code>library()</code> may be in the top most frequently used function calls in R. But what does it do? It makes <code>tidyverse</code>, <code>here</code>, <code>sf</code> and the like available in your code, right? However, this function call is described or perceived as “loading library x”, which is incorrect in two ways.</p>
+<p>First, the <code>library()</code> function does not make a “library” but a “package” in your script. The function is called like that because it pulls a package <em>from a location on your computer called “library”</em>.</p>
+<p>In fact, your computer may have multiple libraries visible to R in a hierarchical way. For instance, if you work with an active reproducible environment using <code>renv</code>, your code will search for packages called with <code>library()</code> in a local library specific to your project directory. This means that there may be multiple <code>tidyverse</code>s or <code>here</code>s or <code>sf</code>s available on your computer. You can see which libraries are available (and searched for) on your computer with <code>.libPaths()</code>.</p>
+<p>The main cause of this confusion is the inconsistent use of the word “library” across languages. For instance, Python, refers to “libraries” in the sense of “packages”. While R’s terminology may contribute to this confusion, it’s still important to maintain precision in language.</p>
+<p>Second, a package is not loaded but it is <em>attached</em> to a search path. This means that, in addition to being loaded to memory, its functions become available without the need for the <code>::</code> operator. While this distinction may be less critical for everyday use, it becomes important when developing your own packages. For those interested, more details can be found in <a href="https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-attach-vs-load">R Packages</a>.</p>
+<p>Consistent use of terms is crucial for reducing confusion, especially for beginners. So, use “package” when referring to a piece of software that provides additional functionality, like <code>tidyverse</code>, and reserve “library” for the <code>library()</code> function itself or the directory where packages are stored.</p>
 
 
 
@@ -549,15 +559,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span style="display: block;"> <img src="../../../../assets/icons/rbanism.png" style="height:2em"> <span style="font-family: Montserrat; font-weight: 700">Rbanism</span> </span> <span style="display: block;"> <img src="../../../../assets/icons/phone.png" height="24"> <span>+31 12 345 6789</span> </span> <span style="display: block;"> <img src="../../../../assets/icons/email.png" height="24"> rbanism@tudelft.nl </span> <span style="display: block;"> <img src="../../../../assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
-<img src="../../../../assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
-<img src="../../../../assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands </span> <!--Social Media--> <span style="display: block;"> <span style="font-family: Montserrat; font-weight: 700">Follow us</span> <img src="../../../../assets/third-party/logos/github.png" height="24"> <img src="../../../../assets/third-party/logos/linkedin.png" height="24"> <img src="../../../../assets/third-party/logos/twitter.png" height="24"> <img src="../../../../assets/third-party/logos/youtube.png" height="24"> </span> <!--Copyright--> <span style="display: block;"> <span style="font-family: Montserrat">Copyright © 2023-2024 Rbanism</span> </span></p>
-</div>   
-    <div class="nav-footer-center">
       &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ 2024 Copyright © Rbanism
+  </li>  
+</ul>
     </div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:rbanism@tudelft.nl">
+      <i class="bi bi-mail" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Rbanism">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/rbanism">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/rbanism">
+      <i class="bi bi-instagram" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Rbanism">
+      <i class="bi bi-youtube" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

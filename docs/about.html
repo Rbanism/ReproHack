@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,6 +46,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -91,15 +92,42 @@ background-size: cover;
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./assets/icons/rbanism.png" alt="" class="navbar-logo">
     </a>
@@ -113,31 +141,31 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">About</span></a>
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html" rel="" target="">
- <span class="menu-text">Events</span></a>
+    <a class="nav-link" href="./events.html"> 
+<span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html" rel="" target="">
- <span class="menu-text">Get in touch</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Get in touch</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./registration.html" rel="" target="">
- <span class="menu-text">JOIN THE COMMUNITY</span></a>
+    <a class="nav-link" href="./registration.html"> 
+<span class="menu-text">JOIN THE COMMUNITY</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -146,7 +174,7 @@ background-size: cover;
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">About</h1>
-            <p class="subtitle lead">Discover how we get started, what are our principles and aims.</p>
+            <p class="subtitle lead">Discover how we got started, what are our principles and aims.</p>
                       </div>
   </div>
     
@@ -169,8 +197,10 @@ background-size: cover;
 
 
 
-<section id="how-we-get-started" class="level2">
-<h2 class="anchored" data-anchor-id="how-we-get-started">How we get started</h2>
+
+<p>Rbanism is a dynamic community of practice that aims to empower urbanism students, researchers, and practitioners to use open-source software and open science practices to answer urban questions effectively and with confidence. Born from a passionate group of R users from the Department of Urbanism at TU Delft in the Netherlands, Rbanism is on a mission to expand on the international stage.</p>
+<section id="how-we-got-started" class="level2">
+<h2 class="anchored" data-anchor-id="how-we-got-started">How we got started</h2>
 <p>The Rbanism community was started by the <a href="https://www.esciencecenter.nl/fellows/claudiu-forgaci/">Rbanism fellowship project</a> funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the <a href="https://www.tudelft.nl/en/architecture-and-the-built-environment/about-the-faculty/departments/urbanism">TU Delft Department of Urbanism</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Digital Competence Center</a>, <a href="https://www.tudelft.nl/library/library-voor-onderzoekers/library-voor-onderzoekers/onderzoek-starten/dcc">TU Delft Library Research Data Services</a>, the <a href="https://delft-rcafe.github.io/home/Index.html">TU Delft R Café</a>, <a href="https://osc-delft.github.io/">Open Science Community Delft</a> and <a href="https://www.esciencecenter.nl/">Netherlands eScience Center</a> in our awareness-raising, capacity- and community-building efforts.</p>
 </section>
 <section id="principles-and-goals" class="level2">
@@ -228,7 +258,7 @@ Our community thrives with a vibrant mix of students, researchers, educators, an
 <h2 class="anchored" data-anchor-id="core-members">Core Members</h2>
 <div id="listing-team" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1701835880146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="-3600000" data-listing-file-modified-sort="1709224440984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./listings/about/team/claudiu-forgaci/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -248,7 +278,7 @@ I am an architect and urbanist, currently engaged in understanding how spatial u
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1701835874512" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-listing-date-sort="2674800000" data-listing-file-modified-sort="1709224440984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./listings/about/team/clementine-cottineau/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -268,7 +298,7 @@ I am interested in the patterns, causes and consequences of inequality in cities
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1701835869554" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-listing-date-sort="5094000000" data-listing-file-modified-sort="1709224440984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./listings/about/team/daniele-cannatella/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -288,7 +318,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidu
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="7772400000" data-listing-file-modified-sort="1701835866234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="3" data-listing-date-sort="7772400000" data-listing-file-modified-sort="1709224440984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./listings/about/team/dimitris-mantas/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
@@ -316,18 +346,24 @@ No matching items
 </section>
 <section id="visual-identity" class="level2">
 <h2 class="anchored" data-anchor-id="visual-identity">Visual Identity</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p>Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.</p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <p><a class="empty-button">DONWLOAD</a> <a class="empty-button">DISCOVER MORE</a></p>
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="assets/imgs/about/vi_l.jpg" class="img-fluid"></p>
 </div>
@@ -421,10 +457,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -434,8 +487,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -448,6 +510,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -491,6 +672,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -516,6 +698,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -573,28 +781,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><span style="display: block;"> <img src=".\assets/icons/rbanism.png" style="height:2em"> <span style="font-family: Montserrat; font-weight: 700">Rbanism</span> </span> <span style="display: block;"> <img src=".\assets/icons/phone.png" height="24"> <span>+31 12 345 6789</span> </span> <span style="display: block;"> <img src=".\assets/icons/email.png" height="24"> rbanism@tudelft.nl </span> <span style="display: block;"> <img src=".\assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
-<img src=".\assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
-<img src=".\assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands </span> <!--Social Media--> <span style="display: block;"> <span style="font-family: Montserrat; font-weight: 700">Follow us</span> <img src=".\assets/third-party/logos/github.png" height="24"> <img src=".\assets/third-party/logos/linkedin.png" height="24"> <img src=".\assets/third-party/logos/twitter.png" height="24"> <img src=".\assets/third-party/logos/youtube.png" height="24"> </span> <!--Copyright--> <span style="display: block;"> <span style="font-family: Montserrat">Copyright © 2023-2024 Rbanism</span> </span></div>   
+    <div class="nav-footer-left">
+<p><span style="display: block;"> <img src="./assets/icons/rbanism.png" style="height:2em"> <span style="font-family: Montserrat; font-weight: 700">Rbanism</span> </span> <span style="display: block;"> <img src="./assets/icons/phone.png" height="24"> <span>+31 12 345 6789</span> </span> <span style="display: block;"> <img src="./assets/icons/email.png" height="24"> rbanism@tudelft.nl </span> <span style="display: block;"> <img src="./assets/icons/address.png" height="24"> Faculty of Architecture and the Built Environment<br>
+<img src="./assets/imgs/pad.png" class="img-fluid" width="24"> Julianalaan 134, 2628 BL<br>
+<img src="./assets/imgs/pad.png" class="img-fluid" width="24"> Delft, The Netherlands </span> <!--Social Media--> <span style="display: block;"> <span style="font-family: Montserrat; font-weight: 700">Follow us</span> <img src="./assets/third-party/logos/github.png" height="24"> <img src="./assets/third-party/logos/linkedin.png" height="24"> <img src="./assets/third-party/logos/twitter.png" height="24"> <img src="./assets/third-party/logos/youtube.png" height="24"> </span> <!--Copyright--> <span style="display: block;"> <span style="font-family: Montserrat">Copyright © 2023-2024 Rbanism</span> </span></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -603,6 +799,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 
