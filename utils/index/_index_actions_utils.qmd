@@ -1,13 +1,13 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector('#benefits');
+      const header = document.querySelector('#actions');
       if (!header) {
           console.log('Could not locate landing page header!');
       }
       
       const btn = document.createElement('h4');
       
-      btn.textContent = 'Benefits';
+      btn.textContent = 'Actions';
         
       header.insertBefore(btn, header.firstChild);
   });

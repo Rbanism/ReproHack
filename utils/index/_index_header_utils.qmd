@@ -10,7 +10,7 @@
       btn.setAttribute('class', 'filled-button');
       btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
       
-      btn.textContent = 'Join the next event';
+      btn.textContent = 'Join us';
         
       header.appendChild(btn);
   });
