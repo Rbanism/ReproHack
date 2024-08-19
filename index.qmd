@@ -30,6 +30,16 @@ listing:
     max-items: 3
     image-height: 100%
     grid-item-border: false
+    
+  - id: blog_latest
+    contents: listings/blog/posts
+    fields: [title, subtitle, description, image, categories]
+    type: default
+    max-items: 3
+    sort: "date desc"
+    image-align: left
+    image-height: 128px
+    grid-item-border: false
 
   - id: partners
     contents: listings/index/partners
@@ -81,6 +91,15 @@ listing:
 ::: {#events}
 :::
 
+## Our latest blogs: {#blogs}
+
+::: {.column-screen}
+:::
+
+<!-- {{< include resources/text/index/events.qmd >}} -->
+
+::: {#blog_latest}
+:::
 
 ## Join the Rbanism Community!
 

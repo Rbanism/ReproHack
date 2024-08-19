@@ -1,0 +1,17 @@
+---
+author: "Claudiu Forgaci"
+title: "Libraries and Packages"
+image: "packages.jpg"
+---
+
+`library()` may be in the top most frequently used function calls in R. But what does it do? It makes `tidyverse`, `here`, `sf` and the like available in your code, right? However, this function call is described or perceived as "loading library x", which is incorrect in two ways.
+
+First, the `library()` function does not make a "library" but a "package" in your script. The function is called like that because it pulls a package *from a location on your computer called "library"*.
+
+In fact, your computer may have multiple libraries visible to R in a hierarchical way. For instance, if you work with an active reproducible environment using `renv`, your code will search for packages called with `library()` in a local library specific to your project directory. This means that there may be multiple `tidyverse`s or `here`s or `sf`s available on your computer. You can see which libraries are available (and searched for) on your computer with `.libPaths()`.
+
+The main cause of this confusion is the inconsistent use of the word "library" across languages. For instance, Python, refers to "libraries" in the sense of "packages". While R's terminology may contribute to this confusion, it’s still important to maintain precision in language.
+
+Second, a package is not loaded but it is *attached* to a search path. This means that, in addition to being loaded to memory, its functions become available without the need for the `::` operator. While this distinction may be less critical for everyday use, it becomes important when developing your own packages. For those interested, more details can be found in [R Packages](https://r-pkgs.org/dependencies-mindset-background.html#sec-dependencies-attach-vs-load).
+
+Consistent use of terms is crucial for reducing confusion, especially for beginners. So, use "package" when referring to a piece of software that provides additional functionality, like `tidyverse`, and reserve "library" for the `library()` function itself or  the directory where packages are stored.

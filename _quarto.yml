@@ -19,6 +19,7 @@ website:
       - about.qmd
       - resources.qmd
       - events.qmd
+      - blog.qmd
       - contact.qmd
     right:
       - registration.qmd

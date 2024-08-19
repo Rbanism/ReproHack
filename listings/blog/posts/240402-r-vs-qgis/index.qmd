@@ -1,0 +1,20 @@
+---
+author: "Claudiu Forgaci"
+title: "R vs. QGIS: R wins in match overtime"
+---
+
+In our [Geospatial Data Carpentry for Urbanism](https://carpentries-incubator.github.io/r-geospatial-urban/) workshops, we often receive the question: why R and not QGIS? Answering this question is not straightforward (both are great), so I’ll try to do it by sharing a personal experience.
+
+Recently, Daniele Cannatella and I gave a QGIS workshop to around 70 MSc Urbanism students at TU Delft. It did not go well as we had to deal with unforeseen technical issues for most of the workshop. [We updated the problematic tutorials](https://www.notion.so/CLC-to-grid-33e13627c2c646a2a3cefd2590904bfb?pvs=21) after the workshop to make them more accessible and to overcome such issues in the future. 
+
+![](clc-eea-grid-qgis.gif)
+
+While updating the QGIS tutorial, I also tried to reproduce the process in R: in a few lines of code and fewer steps.
+
+![](r-script.png)
+
+R felt so much simpler while QGIS felt like this:
+
+![](https://www.speakeasy-news.com/wp-content/uploads/2017/06/SN_goldberg_home.jpg)
+
+This is not to say that QGIS is worse, but that its point-and-click approach works very differently from R’s code-based approach. As I see it, R takes you to the essence of the problem you want to solve without the distractions of a Graphical User Interface. Yes, it takes more time to learn, but you can get your GIS work done with it while being able to automate, scale and ensure that your workflow is reproducible by others.
