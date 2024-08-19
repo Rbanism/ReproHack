@@ -1,6 +1,6 @@
 ---
 title: About
-subtitle: Discover how we get started, what are our principles and aims.
+subtitle: Discover how we got started, what are our principles and aims.
 title-block-style: default
 title-block-banner: assets/imgs/about/header.jpg
 
@@ -16,7 +16,9 @@ listing:
   max-description-length: 99999
 ---
 
-## How we get started
+Rbanism is a dynamic community of practice that aims to empower urbanism students, researchers, and practitioners to use open-source software and open science practices to answer urban questions effectively and with confidence. Born from a passionate group of R users from the Department of Urbanism at TU Delft in the Netherlands, Rbanism is on a mission to expand on the international stage.
+
+## How we got started
 
 {{< include resources/text/about/header.qmd >}}
 
