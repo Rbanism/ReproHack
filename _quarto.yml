@@ -10,7 +10,7 @@ project:
   preview:
     port: 4200
     browser: true
-
+  
 website:
   title: "Rbanism"
   navbar:
@@ -23,6 +23,13 @@ website:
       - contact.qmd
     right:
       - registration.qmd
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "🚀 Welcome to our redesigned website! Please bear with us while 
+              we take care of the final touches!"
+    type: primary
+    position: below-navbar
   search: false
   page-footer:
     center: 
