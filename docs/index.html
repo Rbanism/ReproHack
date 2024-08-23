@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.56">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-description','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -194,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -240,7 +240,7 @@ window.Quarto = {
     <span class="navbar-title">Rbanism</span>
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -273,10 +273,13 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <div id="quarto-announcement" data-announcement-id="5113a63399d75e39d80f336c959e3ac9" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>🚀 Welcome to our redesigned website! Please bear with us while we take care of the final touches!</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -333,7 +336,7 @@ window.Quarto = {
 <a href="./listings/index/actions/improving_awareness/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/actions/improving_awareness.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/actions/improving_awareness.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -347,7 +350,7 @@ Improve<br> Awareness
 <a href="./listings/index/actions/stimulating_engagement/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/actions/stimulating_engagement.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/actions/stimulating_engagement.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -361,7 +364,7 @@ Stimulate<br> Engagement
 <a href="./listings/index/actions/building_capacity/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/actions/building_capacity.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/actions/building_capacity.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -386,7 +389,7 @@ No matching items
 <a href="./listings/index/benefits/reproducibility/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./assets/icons/benefits/reproducibility.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/benefits/reproducibility.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -403,7 +406,7 @@ Adopt transparent urban analytical practices to enable accountability, sharing a
 <a href="./listings/index/benefits/automation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./assets/icons/benefits/automation.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/benefits/automation.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -420,7 +423,7 @@ Save time and reduce errors with scripts, so that you can focus on your core ski
 <a href="./listings/index/benefits/scalability/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./assets/icons/benefits/scalability.svg" class="thumbnail-image card-img" style="height: 128px;">
+<img loading="lazy" src="./assets/icons/benefits/scalability.svg" class="thumbnail-image card-img" style="height: 128px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -452,7 +455,7 @@ No matching items
 <a href="./listings/events/posts/230522_scalegis-workshop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/posts/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
+<img loading="lazy" src="./listings/events/posts/230522_scalegis-workshop/photo.jpg" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -472,7 +475,7 @@ Experience the infrastructure and workflows of large-scale GIS applications rele
 <a href="./listings/events/posts/230403_repro-wrap-up/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/posts/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img loading="lazy" src="./listings/events/posts/230403_repro-wrap-up/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -492,7 +495,7 @@ A celebratory closing to our first series of events.
 <a href="./listings/events/posts/230403_repro-challenge/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <p class="card-img-top">
-<img src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
+<img loading="lazy" src="./listings/events/posts/230403_repro-challenge/photo.png" class="thumbnail-image card-img" style="height: 100%;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -522,7 +525,34 @@ No matching items
 <!-- {{< include resources/text/index/events.qmd >}} -->
 <div id="listing-blog_latest" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-file-modified-sort="1724094191913" data-listing-reading-time-sort="2" data-listing-word-count-sort="204">
+<div class="quarto-post image-left" data-index="0" data-categories="Nuances of R" data-listing-date-sort="1725228000000" data-listing-file-modified-sort="1724102156595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+<div class="thumbnail">
+<p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">
+<p><img loading="lazy" src="./listings/blog/posts/240815-libraries-and-packages/packages.jpg" class="thumbnail-image" style="height: 128px;"></p>
+</a><p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">Libraries &amp; Packages</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Nuances of R'); return false;">
+Nuances of R
+</div>
+</div>
+<div class="listing-description">
+<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"><code>library()</code> may be in the top most frequently used function calls in R. But what does it do? It makes <code>tidyverse</code>, <code>here</code>, <code>sf</code> and the like available in your code, right? However…</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-left" data-index="1" data-categories="R versus" data-listing-date-sort="1712008800000" data-listing-file-modified-sort="1724357135571" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
 <div class="thumbnail">
 <p><a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external">
 <p class="card-img-top"><img src="listings/blog/posts/240402-r-vs-qgis/clc-eea-grid-qgis.gif" style="height: 128px;"  class="thumbnail-image card-img"/></p>
@@ -535,34 +565,17 @@ No matching items
 <div class="listing-subtitle">
 <a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external"></a>
 </div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('R versus'); return false;">
+R versus
+</div>
+</div>
 <div class="listing-description">
 <a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external">In our Geospatial Data Carpentry for Urbanism workshops, we often receive the question: why R and not QGIS? Answering this question is not straightforward (both are great)…</a>
 </div>
 </div>
 <div class="metadata">
 <p><a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240402-r-vs-qgis/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-listing-file-modified-sort="1724096637153" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
-<div class="thumbnail">
-<p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">
-<p><img src="./listings/blog/posts/240815-libraries-and-packages/packages.jpg" class="thumbnail-image" style="height: 128px;"></p>
-</a><p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">Libraries and Packages</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"><code>library()</code> may be in the top most frequently used function calls in R. But what does it do? It makes <code>tidyverse</code>, <code>here</code>, <code>sf</code> and the like available in your code, right? However…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external"></a></p><a href="./listings/blog/posts/240815-libraries-and-packages/index.html" class="no-external">
 </a>
 </div>
 </div>
@@ -590,7 +603,7 @@ No matching items
 <a href="./listings/index/partners/tud/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/partners/tud-abe.svg" class="thumbnail-image card-img" style="height: 64px;">
+<img loading="lazy" src="./assets/icons/partners/tud-abe.svg" class="thumbnail-image card-img" style="height: 64px;">
 </p>
 </div>
 </a>
@@ -599,7 +612,7 @@ No matching items
 <a href="./listings/index/partners/oscd/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/partners/oscd.png" class="thumbnail-image card-img" style="height: 64px;">
+<img loading="lazy" src="./assets/icons/partners/oscd.png" class="thumbnail-image card-img" style="height: 64px;">
 </p>
 </div>
 </a>
@@ -608,7 +621,7 @@ No matching items
 <a href="./listings/index/partners/nlesc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center borderless">
 <p class="card-img-top">
-<img src="./assets/icons/partners/nlesc.svg" class="thumbnail-image card-img" style="height: 64px;">
+<img loading="lazy" src="./assets/icons/partners/nlesc.svg" class="thumbnail-image card-img" style="height: 64px;">
 </p>
 </div>
 </a>
@@ -659,18 +672,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -702,7 +704,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -710,10 +734,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -755,7 +784,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

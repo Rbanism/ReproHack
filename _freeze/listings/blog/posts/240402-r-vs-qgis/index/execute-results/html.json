@@ -1,0 +1,15 @@
+{
+  "hash": "8f81517dc3e1dbfebce0be8bb7229609",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nauthor: \"Claudiu Forgaci\"\ntitle: \"R vs. QGIS: R wins in match overtime\"\ndate: \"2024-04-02\"\ncategories:\n  - R versus\n---\n\n\n\nIn our [Geospatial Data Carpentry for Urbanism](https://carpentries-incubator.github.io/r-geospatial-urban/) workshops, we often receive the question: why R and not QGIS? Answering this question is not straightforward (both are great), so I’ll try to do it by sharing a personal experience.\n\nRecently, Daniele Cannatella and I gave a QGIS workshop to around 70 MSc Urbanism students at TU Delft. It did not go well as we had to deal with unforeseen technical issues for most of the workshop. [We updated the problematic tutorials](https://www.notion.so/CLC-to-grid-33e13627c2c646a2a3cefd2590904bfb?pvs=21) after the workshop to make them more accessible and to overcome such issues in the future. \n\n![](clc-eea-grid-qgis.gif)\n\nWhile updating the QGIS tutorial, I also tried to reproduce the process in R: in a few lines of code and fewer steps.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Load packages ----\nlibrary(tidyverse)\nlibrary(sf)\n\n# Read CLC data and EEA grid ----\nclc <- st_read(\"data/CLC2018/CLC2018.shp\")\neea <- st_read(\"data/FRAME_EEA.gpkg\")\n\n# Create new column with Level-1 code ----\nclc <- clc |> \n  mutate(Level1 = str_sub(Code_18, 1, 1))\n\n# Dissolve by Level-1 CLC class ----\n# Slow ~11 minutes\nclc_dissolved <- clc |> \n  group_by(Level1) |> \n  summarise()\n\n# Intersect CLC and EEA grid ----\n# Slow ~15 minutes\nclc_in_grid <- st_intersection(eea, clc_dissolved)\n\nclc_in_grid_area <- clc_in_grid |> \n  mutate(area = st_area(clc_in_grid))\n\n# Create centroids from intersection ----\nclc_in_grid_centroids <- st_centroid(clc_in_grid_area)\n\n# Join dominant CLC classes to original grid ----\nclc_in_grid_final <- eea |> \n  select(geom) |> \n  st_join(clc_in_grid_centroids) |> \n  group_by(CellCode) |> \n  top_n(1, area)\n\n# Visualise the result ----\nggplot(clc_in_grid_final) +\n  geom_sf(aes(fill = Level1))\n```\n:::\n\n\n\n\nR felt so much simpler while QGIS felt like this:\n\n![](https://www.speakeasy-news.com/wp-content/uploads/2017/06/SN_goldberg_home.jpg)\n\nThis is not to say that QGIS is worse, but that its point-and-click approach works very differently from R’s code-based approach. As I see it, R takes you to the essence of the problem you want to solve without the distractions of a Graphical User Interface. Yes, it takes more time to learn, but you can get your GIS work done with it while being able to automate, scale and ensure that your workflow is reproducible by others.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

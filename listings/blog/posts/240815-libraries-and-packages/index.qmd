@@ -1,12 +1,16 @@
 ---
 author: "Claudiu Forgaci"
-title: "Libraries and Packages"
+title: "Libraries & Packages"
 image: "packages.jpg"
+date: "2024-09-02"
+categories: 
+  - Nuances of R
 ---
+!["[BOXES](https://www.flickr.com/photos/ala_members/2215055222/)" ([CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/)) by [ALA - The American Library Association](https://www.flickr.com/people/ala_members/)](packages.jpg)
 
 `library()` may be in the top most frequently used function calls in R. But what does it do? It makes `tidyverse`, `here`, `sf` and the like available in your code, right? However, this function call is described or perceived as "loading library x", which is incorrect in two ways.
 
-First, the `library()` function does not make a "library" but a "package" in your script. The function is called like that because it pulls a package *from a location on your computer called "library"*.
+First, the `library()` function does not make a "library" but a "package" available in your script. The function is called like that because it pulls a package *from a location on your computer called "library"*.
 
 In fact, your computer may have multiple libraries visible to R in a hierarchical way. For instance, if you work with an active reproducible environment using `renv`, your code will search for packages called with `library()` in a local library specific to your project directory. This means that there may be multiple `tidyverse`s or `here`s or `sf`s available on your computer. You can see which libraries are available (and searched for) on your computer with `.libPaths()`.
 

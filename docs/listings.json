@@ -13,8 +13,8 @@
       "/listings/events/posts/230403_repro-challenge/index.html",
       "/listings/events/posts/230403_repro-hack/index.html",
       "/listings/events/posts/230403_repro-r-workshop/index.html",
-      "/listings/blog/posts/240402-r-vs-qgis/index.html",
       "/listings/blog/posts/240815-libraries-and-packages/index.html",
+      "/listings/blog/posts/240402-r-vs-qgis/index.html",
       "/listings/index/partners/tud/index.html",
       "/listings/index/partners/oscd/index.html",
       "/listings/index/partners/nlesc/index.html"
@@ -45,8 +45,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/listings/blog/posts/240402-r-vs-qgis/index.html",
-      "/listings/blog/posts/240815-libraries-and-packages/index.html"
+      "/listings/blog/posts/240815-libraries-and-packages/index.html",
+      "/listings/blog/posts/240402-r-vs-qgis/index.html"
     ]
   }
 ]
