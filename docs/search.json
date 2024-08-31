@@ -1,206 +1,297 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.\nOur mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the Carpentries, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility.\nThe Rbanism community was started by the Rbanism fellowship project funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the TU Delft Department of Urbanism, TU Delft Digital Competence Center, TU Delft Library Research Data Services, the TU Delft R Café, Open Science Community Delft and Netherlands eScience Center in our awareness-raising, capacity- and community-building efforts."
+    "text": "Libraries & Packages\n\n\n\n\n\n\nNuances of R\n\n\n\n\n\n\n\n\n\nSep 2, 2024\n\n\nClaudiu Forgaci\n\n\n\n\n\n\n\n\n\n\n\n\nR vs. QGIS: R wins in match overtime\n\n\n\n\n\n\nR versus\n\n\n\n\n\n\n\n\n\nApr 2, 2024\n\n\nClaudiu Forgaci\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "about.html#the-why",
-    "href": "about.html#the-why",
-    "title": "About",
-    "section": "The why",
-    "text": "The why\nThe urbanism research community is challenged by a limited awareness of state-of-the-art digital technologies, as well as the scarcity of scientific computing, data science, computational thinking and software management skills. Rbanism can bring experiences from Carpentries workshops and synergies with other activities carried out at TU Delft to benefit both the content of the planned activities and the community-building efforts of this fellowship."
+    "objectID": "index.html#actions",
+    "href": "index.html#actions",
+    "title": "Rbanism  Community",
+    "section": "We reach out to the community to:",
+    "text": "We reach out to the community to:\n\n\n\n\n\n\n\n\n\n\n\n\n\nImprove Awareness\n\n\n\n\n\n\n\n\n\n\n\n\n\nStimulate Engagement\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Capacity\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rbanism: Empowering the urbanism research community to use research software effectively and with confidence",
+    "objectID": "index.html#benefits",
+    "href": "index.html#benefits",
+    "title": "Rbanism  Community",
+    "section": "We build digital competence and skills for:",
+    "text": "We build digital competence and skills for:\n\n\n\n\n\n\n\n\n\n\n\nReproducibility\n\n\nAdopt transparent urban analytical practices to enable accountability, sharing and knowledge transfer.\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomation\n\n\nSave time and reduce errors with scripts, so that you can focus on your core skills and knowledge.\n\n\n\n\n\n\n\n\n\n\n\n\n\nScalability\n\n\nLeverage large datasets and computation for cross-case analyses of regions, cities and neighbourhoods.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#events",
+    "href": "index.html#events",
+    "title": "Rbanism  Community",
+    "section": "Our latest events:",
+    "text": "Our latest events:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScalable GIS for Urbanists Workshop\n\n\nMay 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library\n\n\nExperience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproducibility Wrap-up Event\n\n\nApr. 10, 2023, 3:00-4:30 PM\n\n\nA celebratory closing to our first series of events.\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproducibility Challenge\n\n\nOct. 26, 2022–Jan. 26, 2023\n\n\nFind out how reproducible your research is.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#blogs",
+    "href": "index.html#blogs",
+    "title": "Rbanism  Community",
+    "section": "Our latest blogs:",
+    "text": "Our latest blogs:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLibraries & Packages\n\n\n\n\n\n\nNuances of R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR vs. QGIS: R wins in match overtime\n\n\n\n\n\n\nR versus\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#join-the-rbanism-community",
+    "href": "index.html#join-the-rbanism-community",
+    "title": "Rbanism  Community",
+    "section": "Join the Rbanism Community!",
+    "text": "Join the Rbanism Community!\nSign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
+  },
+  {
+    "objectID": "index.html#partners",
+    "href": "index.html#partners",
+    "title": "Rbanism  Community",
+    "section": "Amazing partners who supported us:",
+    "text": "Amazing partners who supported us:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resources/text/index/registration.html",
+    "href": "resources/text/index/registration.html",
+    "title": "Rbanism",
     "section": "",
-    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community."
+    "text": "Sign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
   },
   {
-    "objectID": "posts/230403_challenge/index.html",
-    "href": "posts/230403_challenge/index.html",
-    "title": "Challenge",
+    "objectID": "resources/text/index/partners.html",
+    "href": "resources/text/index/partners.html",
+    "title": "Rbanism",
     "section": "",
-    "text": "In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a peer assessment in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an expert assessment committee consisting of at least three members. The first three entries will be awarded in the wrap-up event with vouchers and mentoring hours."
+    "text": "Amazing partners who support us!"
   },
   {
-    "objectID": "posts/230403_reproducible-research/index.html",
-    "href": "posts/230403_reproducible-research/index.html",
+    "objectID": "resources/text/about/pillars.html",
+    "href": "resources/text/about/pillars.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "Reproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\nAutomation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.\n\n\n\nlesson\n\n\n\nScalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.\n\n\n\nIntroduction: slides\n\n\n\n\nOverall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery."
+  },
+  {
+    "objectID": "resources/text/about/vision.html",
+    "href": "resources/text/about/vision.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.\nOur mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the Carpentries, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility."
+  },
+  {
+    "objectID": "resources/coc.html",
+    "href": "resources/coc.html",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice.\nThe purpose of this Code of Conduct (CoC) is to enable an environment in which diverse individuals can collaborate and interact in mutual respect. We recognize a shared responsibility to create and maintain that environment for the benefit of all. Some behaviors, therefore, are specifically prohibited:\n\nDiscriminating, racist, intimidating, harassing, lewd, demeaning, bullying, stalking, or threatening speech or actions\nAny real or implied threat of physical harm\nUnwelcome sexual attention\nUnwelcome physical contact\nSustained disruption of speakers or events (verbally or physically)\nRetaliation against an individual for reporting harassment or other unacceptable behaviors\nRetaliation against an individual for participating in the investigation of a report of harassment or other unacceptable behaviors\nAdvocating or encouraging any of the above behaviors\nFalsely reporting harassment or other unacceptable behaviors.\n\nCritical examination of beliefs and viewpoints does not, by itself, constitute hostile conduct or harassment. Similarly, use of sexual imagery or language in the context of a professional discussion might not constitute hostile conduct or harassment if necessary to the topic of discussion.\n\n\nIf someone makes you or anyone else feel unsafe or unwelcome, or if you believe a harassment problem exists, please report it as soon as possible to the enforcer of this Code of Conduct, Claudiu Forgaci, either in person or electronically (with the option to remain anonymous). If the person you should report to is the target of the complaint, you may contact the TU Delft External Confidential Advisor. The target of the complaint will not be involved in handling or resolving the incident. Every code of conduct violation report will be treated with seriousness and care.\n\n\n\nParticipants who are asked to stop any unacceptable behavior are expected to comply immediately. Community Coordinator(s) and event organizers retain the right to take appropriate actions, including: (i) mediation between complainant and alleged perpetrator(s), to reach an amicable resolution; (ii) issue a verbal warning; (iii) expel the offender(s) from the event (particularly if a participant’s immediate safety is threatened); and/or, (iv) exp the offender(s) from the Rbanism community. Community Coordinator(s) and event organizers will also discuss with the complainant whether they wish to contact the confidential advisor(s) at the affiliated University. The alleged perpetrator(s) will be notified of a complaint as soon as possible, and be given a chance to respond to the complaint."
+  },
+  {
+    "objectID": "resources/coc.html#reporting",
+    "href": "resources/coc.html#reporting",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "If someone makes you or anyone else feel unsafe or unwelcome, or if you believe a harassment problem exists, please report it as soon as possible to the enforcer of this Code of Conduct, Claudiu Forgaci, either in person or electronically (with the option to remain anonymous). If the person you should report to is the target of the complaint, you may contact the TU Delft External Confidential Advisor. The target of the complaint will not be involved in handling or resolving the incident. Every code of conduct violation report will be treated with seriousness and care."
+  },
+  {
+    "objectID": "resources/coc.html#enforcement",
+    "href": "resources/coc.html#enforcement",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "Participants who are asked to stop any unacceptable behavior are expected to comply immediately. Community Coordinator(s) and event organizers retain the right to take appropriate actions, including: (i) mediation between complainant and alleged perpetrator(s), to reach an amicable resolution; (ii) issue a verbal warning; (iii) expel the offender(s) from the event (particularly if a participant’s immediate safety is threatened); and/or, (iv) exp the offender(s) from the Rbanism community. Community Coordinator(s) and event organizers will also discuss with the complainant whether they wish to contact the confidential advisor(s) at the affiliated University. The alleged perpetrator(s) will be notified of a complaint as soon as possible, and be given a chance to respond to the complaint."
+  },
+  {
+    "objectID": "listings/events/posts/230522_scalegis-workshop/index.html",
+    "href": "listings/events/posts/230522_scalegis-workshop/index.html",
+    "title": "Scalable GIS for Urbanists Workshop",
+    "section": "",
+    "text": "Scalable GIS for Urbanists aims to introduce the infrastructure and workflows of large-scale GIS applications relevant for urbanism research. After a presentation of Big Geodata Science and a discussion on how it relates to urbanism research, the workshop will showcase two large-scale GIS applications in a tutorial format, namely a demonstration of the Remote-Sensing Deployable Analysis environmenT (RS-DAT) and a tutorial on how to run a scaled-up analysis with the Netherlands-wide 3D BAG dataset. Overall, the focus will be on challenges specific to the field of urbanism that cannot be solved with current approaches involving GUI-based software and data loaded in memory. The input will be given by representatives of the Centre of Expertise in Big Geodata Science (Faculty ITC, University of Twente), Netherlands eScience Center, and the 3D Geoinformation group from Delft Univeristy of Technology. Based on the knowledge gained from the introduction and the showcased projects, participants will learn to assemble a scaled-up workflow starting from a given case of small-scale GIS analysis.\nParticipants must have access to a computer with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.\nScalable GIS for Urbanists is open to all researchers in the Netherlands from the field of urbanism and related fields, including urban design, spatial planning, landscape architecture, and urban studies. You don’t need to have any previous knowledge of the tools that will be presented at the workshop.\nThis workshop is organised by TU Delft, Faculty of Architecture and the Built Environment, Department of Urbanism, in collaboration with the TU Delft Library, and it is part of the Netherlands eScience Center fellowship project Rbanism, targeting digital competence in the urbanism research community.\n\n&gt; Links\n\nWorkshop program: link\nIntroduction: slides\nIntroduction to Big Geodata Insfrastricture, by Serkan Girgin: slides\nSURF infrastructure, by Natalie Danezi: slides\nTutorial 1 - Scaling up the analysis of urban form, by Lukas Beuster: repository\nTutorial 2 - Scaled-up network analysis using the RS DAT framework, by Francesco Nattino & Ou Ku: repository\nScale-up exercise in groups: assignments\nWrap-up: slides"
+  },
+  {
+    "objectID": "listings/events/posts/230403_repro-r-workshop/index.html",
+    "href": "listings/events/posts/230403_repro-r-workshop/index.html",
     "title": "Reproducible Research with R Workshop",
     "section": "",
     "text": "The “Reproducible Research with R” workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows the Carpentries lesson “Reproducible Research with R”. Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training."
   },
   {
-    "objectID": "posts/230403_reproducible-research/index.html#links",
-    "href": "posts/230403_reproducible-research/index.html#links",
+    "objectID": "listings/events/posts/230403_repro-r-workshop/index.html#links",
+    "href": "listings/events/posts/230403_repro-r-workshop/index.html#links",
     "title": "Reproducible Research with R Workshop",
     "section": "Links",
     "text": "Links\n\nIntroduction: slides\nOrganisation: slides\nAutomation: lesson and script\nDocumentation: slides and R Markdown document\nDissemination: slides\nWrap-up: slides"
   },
   {
-    "objectID": "posts/230403_reprohack/index.html",
-    "href": "posts/230403_reprohack/index.html",
-    "title": "Urbanism ReproHack",
+    "objectID": "listings/events/posts/230403_repro-challenge/index.html",
+    "href": "listings/events/posts/230403_repro-challenge/index.html",
+    "title": "Reproducibility Challenge",
     "section": "",
-    "text": "Before the ReproHack, a call for papers was launched to select papers and associated (open) data that will be made available to the participants. A selection of papers using R was not a requirement; the use of other (e.g., Python-based) tool sets was also possible. The Urbanism ReproHack lasted 4 hours, in which teams work together to reproduce a paper submitted by the authors. The event was hosted on the ReproHack Hub, where participants could also get further acquainted with the global research community concerned with reproducibility."
+    "text": "In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a peer assessment in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an expert assessment committee consisting of at least three members. The first three entries will be awarded in an online wrap-up event."
   },
   {
-    "objectID": "posts/230403_reprohack/index.html#links",
-    "href": "posts/230403_reprohack/index.html#links",
+    "objectID": "listings/blog/posts/240815-libraries-and-packages/index.html",
+    "href": "listings/blog/posts/240815-libraries-and-packages/index.html",
+    "title": "Libraries & Packages",
+    "section": "",
+    "text": "“BOXES” (CC BY-NC-SA 2.0) by ALA - The American Library Association\n\n\nlibrary() may be in the top most frequently used function calls in R. But what does it do? It makes tidyverse, here, sf and the like available in your code, right? However, this function call is described or perceived as “loading library x”, which is incorrect in two ways.\nFirst, the library() function does not make a “library” but a “package” available in your script. The function is called like that because it pulls a package from a location on your computer called “library”.\nIn fact, your computer may have multiple libraries visible to R in a hierarchical way. For instance, if you work with an active reproducible environment using renv, your code will search for packages called with library() in a local library specific to your project directory. This means that there may be multiple tidyverses or heres or sfs available on your computer. You can see which libraries are available (and searched for) on your computer with .libPaths().\nThe main cause of this confusion is the inconsistent use of the word “library” across languages. For instance, Python, refers to “libraries” in the sense of “packages”. While R’s terminology may contribute to this confusion, it’s still important to maintain precision in language.\nSecond, a package is not loaded but it is attached to a search path. This means that, in addition to being loaded to memory, its functions become available without the need for the :: operator. While this distinction may be less critical for everyday use, it becomes important when developing your own packages. For those interested, more details can be found in R Packages.\nConsistent use of terms is crucial for reducing confusion, especially for beginners. So, use “package” when referring to a piece of software that provides additional functionality, like tidyverse, and reserve “library” for the library() function itself or the directory where packages are stored."
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library\n\n\n\nWorkshops\n\n\nScalability\n\n\n\nExperience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events.html#new-community-gatherings",
+    "href": "events.html#new-community-gatherings",
+    "title": "Events",
+    "section": "",
+    "text": "May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library\n\n\n\nWorkshops\n\n\nScalability\n\n\n\nExperience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events.html#discover-the-community-gatherings",
+    "href": "events.html#discover-the-community-gatherings",
+    "title": "Events",
+    "section": "Discover the community gatherings",
+    "text": "Discover the community gatherings\n\n\n\n\n\n\n\n\n\n\nChallenges\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorkshops\n\n\n\n\n\n\n\n\n\n\n\n\n\nSocial Events\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events.html#recent-community-gatherings",
+    "href": "events.html#recent-community-gatherings",
+    "title": "Events",
+    "section": "Recent community gatherings",
+    "text": "Recent community gatherings\n\n\n\n\n\n\n\n\n\n\nScalable GIS for Urbanists Workshop\n\n\nMay 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library\n\n\n\nWorkshops\n\n\nScalability\n\n\n\nExperience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproducibility Wrap-up Event\n\n\nApr. 10, 2023, 3:00-4:30 PM\n\n\n\nGeneral\n\n\nReproducibility\n\n\n\nA celebratory closing to our first series of events.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproducibility Challenge\n\n\nOct. 26, 2022–Jan. 26, 2023\n\n\n\nChallenges\n\n\nReproducibility\n\n\n\nFind out how reproducible your research is.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUrbanism ReproHack\n\n\nOct. 14, 2022, 1:00–5:00 PM\n\n\n\nHackathons\n\n\nReproducibility\n\n\n\nAttempt to reproduce a published paper.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReproducible Research with R Workshop\n\n\nOct. 10, 2022, 9:00 AM–5:00 PM\n\n\n\nWorkshops\n\n\nReproducibility\n\n\n\nExperience the benefits, principles, and crafts of reproducible research.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "listings/blog/posts/240402-r-vs-qgis/index.html",
+    "href": "listings/blog/posts/240402-r-vs-qgis/index.html",
+    "title": "R vs. QGIS: R wins in match overtime",
+    "section": "",
+    "text": "In our Geospatial Data Carpentry for Urbanism workshops, we often receive the question: why R and not QGIS? Answering this question is not straightforward (both are great), so I’ll try to do it by sharing a personal experience.\nRecently, Daniele Cannatella and I gave a QGIS workshop to around 70 MSc Urbanism students at TU Delft. It did not go well as we had to deal with unforeseen technical issues for most of the workshop. We updated the problematic tutorials after the workshop to make them more accessible and to overcome such issues in the future.\n\nWhile updating the QGIS tutorial, I also tried to reproduce the process in R: in a few lines of code and fewer steps.\n\n# Load packages ----\nlibrary(tidyverse)\nlibrary(sf)\n\n# Read CLC data and EEA grid ----\nclc &lt;- st_read(\"data/CLC2018/CLC2018.shp\")\neea &lt;- st_read(\"data/FRAME_EEA.gpkg\")\n\n# Create new column with Level-1 code ----\nclc &lt;- clc |&gt; \n  mutate(Level1 = str_sub(Code_18, 1, 1))\n\n# Dissolve by Level-1 CLC class ----\n# Slow ~11 minutes\nclc_dissolved &lt;- clc |&gt; \n  group_by(Level1) |&gt; \n  summarise()\n\n# Intersect CLC and EEA grid ----\n# Slow ~15 minutes\nclc_in_grid &lt;- st_intersection(eea, clc_dissolved)\n\nclc_in_grid_area &lt;- clc_in_grid |&gt; \n  mutate(area = st_area(clc_in_grid))\n\n# Create centroids from intersection ----\nclc_in_grid_centroids &lt;- st_centroid(clc_in_grid_area)\n\n# Join dominant CLC classes to original grid ----\nclc_in_grid_final &lt;- eea |&gt; \n  select(geom) |&gt; \n  st_join(clc_in_grid_centroids) |&gt; \n  group_by(CellCode) |&gt; \n  top_n(1, area)\n\n# Visualise the result ----\nggplot(clc_in_grid_final) +\n  geom_sf(aes(fill = Level1))\n\nR felt so much simpler while QGIS felt like this:\n\nThis is not to say that QGIS is worse, but that its point-and-click approach works very differently from R’s code-based approach. As I see it, R takes you to the essence of the problem you want to solve without the distractions of a Graphical User Interface. Yes, it takes more time to learn, but you can get your GIS work done with it while being able to automate, scale and ensure that your workflow is reproducible by others."
+  },
+  {
+    "objectID": "listings/events/posts/230403_repro-hack/index.html",
+    "href": "listings/events/posts/230403_repro-hack/index.html",
+    "title": "Urbanism ReproHack",
+    "section": "",
+    "text": "The Urbanism ReproHack is a hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack include both R- and Python-based workflows. The Urbanism ReproHack is hosted on the ReproHack Hub, where participants can also get further acquainted with the global research community concerned with reproducibility."
+  },
+  {
+    "objectID": "listings/events/posts/230403_repro-hack/index.html#links",
+    "href": "listings/events/posts/230403_repro-hack/index.html#links",
     "title": "Urbanism ReproHack",
     "section": "Links",
     "text": "Links\n\nThe Urbanism ReproHack page on the ReproHack Hub"
   },
   {
-    "objectID": "posts/230403_wrap-up/index.html",
-    "href": "posts/230403_wrap-up/index.html",
-    "title": "Wrap-up Event",
+    "objectID": "listings/events/posts/230403_repro-wrap-up/index.html",
+    "href": "listings/events/posts/230403_repro-wrap-up/index.html",
+    "title": "Reproducibility Wrap-up Event",
     "section": "",
-    "text": "The wrap-up event, open to the wider national and international urbanism research community, will (1) present the principles of reproducibility put forward in this fellowship, (2) announce the results of the challenge, and (3) share a data-informed synthesis of challenges an opportunities of reproducibility emerging from the challenge submissions. The latter is meant to inform the wider community about the learning process.\nAll material produced throughout the four stages of this process will be made openly available on the Rbanism website and will be archived on Zenodo for the long term."
+    "text": "The wrap-up event, open to the wider national and international urbanism research community, will (1) present the lessons learned from the reproducibility stage of the Rbanism project, (2) host an inspirational lecture by Daniel Nüst about reproducibility in the geosciences and (3) announce the winners of the reproducibility challenge."
+  },
+  {
+    "objectID": "listings/events/posts/230403_repro-wrap-up/index.html#links",
+    "href": "listings/events/posts/230403_repro-wrap-up/index.html#links",
+    "title": "Reproducibility Wrap-up Event",
+    "section": "Links",
+    "text": "Links\n\nLessons learned and prizes\nLecture by Daniel Nüst\nRecording"
+  },
+  {
+    "objectID": "resources/text/about/members.html",
+    "href": "resources/text/about/members.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community\n\n\n\n\n\nOur community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals."
+  },
+  {
+    "objectID": "resources/text/about/vi.html",
+    "href": "resources/text/about/vi.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "Our logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research."
+  },
+  {
+    "objectID": "resources/text/about/header.html",
+    "href": "resources/text/about/header.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community was started by the Rbanism fellowship project funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the TU Delft Department of Urbanism, TU Delft Digital Competence Center, TU Delft Library Research Data Services, the TU Delft R Café, Open Science Community Delft and Netherlands eScience Center in our awareness-raising, capacity- and community-building efforts."
+  },
+  {
+    "objectID": "resources/text/index/events.html",
+    "href": "resources/text/index/events.html",
+    "title": "Rbanism",
+    "section": "",
+    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence."
+  },
+  {
+    "objectID": "resources/text/index/header.html",
+    "href": "resources/text/index/header.html",
+    "title": "Rbanism  Community",
+    "section": "",
+    "text": "Rbanism  Community\nOur mission is to build capacity, competence, and confidence for working with data and research software in the urbanism community."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Rbanism is a dynamic community of practice that aims to empower urbanism students, researchers, and practitioners to use open-source software and open science practices to answer urban questions effectively and with confidence. Born from a passionate group of R users from the Department of Urbanism at TU Delft in the Netherlands, Rbanism is on a mission to expand on the international stage."
+  },
+  {
+    "objectID": "about.html#how-we-got-started",
+    "href": "about.html#how-we-got-started",
+    "title": "About",
+    "section": "How we got started",
+    "text": "How we got started\nThe Rbanism community was started by the Rbanism fellowship project funded by the Netherlands eScience Center and with support from the Mainstreaming Open Science Fund of the Open Science Community Delft. We work closely together with the TU Delft Department of Urbanism, TU Delft Digital Competence Center, TU Delft Library Research Data Services, the TU Delft R Café, Open Science Community Delft and Netherlands eScience Center in our awareness-raising, capacity- and community-building efforts."
+  },
+  {
+    "objectID": "about.html#principles-and-goals",
+    "href": "about.html#principles-and-goals",
+    "title": "About",
+    "section": "Principles and goals",
+    "text": "Principles and goals\nThe Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice. The community is initiated by a group of R users in the Department of Urbanism at TU Delft, and it has the ambition to scale up to a larger national and international Rbanism community.\nOur mission is to build and sustain digital competence and skills for reproducibility, automation and scalability, in the urbanism research and education community. We cultivate scientific computing, data science, computational thinking and software management skills, through peer exchange in a growing network. To that end, our activities include workshops, many of which are carried out as part of the Carpentries, hackathons and challenges, as well as various community gatherings. We organise both offline and online events to ensure the exchange of knowledge and experiences with our international community members. These various forms of engagement follow our commitment to inclusion and accessibility."
+  },
+  {
+    "objectID": "about.html#why-reproducibility-automation-and-scalability",
+    "href": "about.html#why-reproducibility-automation-and-scalability",
+    "title": "About",
+    "section": "Why reproducibility, automation and scalability?",
+    "text": "Why reproducibility, automation and scalability?\n\nReproducibility: Reproducibility is essential for result validation in urban research. By using the R programming language, it is possible to create a working environment where analysis results, models, and data processing can be easily reproduced by others or in the future. This is achieved by organizing and documenting source code, datasets used, and procedures adopted, enabling others to understand, verify, and replicate the same steps to obtain consistent results.\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\nAutomation: Automation allows for the automation of complex and repetitive processes in urban research. By using the R programming language, researchers can develop scripts and programs that automate data processing, visualization creation, and report generation. This saves valuable time for researchers and reduces human errors, improving overall research efficiency.\n\n\n\nlesson\n\n\n\nScalability: Scalability is crucial for addressing complex urban challenges that require processing large amounts of data. The R programming language provides tools and packages that allow for working with large datasets, distributing processing across computer clusters, and optimizing analysis performance. This enables researchers to tackle larger-scale challenges and achieve fast and efficient results in urban research.\n\n\n\nIntroduction: slides\n\n\n\n\nOverall, automation, reproducibility, and scalability, facilitated by digital skills like the R programming language, offer a range of benefits to urban research. Automation speeds up processes and reduces errors, reproducibility ensures result validity, and scalability allows for addressing complex challenges. The use of R as a programming language provides powerful tools to implement these key functionalities, improving the efficiency and accuracy of urban research and opening new opportunities for analysis and discovery."
+  },
+  {
+    "objectID": "about.html#members",
+    "href": "about.html#members",
+    "title": "About",
+    "section": "Members",
+    "text": "Members\nWhile Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice\n\n\nJoin the community\n\n\n\n\n\nOur community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals."
+  },
+  {
+    "objectID": "about.html#core-members",
+    "href": "about.html#core-members",
+    "title": "About",
+    "section": "Core Members",
+    "text": "Core Members\n\n\n\n\n\n\n\n\n\n\nClaudiu Forgaci\n\n\nAssistant Professor, TU Delft\n\n\nI am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.\n\n\n\n\n\n\n\n\n\n\n\n\n\nClémentine Cottineau\n\n\nPhD in Geography\n\n\nI am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDaniele Cannatella\n\n\nAssistant Professor, TU Delft\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit tincidunt mattis. Nulla vel eros rutrum, aliquet orci sit amet, mattis nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis gravida, leo ac placerat hendrerit, ante elit mollis lorem.\n\n\n\n\n\n\n\n\n\n\n\n\n\nDimitris Mantas\n\n\nStudent Assistant, TU Delft\n\n\nI am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html#visual-identity",
+    "href": "about.html#visual-identity",
+    "title": "About",
+    "section": "Visual Identity",
+    "text": "Visual Identity\n\n\n\n\n\n\nOur logo is the cornerstone of our identity, the primary visual element that defines and represents us. It serves as the essence of our community, Rbanism, which consists of dedicated urbanist researchers. We deliberately chose a generative logo to symbolize the dynamic nature of our field and the continuous innovation that defines our community. It reflects the ever-evolving landscape of urbanism and mirrors our commitment to fostering connections among our members through a diverse range of planned events. Moreover, the choice of a generative logo aligns with the individuality and diverse approaches within our community. Each member brings their unique perspective and utilizes the power of the R programming language, as well as other cutting-edge digital technologies, to enhance urban research. Our logo serves as a visual representation of this shared spirit of exploration and the synergies created through the fusion of expertise. In summary, our logo stands as the vital visual emblem that encapsulates the essence of Rbanism - a dynamic community of urbanist researchers continuously pushing the boundaries of knowledge and leveraging digital tools to enrich urban research.\n\n\nDONWLOAD DISCOVER MORE"
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "This is a curated and evolving list of resources on the topics of reproducibility, automation and scalability for urbanism researchers. The list includes both resources created during the Rbanism project and other resources that are relevant for urbanism research. Although R-based resources are predominant, other (e.g., Python-based) approaches are also included."
+    "text": "slides\n\n\n\n\n\nslides\n\n\n\n\n\nlesson\nscript\n\n\n\n\n\nslides\nR Markdown document\n\n\n\n\n\nslides\n\n\n\n\n\nslides\n\n\n\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nBuilding reproducible analytical pipelines with R - This is an excellent book written by Bruno Rodrigues a practicing data scientist who is an advocate of software engineering in the field of data science. The book provides an in-depth overview of the tools, practices and techniques for reproducible analytical pipelines (RAPs). The book does not teach R programming basics, nor does it cover statistics and visualisation. The language is accessible and non-academic, with multiple references to the pains encounters by data science practitioners due to the lack of reproducibility.\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\n\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science\nReproducible Graduate Theses in GIScience"
   },
   {
     "objectID": "resources.html#reproducibility",
     "href": "resources.html#reproducibility",
     "title": "Resources",
-    "section": "Reproducibility",
-    "text": "Reproducibility\n\nReproducible Research with R for Urbanists workshop\n\nIntroduction\n\nslides\n\n\n\nOrganisation\n\nslides\n\n\n\nAutomation\n\nlesson\nscript\n\n\n\nDocumentation\n\nslides\nR Markdown document\n\n\n\nDissemination\n\nslides\n\n\n\nWrap-up\n\nslides\n\n\n\n\nGeneral resources on reproducibility\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\nFor R users\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nBuilding reproducible analytical pipelines with R - This is an excellent book written by Bruno Rodrigues a practicing data scientist who is an advocate of software engineering in the field of data science. The book provides an in-depth overview of the tools, practices and techniques for reproducible analytical pipelines (RAPs). The book does not teach R programming basics, nor does it cover statistics and visualisation. The language is accessible and non-academic, with multiple references to the pains encounters by data science practitioners due to the lack of reproducibility.\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\nFrom urbanism research\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science\nReproducible Graduate Theses in GIScience"
-  },
-  {
-    "objectID": "events/230403_wrap-up/index.html",
-    "href": "events/230403_wrap-up/index.html",
-    "title": "Wrap-up Event",
     "section": "",
-    "text": "The wrap-up event, open to the wider national and international urbanism research community, will (1) present the lessons learned from the reproducibility stage of the Rbanism project, (2) host an inspirational lecture by Daniel Nüst about reproducibility in the geosciences and (3) announce the winners of the reproducibility challenge."
-  },
-  {
-    "objectID": "events/230403_reprohack/index.html",
-    "href": "events/230403_reprohack/index.html",
-    "title": "Urbanism ReproHack",
-    "section": "",
-    "text": "The Urbanism ReproHack is a hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack include both R- and Python-based workflows. The Urbanism ReproHack is hosted on the ReproHack Hub, where participants can also get further acquainted with the global research community concerned with reproducibility."
-  },
-  {
-    "objectID": "events/230403_reprohack/index.html#links",
-    "href": "events/230403_reprohack/index.html#links",
-    "title": "Urbanism ReproHack",
-    "section": "Links",
-    "text": "Links\n\nThe Urbanism ReproHack page on the ReproHack Hub"
-  },
-  {
-    "objectID": "events/230403_reproducible-research/index.html",
-    "href": "events/230403_reproducible-research/index.html",
-    "title": "Reproducible Research with R Workshop",
-    "section": "",
-    "text": "The “Reproducible Research with R” workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows the Carpentries lesson “Reproducible Research with R”. Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training."
-  },
-  {
-    "objectID": "events/230403_reproducible-research/index.html#links",
-    "href": "events/230403_reproducible-research/index.html#links",
-    "title": "Reproducible Research with R Workshop",
-    "section": "Links",
-    "text": "Links\n\nIntroduction: slides\nOrganisation: slides\nAutomation: lesson and script\nDocumentation: slides and R Markdown document\nDissemination: slides\nWrap-up: slides"
-  },
-  {
-    "objectID": "events/230403_challenge/index.html",
-    "href": "events/230403_challenge/index.html",
-    "title": "Challenge",
-    "section": "",
-    "text": "In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a peer assessment in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an expert assessment committee consisting of at least three members. The first three entries will be awarded in an online wrap-up event."
-  },
-  {
-    "objectID": "index.html#events",
-    "href": "index.html#events",
-    "title": "Rbanism: Empowering the urbanism research community to use research software effectively and with confidence",
-    "section": "Events",
-    "text": "Events\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Categories\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nScalable GIS for Urbanists Workshop\n\n\nMay 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library\n\n\n\n\nWorkshops\n\n\nScalability\n\n\n\n\nExperience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research.\n\n\n\n\n\n\nMay 22, 2023\n\n\nThe Rbanism Content Team\n\n\n\n\n\n\n  \n\n\n\n\nReproducibility Wrap-up Event\n\n\nApr. 10, 2023, 3:00-4:30 PM\n\n\n\n\nGeneral\n\n\nReproducibility\n\n\n\n\nA celebratory closing to our first series of events.\n\n\n\n\n\n\nMar 4, 2023\n\n\nThe Rbanism Content Team\n\n\n\n\n\n\n  \n\n\n\n\nReproducibility Challenge\n\n\nOct. 26, 2022–Jan. 26, 2023\n\n\n\n\nChallenges\n\n\nReproducibility\n\n\n\n\nFind out how reproducible your research is.\n\n\n\n\n\n\nMar 3, 2023\n\n\nThe Rbanism Content Team\n\n\n\n\n\n\n  \n\n\n\n\nUrbanism ReproHack\n\n\nOct. 14, 2022, 1:00–5:00 PM\n\n\n\n\nHackathons\n\n\nReproducibility\n\n\n\n\nAttempt to reproduce a published paper.\n\n\n\n\n\n\nMar 2, 2023\n\n\nThe Rbanism Content Team\n\n\n\n\n\n\n  \n\n\n\n\nReproducible Research with R Workshop\n\n\nOct. 10, 2022, 9:00 AM–5:00 PM\n\n\n\n\nWorkshops\n\n\nReproducibility\n\n\n\n\nExperience the benefits, principles, and crafts of reproducible research.\n\n\n\n\n\n\nMar 1, 2023\n\n\nThe Rbanism Content Team\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#join-the-communtiy",
-    "href": "index.html#join-the-communtiy",
-    "title": "Rbanism: Empowering the urbanism research community to use research software effectively and with confidence",
-    "section": "Join the communtiy",
-    "text": "Join the communtiy\nSign up to join the Rbanism community and stay up to date with our events, activities and resources.\nPlease note that we expect all members of the community to follow our Code of Conduct."
-  },
-  {
-    "objectID": "code-of-conduct.html",
-    "href": "code-of-conduct.html",
-    "title": "Rbanism",
-    "section": "",
-    "text": "The Rbanism community aims to empower urbanism researchers, students, educators and practitioners to use open-source software and related open-science practices effectively and with confidence. It raises awareness, stimulates engagement and builds capacity by demonstrating the benefits of reproducibility, automation and scalability for urbanism research, education and practice.\nThe purpose of this Code of Conduct (CoC) is to enable an environment in which diverse individuals can collaborate and interact in mutual respect. We recognize a shared responsibility to create and maintain that environment for the benefit of all. Some behaviors, therefore, are specifically prohibited:\n\nDiscriminating, racist, intimidating, harassing, lewd, demeaning, bullying, stalking, or threatening speech or actions\nAny real or implied threat of physical harm\nUnwelcome sexual attention\nUnwelcome physical contact\nSustained disruption of speakers or events (verbally or physically)\nRetaliation against an individual for reporting harassment or other unacceptable behaviors\nRetaliation against an individual for participating in the investigation of a report of harassment or other unacceptable behaviors\nAdvocating or encouraging any of the above behaviors\nFalsely reporting harassment or other unacceptable behaviors.\n\nCritical examination of beliefs and viewpoints does not, by itself, constitute hostile conduct or harassment. Similarly, use of sexual imagery or language in the context of a professional discussion might not constitute hostile conduct or harassment if necessary to the topic of discussion.\n\n\nIf someone makes you or anyone else feel unsafe or unwelcome, or if you believe a harassment problem exists, please report it as soon as possible to the enforcer of this Code of Conduct, Claudiu Forgaci, either in person or electronically (with the option to remain anonymous). If the person you should report to is the target of the complaint, you may contact the TU Delft External Confidential Advisor. The target of the complaint will not be involved in handling or resolving the incident. Every code of conduct violation report will be treated with seriousness and care.\n\n\n\nParticipants who are asked to stop any unacceptable behavior are expected to comply immediately. Community Coordinator(s) and event organizers retain the right to take appropriate actions, including: (i) mediation between complainant and alleged perpetrator(s), to reach an amicable resolution; (ii) issue a verbal warning; (iii) expel the offender(s) from the event (particularly if a participant’s immediate safety is threatened); and/or, (iv) exp the offender(s) from the Rbanism community. Community Coordinator(s) and event organizers will also discuss with the complainant whether they wish to contact the confidential advisor(s) at the affiliated University. The alleged perpetrator(s) will be notified of a complaint as soon as possible, and be given a chance to respond to the complaint."
-  },
-  {
-    "objectID": "events/230522_scalegis-workshop/index.html",
-    "href": "events/230522_scalegis-workshop/index.html",
-    "title": "Scalable GIS for Urbanists Workshop",
-    "section": "",
-    "text": "Scalable GIS for Urbanists aims to introduce the infrastructure and workflows of large-scale GIS applications relevant for urbanism research. After a presentation of Big Geodata Science and a discussion on how it relates to urbanism research, the workshop will showcase two large-scale GIS applications in a tutorial format, namely a demonstration of the Remote-Sensing Deployable Analysis environmenT (RS-DAT) and a tutorial on how to run a scaled-up analysis with the Netherlands-wide 3D BAG dataset. Overall, the focus will be on challenges specific to the field of urbanism that cannot be solved with current approaches involving GUI-based software and data loaded in memory. The input will be given by representatives of the Centre of Expertise in Big Geodata Science (Faculty ITC, University of Twente), Netherlands eScience Center, and the 3D Geoinformation group from Delft Univeristy of Technology. Based on the knowledge gained from the introduction and the showcased projects, participants will learn to assemble a scaled-up workflow starting from a given case of small-scale GIS analysis.\nParticipants must have access to a computer with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.\nScalable GIS for Urbanists is open to all researchers in the Netherlands from the field of urbanism and related fields, including urban design, spatial planning, landscape architecture, and urban studies. You don’t need to have any previous knowledge of the tools that will be presented at the workshop.\nThis workshop is organised by TU Delft, Faculty of Architecture and the Built Environment, Department of Urbanism, in collaboration with the TU Delft Library, and it is part of the Netherlands eScience Center fellowship project Rbanism, targeting digital competence in the urbanism research community."
-  },
-  {
-    "objectID": "events/230522_scalegis-workshop/index.html#links",
-    "href": "events/230522_scalegis-workshop/index.html#links",
-    "title": "Scalable GIS for Urbanists Workshop",
-    "section": "Links",
-    "text": "Links\n\nWorkshop program: link\nIntroduction: slides\nIntroduction to Big Geodata Insfrastricture, by Serkan Girgin: slides\nSURF infrastructure, by Natalie Danezi: slides\nTutorial 1 - Scaling up the analysis of urban form, by Lukas Beuster: repository\nTutorial 2 - Scaled-up network analysis using the RS DAT framework, by Francesco Nattino & Ou Ku: repository\nScale-up exercise in groups: assignments\nWrap-up: slides"
-  },
-  {
-    "objectID": "events/230403_repro-challenge/index.html",
-    "href": "events/230403_repro-challenge/index.html",
-    "title": "Reproducibility Challenge",
-    "section": "",
-    "text": "In this last part of the Reproducibility event series, individuals or teams can submit entries with their own reproducible research, together with a narrative self-assessment of the level of reproducibility and challenges involved. A two-tiered assessment process is used to evaluate and rank the submissions: (1) a peer assessment in which participants evaluate two other submissions following a reproducibility checklist and evaluating the narrative self-assessment qualitatively; (2) after the entries have been ranked based on peer assessment, the top 10 entries are evaluated in depth by an expert assessment committee consisting of at least three members. The first three entries will be awarded in an online wrap-up event."
-  },
-  {
-    "objectID": "events/230403_repro-hack/index.html",
-    "href": "events/230403_repro-hack/index.html",
-    "title": "Urbanism ReproHack",
-    "section": "",
-    "text": "The Urbanism ReproHack is a hands-on event in which participants work in teams to reproduce a set of published papers and associated (open) data submitted by authors. The papers submitted for the Urbanism ReproHack include both R- and Python-based workflows. The Urbanism ReproHack is hosted on the ReproHack Hub, where participants can also get further acquainted with the global research community concerned with reproducibility."
-  },
-  {
-    "objectID": "events/230403_repro-hack/index.html#links",
-    "href": "events/230403_repro-hack/index.html#links",
-    "title": "Urbanism ReproHack",
-    "section": "Links",
-    "text": "Links\n\nThe Urbanism ReproHack page on the ReproHack Hub"
-  },
-  {
-    "objectID": "events/230403_repro-r-workshop/index.html",
-    "href": "events/230403_repro-r-workshop/index.html",
-    "title": "Reproducible Research with R Workshop",
-    "section": "",
-    "text": "The “Reproducible Research with R” workshop is meant to introduce the urbanism research community to the benefits, principles and craft of reproducible research. The workshop follows the Carpentries lesson “Reproducible Research with R”. Basic knowledge of R or other tools such as Python or the Shell is recommended for this workshop. Participants who previously followed a Data or Software Carpentry workshop, will have the required skills and knowledge. However, less experienced users are also welcome, as the workshop emphasizes the principles of reproducibility and can provide pointers for follow-up skills training."
-  },
-  {
-    "objectID": "events/230403_repro-r-workshop/index.html#links",
-    "href": "events/230403_repro-r-workshop/index.html#links",
-    "title": "Reproducible Research with R Workshop",
-    "section": "Links",
-    "text": "Links\n\nIntroduction: slides\nOrganisation: slides\nAutomation: lesson and script\nDocumentation: slides and R Markdown document\nDissemination: slides\nWrap-up: slides"
-  },
-  {
-    "objectID": "events/230403_repro-wrap-up/index.html",
-    "href": "events/230403_repro-wrap-up/index.html",
-    "title": "Reproducibility Wrap-up Event",
-    "section": "",
-    "text": "The wrap-up event, open to the wider national and international urbanism research community, will (1) present the lessons learned from the reproducibility stage of the Rbanism project, (2) host an inspirational lecture by Daniel Nüst about reproducibility in the geosciences and (3) announce the winners of the reproducibility challenge."
-  },
-  {
-    "objectID": "events/230403_repro-wrap-up/index.html#links",
-    "href": "events/230403_repro-wrap-up/index.html#links",
-    "title": "Reproducibility Wrap-up Event",
-    "section": "Links",
-    "text": "Links\n\nLessons learned and prizes\nLecture by Daniel Nüst\nRecording"
+    "text": "slides\n\n\n\n\n\nslides\n\n\n\n\n\nlesson\nscript\n\n\n\n\n\nslides\nR Markdown document\n\n\n\n\n\nslides\n\n\n\n\n\nslides\n\n\n\n\n\n\nThe Turing Way handbook to reproducible, ethical and collaborative data science - Guide for Reproducible Research\n\n\n\n\nR Workflow\nReproducible Research Data and Project Management in R\nThe holepunch package\nrrtools: Tools for Writing Reproducible Research in R\nBuilding reproducible analytical pipelines with R - This is an excellent book written by Bruno Rodrigues a practicing data scientist who is an advocate of software engineering in the field of data science. The book provides an in-depth overview of the tools, practices and techniques for reproducible analytical pipelines (RAPs). The book does not teach R programming basics, nor does it cover statistics and visualisation. The language is accessible and non-academic, with multiple references to the pains encounters by data science practitioners due to the lack of reproducibility.\nGetting started with R Markdown (episode part of the R for Social Scientists Data Carpentry curriculum) - 1 hour\n\n\n\n\n\n\nGIS and Computational Notebooks\nEvolution of Urban Patterns: Urban Morphology as an Open Reproducible Data Science\nReproducible Graduate Theses in GIScience"
   },
   {
     "objectID": "resources.html#scalability",

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211 136">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #00a99d;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        opacity: .7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 15px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        stroke: #fbb03b;
+      }
+    </style>
+  </defs>
+  <g id="Livello_3" data-name="Livello 3">
+    <g>
+      <polyline class="cls-2" points="203.5 128.5 166.5 107.5 45.5 107.5 7.5 128.5"/>
+      <line class="cls-2" x1="7.5" y1="128.5" x2="203.5" y2="128.5"/>
+      <circle class="cls-3" cx="7.5" cy="128.5" r="4.5"/>
+      <circle class="cls-3" cx="203.5" cy="128.5" r="4.5"/>
+      <circle class="cls-3" cx="166.5" cy="107.5" r="4.5"/>
+      <circle class="cls-3" cx="45.5" cy="107.5" r="4.5"/>
+      <polygon class="cls-1" points="24.5 7.5 104.5 75.5 184.5 7.5 104.5 30.5 24.5 7.5"/>
+      <line class="cls-1" x1="104.5" y1="30.5" x2="104.5" y2="74.5"/>
+      <circle class="cls-3" cx="184.5" cy="7.5" r="4.5"/>
+      <circle class="cls-3" cx="25.5" cy="7.5" r="4.5"/>
+      <circle class="cls-3" cx="104.5" cy="30.5" r="4.5"/>
+      <circle class="cls-3" cx="104.5" cy="71.5" r="4.5"/>
+    </g>
+  </g>
+</svg>

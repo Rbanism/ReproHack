@@ -1,0 +1,6 @@
+---
+title: Reproducibility
+description: Adopt transparent urban analytical practices to enable accountability, sharing and knowledge transfer.
+date: 1/1/1970
+image: ../../../../assets/icons/benefits/reproducibility.svg
+---

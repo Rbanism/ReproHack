@@ -1,0 +1,7 @@
+---
+title: Dimitris Mantas
+subtitle: Student Assistant, TU Delft
+description: I am deeply interested in artificial intelligence, computer vision and operational research applications in numerous sub-disciplines within the broad field of civil engineering.
+date: 4/1/1970
+image: ../../../../assets/imgs/about/team/dimitris.jpg
+---

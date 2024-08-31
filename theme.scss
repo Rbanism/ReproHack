@@ -1,0 +1,599 @@
+/*-- scss:defaults --*/
+// Name
+$theme: "Rbanism" !default;
+
+
+// Color Palette
+$gray       : #DEE2E6 !default;
+$orange     : #F9A94B !default;
+$plum       : #93278F !default;
+$teal       : #00A99D !default;
+$dark-purple: #16205F !default;
+
+$font-color: $dark-purple;
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif !default;
+$font-family-monospace : 'Fira Code' , monospace  !default;
+
+$h1-font-size: 2.5em !default;
+$h2-font-size: 2.0em !default;
+$h3-font-size: 1.5em !default;
+$h4-font-size: 1.0em !default;
+$h5-font-size: 1.0em !default;
+
+$paragraph-font-size : 1.5em !default;
+$event-description-font-size : 1em !default;
+$button-font-size : 1em !default;
+
+$bold-font-weight     : 700 !default;
+$semi-bold-font-weight: 600 !default;
+
+$elem-to-bord-padding: 3.5rem !default;
+$elem-to-elem-padding: 2.0rem !default;
+
+
+// Navigation
+$navbar-bg: white !default;
+
+
+/*-- scss:rules --*/
+///////////////////////////////////////////////////////////////////////////////
+// Global
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Buttons
+///////////////////////////////////////////////////////////////////////////////
+
+.empty-button {
+  background-color: white;
+  background-image:url("assets/icons/button/arrow_cl.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: 1px solid $plum;
+  border-radius: 8px;
+  color:$plum;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+.empty-button:hover {
+  border: 1px solid $orange;
+  color: $orange;
+}
+
+a.empty-button {
+  background-color: white;
+  background-image:url("assets/icons/button/arrow_cl.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: 1px solid $plum;
+  border-radius: 8px;
+  color:$plum;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+a.empty-button:hover {
+  border: 1px solid $orange;
+  color: $orange;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Text
+///////////////////////////////////////////////////////////////////////////////
+*, a, .a, a:hover, {
+  color: $font-color;
+}
+
+h1, .h1 {
+  font-weight: $bold-font-weight;
+}
+
+h2, .h2, h3, .h3, h4, .h4 {
+  border-bottom: none;
+  font-weight: $semi-bold-font-weight;
+}
+
+p, .p {
+  font-family: $font-family-monospace;
+}
+#quarto-document-content  ul {
+	font-family: $font-family-monospace;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Navigation Bar
+///////////////////////////////////////////////////////////////////////////////
+
+// Bottom Border
+.navbar{
+  border-bottom: 1px solid $gray;
+}
+
+// 
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-logo {
+  max-height: $h2-font-size;
+}
+
+// Button
+#navbarCollapse > ul.navbar-nav.navbar-nav-scroll.ms-auto > li > a {
+  background-color: white;
+  background-image: url("assets/icons/button/arrow_cl.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: 1px solid $plum;
+  border-radius: 8px;
+  color:$plum;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:40px;
+  text-decoration: none;
+}
+
+#navbarCollapse > ul.navbar-nav.navbar-nav-scroll.ms-auto > li > a:link {
+  color: $plum;
+}
+
+#navbarCollapse > ul.navbar-nav.navbar-nav-scroll.ms-auto > li > a:hover {
+  border: 1px solid $orange;
+  color: $orange;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// GLOBAL RULES
+///////////////////////////////////////////////////////////////////////////////
+
+.navbar-title {
+  font-family: $font-family-sans-serif;
+  font-weight: $bold-font-weight;
+}
+
+// Cards
+.card {
+    background-color: transparent;
+}
+
+.quarto-grid-item p.card-img-top > img {
+    object-fit:scale-down;
+}
+
+.quarto-grid-item .card-title {
+  font-size: $h3-font-size;
+  font-weight: $semi-bold-font-weight;
+}
+
+.quarto-grid-item .card-text {
+  font-size: 1em;
+  font-family: $font-family-monospace;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Index
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// Header
+///////////////////////////////////////////////////////////////////////////////
+// Set the title accent color.
+#index-header-community {
+	color: $orange;
+}
+
+// Space the button below the paragraph.
+#rbanism-community .quarto-layout-cell figure, .quarto-layout-cell>p {
+	margin-bottom: 2em;
+}
+
+// Align the button with the paragraph.
+#rbanism-community > a {
+	margin:0.2em;
+}
+
+.quarto-layout-panel {
+  margin-bottom: $elem-to-bord-padding;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Actions
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#actions {
+  background: $orange;
+  pointer-events: none;
+}
+
+#actions h2 {
+  padding-left: 0.1em;
+  padding-top: 1em;
+  color: white;
+}
+
+#events h2 {
+  padding-left: 0.1em;
+  padding-top: 1em;
+  color: white;
+}
+
+#actions #listing-actions {
+  padding-top: 1em;
+  padding-bottom: $elem-to-bord-padding;
+}
+
+#actions .quarto-grid-item .card-title {
+  color: $white;
+}
+
+#actions .card-body {
+  // Overwrite Quarto defaults.
+  padding: 0em;
+  padding-top: $elem-to-elem-padding;
+}
+
+#actions .quarto-grid-item .card-title {
+  margin-bottom: 0em;
+}
+
+
+
+
+
+
+
+
+// Benefits
+#we-build-digital-competence-and-skills-for {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  #actions > h2 {
+    color: white;
+    width: 40%;
+  }
+  #benefits > h2 {
+    width: 40%;
+  }
+  #events > h2 {
+    width: 40%;
+  }
+}
+
+#benefits .card-title {
+  color: $dark-purple;
+}
+
+#we-build-digital-competence-and-skills-for > h2 {
+  width: 40%;
+}
+
+.card-text:last-child {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.card-img, .card-img-top {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+//.img-fluid {
+//  padding-top: 0em;
+//}
+
+//#we-want-to-build-digital-competence-and-skills-for div.quarto-post .thumbnail {
+//  flex-basis: 128px;
+//}
+//
+//#we-want-to-build-digital-competence-and-skills-for div.quarto-post .thumbnail img {
+//  object-fit: scale-down;
+//}
+//
+//#we-want-to-build-digital-competence-and-skills-for div.quarto-post {
+//  border-bottom: 0;
+//}
+
+
+
+
+// Community Gatherings
+#events {
+  background:$plum;
+}
+
+#events * {
+  color: $white;
+}
+
+#community-gatherings .card-body {
+  // Overwrite Quarto defaults.
+  padding: 0em;
+  padding-top: 1rem;
+}
+
+// Partners
+#partners {
+  background: $teal;
+}
+
+#partners * {
+  color: $white;
+}
+
+#partners p {
+  font-family: $font-family-sans-serif;
+  font-size: $h2-font-size;
+  font-weight: $bold-font-weight;
+}
+
+.thumbnail-image .card-image {
+  padding: 0em;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// About
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Header
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#title-block-header > div.quarto-title-banner.page-columns.page-full > div > h1 {
+	text-align:center;
+	color:white;
+}
+
+.quarto-title-block .quarto-title-banner {
+  background-blend-mode: overlay;
+}
+.quarto-title-banner{
+  background-color: #00000033;
+}
+
+#title-block-header > div.quarto-title-banner.page-columns.page-full > div > p {
+	text-align:center;
+	color:white;
+}
+#title-block-header > div.quarto-title-banner.page-columns.page-full:after {
+	background: rgba(204, 0, 255, 0.7);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Pillars
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#why-reproducibility-automation-and-scalability > ol {
+	padding-left: 1.1rem;
+}
+
+.pillar-link-item::marker, .member-registration-form-list-item::marker {
+  font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+  content: "> ";
+
+}
+
+.pillar-link-item p, .member-registration-form-list-item   {
+  font-family: Montserrat;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Members
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#members > ul > li > a {
+	text-decoration:none;
+}
+
+#members > div {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#members > div > div {
+  width:66.67%;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size:$h3-font-size;
+  font-weight: $semi-bold-font-weight;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Visual Identity
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#visual-identity > div:nth-child(2) > div > div:nth-child(1) {
+	flex-basis:66.67% !important; 
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) {
+	flex-basis:33.33% !important; 
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) > p > a:nth-child(1){
+	display:block;
+	margin-bottom:1rem;
+}
+#visual-identity > div:nth-child(2) > div > div:nth-child(2) > p > a:nth-child(2){
+	display:block;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Events
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// TODO - Delete the empty division on the right end of the event cards.
+
+// Cards
+div.quarto-post .thumbnail {
+    flex-basis: fit-content;
+}
+
+div.quarto-post .thumbnail img {
+    object-fit: scale-down;
+}
+div.quarto-post{
+  border-bottom: none;
+}
+
+
+div.quarto-post .listing-categories{
+  pointer-events: none;
+}
+
+@media (max-width: 767.98px){.quarto-post.image-right, .quarto-post.image-left {
+    gap: 0em;
+    flex-direction: column-reverse;
+}}
+
+// Categories
+div.quarto-post .listing-categories .listing-category[onclick="window.quartoListingCategory('Challenges'); return false;"]{
+  color:$orange;
+  border-color: $orange;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick="window.quartoListingCategory('Workshops'); return false;"]{
+  color:$green;
+  border-color: $green;
+}
+
+div.quarto-post .listing-categories .listing-category[onclick="window.quartoListingCategory('Social Events'); return false;"]{
+  color:$plum;
+  border-color: $plum;
+}
+
+.quarto-title .quarto-categories .quarto-category {
+    padding: .25em .75em;
+    font-size: .65em;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: .25rem;
+    opacity: .6;
+      color:$plum;
+  border-color: $plum;
+}
+#title-block-header > div.quarto-title > p{
+  font-family: $font-family-sans-serif;
+}
+
+#title-block-header > div:nth-child(2) > div{
+  font-family: $font-family-monospace;
+}
+#title-block-header > div.quarto-title-meta > div:nth-child(1) > div.quarto-title-meta-contents>p{
+  font-family: $font-family-sans-serif;
+}
+#title-block-header > div.quarto-title-meta > div:nth-child(2) > div.quarto-title-meta-contents > p{
+  font-family: $font-family-sans-serif;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Contact
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Resources
+
+#TOC{
+  font-family: $font-family-monospace;
+  border: none;
+  //border-radius: 8px;
+  //box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#toc-title{
+  display: none;
+}
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid $orange;
+}
+.sidebar nav[role=doc-toc]>ul a {
+    border-left: 1px solid $teal;
+}
+
+//
+//
+//footer, p {
+//  font-family: $font-family-monospace;
+//  font-size: $paragraph-font-size;
+//}
+//
+//// Buttons
+
+//
+
+//
+//// Footer
+//// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+//.nav-footer {
+//  text-align: left;
+//}
+//
+//// FIXME - TEXT JUSTIFICATION IS NOT WORKING.
+//// Add a top border to the copyright disclaimer.
+//.nav-footer {
+//  border-top: 1px solid $gray;
+//  display: block;
+//}
+//.nav-footer-left span:last-of-type {
+//  border-top: 1px solid $gray;
+//  display: block;
+//}
+//
+////-------------------------------------------------------------------------------------------------------------------
+//
+
+//
+//#core-members {
+//  pointer-events: none;
+//}
+//#core-members .card * {
+//  background-color: white;
+//}
+//#core-members .card-body * {
+//  color:black;
+//}
+//#core-members .card-subtitle.listing-subtitle {
+//  font-family: $font-family-monospace;
+//}
+//#core-members .g-col-1{
+//  box-shadow: 5px 5px 5px $gray;
+//}
+//
+//
+////-------------------------------------------------------------------------------------------------------------------
+
+
+.filled-button {
+  background-color: $plum;
+  background-image:url("assets/icons/button/arrow_wh.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size:$button-font-size auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px black;
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+.filled-button:hover {
+  border:none;
+  box-shadow: inset 0px 0px 5px black;
+}

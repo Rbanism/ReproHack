@@ -1,0 +1,7 @@
+---
+title: Claudiu Forgaci
+subtitle: Assistant Professor, TU Delft
+description: I am an architect and urbanist, currently engaged in understanding how spatial urbanisation patterns, at multiple scales, are related to urban resilience. In my research and practice, I combine urban design and planning, landscape architecture and architecture in a multi-scalar and social-ecological approach to urbanism.
+date: 1/1/1970
+image: ../../../../assets/imgs/about/team/claudiu.jpg
+---

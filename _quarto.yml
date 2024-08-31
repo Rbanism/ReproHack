@@ -1,22 +1,48 @@
+format:
+  html:
+    theme: theme.scss
+  
+link-external-newwindow: true
+
 project:
   type: website
   output-dir: docs
-
+  preview:
+    port: 4200
+    browser: true
+  
 website:
   title: "Rbanism"
   navbar:
-    background: primary
+    logo: assets/icons/rbanism.png
     left:
-      - href: index.qmd
-        text: Home
-      - resources.qmd
       - about.qmd
-
-format:
-  html:
-    theme: yeti
-    css: styles.css
-    toc: true
-
-link-external-newwindow: true
-
+      - resources.qmd
+      - events.qmd
+      - blog.qmd
+      - contact.qmd
+    right:
+      - registration.qmd
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "🚀 Welcome to our redesigned website! Please bear with us while 
+              we take care of the final touches!"
+    type: primary
+    position: below-navbar
+  search: false
+  page-footer:
+    center: 
+      - text: "2024 Copyright © Rbanism"
+    right:
+      - icon: mail
+        href: mailto:rbanism@tudelft.nl
+      - icon: github
+        href: https://github.com/Rbanism
+      - icon: linkedin
+        href: https://www.linkedin.com/company/rbanism
+      - icon: instagram
+        href: https://www.instagram.com/rbanism
+      - icon: youtube
+        href: https://www.youtube.com/@Rbanism
+        

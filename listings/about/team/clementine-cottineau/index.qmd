@@ -1,0 +1,7 @@
+---
+title: Clémentine Cottineau
+subtitle: "PhD in Geography"
+description: I am interested in the patterns, causes and consequences of inequality in cities. As a teacher, trainer and supervisor, I am a strong advocate of critical thinking, collaborative and hands-on practice , as well as the use of open source data and softwares.
+date: 2/1/1970
+image: ../../../../assets/imgs/about/team/clementine.jpg
+---

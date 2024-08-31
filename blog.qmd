@@ -1,0 +1,28 @@
+---
+title: "Blog"
+listing:
+  - id: blog
+    contents: listings/blog/posts
+    fields: [date, author, title, subtitle, description, image, categories]
+    type: default
+    page-size: 10
+    sort: "date desc"
+    image-height: 128px
+    grid-item-border: false
+---
+<!-- {{< include utils/events/_events_category_listings.qmd >}} -->
+
+<!-- ## Latest posts -->
+
+<!-- ::: {#blog_latest} -->
+<!-- ::: -->
+
+<!-- ## Categories -->
+
+<!-- ::: {#blog_categs} -->
+<!-- ::: -->
+
+<!-- ## Posts -->
+
+::: {#blog}
+:::

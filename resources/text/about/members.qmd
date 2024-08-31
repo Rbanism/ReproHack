@@ -1,0 +1,10 @@
+While Rbanism originated as an academic initiative, our community is open to anyone who wishes to join and expand our network. We primarily cater to individuals who are passionate about or professionally involved in urban research and its implementation through the use of new digital skills, such as the R programming language. Our community gatherings and initiatives aim to foster connections among those in the realms of education, research, and professional practice
+
+<ul class="member-registration-form-link-list">
+<li class="member-registration-form-list-item">[Join the community](https://forms.office.com/e/25Va69R1h2)</li>
+</ul>
+
+<div class="members-img">
+<img src="assets/imgs/about/members.jpg" alt="Snow" style="width:100%;">
+<div class="bottom-left">Our community thrives with a vibrant mix of students, researchers, educators, and practioners - a melting pot of young minds, driven explorers, inspired teachers, and talented professionals.</div>
+</div>

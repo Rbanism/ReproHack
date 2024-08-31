@@ -1,12 +1,52 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/listings/blog/posts/240815-libraries-and-packages/index.html",
+      "/listings/blog/posts/240402-r-vs-qgis/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/events/230522_scalegis-workshop/index.html",
-      "/events/230403_repro-wrap-up/index.html",
-      "/events/230403_repro-challenge/index.html",
-      "/events/230403_repro-hack/index.html",
-      "/events/230403_repro-r-workshop/index.html"
+      "/listings/index/actions/improving_awareness/index.html",
+      "/listings/index/actions/stimulating_engagement/index.html",
+      "/listings/index/actions/building_capacity/index.html",
+      "/listings/index/benefits/reproducibility/index.html",
+      "/listings/index/benefits/automation/index.html",
+      "/listings/index/benefits/scalability/index.html",
+      "/listings/events/posts/230522_scalegis-workshop/index.html",
+      "/listings/events/posts/230403_repro-wrap-up/index.html",
+      "/listings/events/posts/230403_repro-challenge/index.html",
+      "/listings/events/posts/230403_repro-hack/index.html",
+      "/listings/events/posts/230403_repro-r-workshop/index.html",
+      "/listings/blog/posts/240815-libraries-and-packages/index.html",
+      "/listings/blog/posts/240402-r-vs-qgis/index.html",
+      "/listings/index/partners/tud/index.html",
+      "/listings/index/partners/oscd/index.html",
+      "/listings/index/partners/nlesc/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/listings/events/posts/230522_scalegis-workshop/index.html",
+      "/listings/events/posts/230403_repro-wrap-up/index.html",
+      "/listings/events/posts/230403_repro-challenge/index.html",
+      "/listings/events/posts/230403_repro-hack/index.html",
+      "/listings/events/posts/230403_repro-r-workshop/index.html",
+      "/listings/events/categories/challenges/index.html",
+      "/listings/events/categories/workshops/index.html",
+      "/listings/events/categories/social/index.html"
+    ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/listings/about/team/claudiu-forgaci/index.html",
+      "/listings/about/team/clementine-cottineau/index.html",
+      "/listings/about/team/daniele-cannatella/index.html",
+      "/listings/about/team/dimitris-mantas/index.html"
     ]
   }
 ]

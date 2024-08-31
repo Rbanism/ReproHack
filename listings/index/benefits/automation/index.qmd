@@ -1,0 +1,6 @@
+---
+title: Automation
+description: Save time and reduce errors with scripts, so that you can focus on your core skills and knowledge.
+date: 2/1/1970
+image: ../../../../assets/icons/benefits/automation.svg
+---

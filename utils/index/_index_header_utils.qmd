@@ -1,0 +1,17 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('#rbanism-community');
+      if (!header) {
+          console.log('Could not locate index header!');
+      }
+    
+      const btn = document.createElement('a');
+      
+      btn.setAttribute('class', 'filled-button');
+      btn.setAttribute('href' , 'https://forms.office.com/e/25Va69R1h2');
+      
+      btn.textContent = 'Join us';
+        
+      header.appendChild(btn);
+  });
+</script>

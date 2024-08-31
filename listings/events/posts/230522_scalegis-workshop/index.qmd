@@ -1,0 +1,34 @@
+---
+title: "Scalable GIS for Urbanists Workshop"
+subtitle: "May 22, 2023, 9:00 AM–5:00 PM, Blue Room, TU Delft Library"
+date: "5/22/2023"
+description: "Experience the infrastructure and workflows of large-scale GIS applications relevant for urbanism research."
+categories: [Workshops, Scalability]
+image: photo.jpg
+---
+
+Scalable GIS for Urbanists aims to introduce the infrastructure and workflows of large-scale GIS applications relevant for urbanism research. After a presentation of Big Geodata Science and a discussion on how it relates to urbanism research, the workshop will showcase two large-scale GIS applications in a tutorial format, namely a demonstration of the [Remote-Sensing Deployable Analysis environmenT (RS-DAT)](https://research-software-directory.org/projects/rs-dat) and a tutorial on how to run a scaled-up analysis with the [Netherlands-wide 3D BAG dataset](https://3dbag.nl/en/viewer). Overall, the focus will be on challenges specific to the field of urbanism that cannot be solved with current approaches involving GUI-based software and data loaded in memory. The input will be given by representatives of the [Centre of Expertise in Big Geodata Science (Faculty ITC, University of Twente)](https://urldefense.com/v3/__https://itc.nl/big-geodata__;!!PAKc-5URQlI!4gtYSXHLQTmXNqeCiziPw_FxD8H5xVpOcJMHNFwkYvqaTtwv3P13L8YhFRJ6uZfafZvykjKrHczciCFGSnyvkR3_$), [Netherlands eScience Center](https://www.esciencecenter.nl/), and the [3D Geoinformation group from Delft Univeristy of Technology](https://3d.bk.tudelft.nl/). Based on the knowledge gained from the introduction and the showcased projects, participants will learn to assemble a scaled-up workflow starting from a given case of small-scale GIS analysis.
+
+Participants must have access to a computer with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+
+Scalable GIS for Urbanists is open to all researchers in the Netherlands from the field of urbanism and related fields, including urban design, spatial planning, landscape architecture, and urban studies. You don't need to have any previous knowledge of the tools that will be presented at the workshop.
+
+This workshop is organised by TU Delft, Faculty of Architecture and the Built Environment, Department of Urbanism, in collaboration with the TU Delft Library, and it is part of the Netherlands eScience Center fellowship project [Rbanism](https://www.esciencecenter.nl/claudiu-forgaci/), targeting digital competence in the urbanism research community.
+
+### > Links
+
+- Workshop program: [link](https://rbanism.github.io/scalegis-workshop/)
+
+- Introduction: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)
+
+- Introduction to Big Geodata Insfrastricture, by [Serkan Girgin](https://people.utwente.nl/s.girgin): [slides](https://doi.org/10.5281/zenodo.7957147)
+
+- SURF infrastructure, by [Natalie Danezi](https://www.surf.nl/data-van-buitenaardse-proporties): [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/surf-slides.pdf)
+
+- Tutorial 1 - Scaling up the analysis of urban form, by [Lukas Beuster](https://3d.bk.tudelft.nl/lbeuster/): [repository](https://github.com/lukasbeuster/3dgeo_scalable_gis)
+
+- Tutorial 2 - Scaled-up network analysis using the RS DAT framework, by [Francesco Nattino](https://www.esciencecenter.nl/team/dr-francesco-nattino/) & [Ou Ku](https://www.esciencecenter.nl/team/ou-ku-msc/): [repository](https://github.com/RS-DAT/2023-05-22-scalable-GIS)
+
+- Scale-up exercise in groups: [assignments](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/assignments.pdf)
+
+- Wrap-up: [slides](https://github.com/Rbanism/scalegis-workshop/blob/main/docs/scalegis-slides.pdf)
