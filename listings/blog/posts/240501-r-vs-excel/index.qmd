@@ -1,0 +1,31 @@
+---
+author: "Clémentine Cottineau"
+title: "R vs. Excel: R wins"
+date: "2024-05-01"
+categories:
+  - R versus
+---
+
+In our [Geospatial Data Carpentry for Urbanism](https://carpentries-incubator.github.io/r-geospatial-urban/) workshops, we never receive the question: why R and not Excel! Yet we all use spreadsheet softwares in our work. Maybe we don’t get the question because the answer is obvious, or maybe it’s more complicated than that. I’ll point to a few obvious answers, illustrated by a personal experience, and end with nuance.
+
+A first simple answer could be that R is an open-source software, whereas Excel is proprietary. But that could be solved by using [LibreOffice](https://www.libreoffice.org/) (which works just as well).
+
+A second simple answer could be that R is a large versatile toolbox whereas Excel/LibreOffice does mostly one thing: tables. R does tables as well (with base-R, but also large tables with the package ['data.table'](https://rdatatable.gitlab.io/data.table/) or online tables with ['googlesheets4'](https://googlesheets4.tidyverse.org/)). Yet R also does statistical analysis (with base-R, but also the packages ['FactoMineR'](https://cran.r-project.org/web/packages/FactoMineR/index.html) for multivariate data mining or ['lme4'](https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf) for linear mixed-effects models), and visualisation (['ggplot2'](https://ggplot2.tidyverse.org/) of course, but also ['ggVennDiagram'](https://cran.r-project.org/web/packages/ggVennDiagram/readme/README.html) for Venn Diagrams or ['ggalluvial'](https://cran.r-project.org/web/packages/ggalluvial/vignettes/ggalluvial.html) for Sankey plots), and maps (with ['sf'](https://cran.r-project.org/web/packages/sf/index.html), ['terra'](https://cran.r-project.org/web/packages/terra/index.html) or ['leaflet'](https://cran.r-project.org/web/packages/leaflet/index.html)), and networks (with ['igraph'](https://cran.r-project.org/web/packages/igraph/index.html) or ['network'](https://cran.r-project.org/web/packages/network/index.html)), and text mining (with ['quanteda'](https://quanteda.io/), ['ldatuning'](https://cran.r-project.org/web/packages/ldatuning/index.html) or ['wordcloud'](https://cran.r-project.org/web/packages/wordcloud/wordcloud.pdf)) and machine learning (with ['caret'](https://cran.r-project.org/web/packages/caret/index.html) or ['mlr3'](https://mlr3.mlr-org.com/)), etc. This makes it a much more valuable tool when it comes to designing **workflows**.
+
+And that is where R has the most impact in my opinion. A personal story to illustrate it. As a PhD student, I knew a little about R and I used it for some tasks, but my workflow was a complicated one: I compiled data about cities and computed simple statistical analyses in Excel, I imported the data tables into R for multivariate regressions, I exported model outputs as text, and model residuals as tables. I imported residual tables into QGIS to map them, and refined the maps (in terms of styling, labelling, annotation, etc.) with Inkscape. There is about a dozen of residual maps in my dissertation, so that took some time, but it was still manageable.
+
+![](worflow2.png)
+
+As a postdoctoral researcher, I worked on a sensitivity analysis where I had to perform each regression analysis 5000 times (one for each combination of three city definition thresholds). The old workflow would not do… I had to integrate it both to **automate** it (that was way more clicks than a person is willing to do) and make it **scalable** (because it’s 5000 times today, but it could be more tomorrow).
+
+![](ITERATION 1.jpeg)
+
+*Source: Cottineau et al. (2019), Figure 4*
+
+In the process, I also solved the problem of **reproducibility**, because by encoding all the different operations into a program, I now had a trace of all the operations necessary, their order and the parameters chosen, so much so that I could rerun the code later and share it with others (and not wonder in three months about the exact file I had taken as input). These three principles – Automation, Reproducibility, Scalability – are the one we aim to promote within [Rbanism](https://www.notion.so/Rbanism-Communication-Dashboard-e2460098c50d49c38bd37e34c80968b7?pvs=21), because R wins on all these fronts, and make your life easier.
+
+I just want to finish with a note of nuance, which is that although R wins, it does not mean that Excel/LibreOffice isn’t useful. I find it much quicker and intuitive for data creation, with small datasets or to perform administrative tasks and their communication. As a rule of thumb, if your table fits in an A4, you probably do not need R.
+
+**Reference:**
+
+Cottineau, C., Finance, O., Hatna, E., Arcaute, E., & Batty, M. (2019). Defining urban clusters to detect agglomeration economies.*Environment and Planning B: Urban Analytics and City Science*,*46*(9), 1611-1626.
